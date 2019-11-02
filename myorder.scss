@@ -1,0 +1,52 @@
+header {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background: #e3e4e5;
+    border-bottom: solid 1px #ddd;
+    .content {
+        color: #999;
+        background: #e3e4e5;
+        overflow: hidden;
+        .fl {
+            float: left;
+            width: 152px;
+            height: 30px;
+            overflow: hidden;
+            li {
+                float: left;
+                height: 100%;
+                padding: 0 2px;
+                i {
+                    position: relative;
+                    display: inline;
+                    font-size: 16px;
+                    color: #5c5452;
+                    padding-right: 5px;
+                }
+                a {
+                    color: #999;
+                }
+            }
+        }
+        .fr {
+            float: right;
+            overflow: hidden;
+            li {
+                float: right;
+            }
+            .spacer {
+                width: 1px;
+                height: 12px;
+                margin-top: 9px;
+                padding: 0;
+                background: #ccc;
+                overflow: hidden;
+            }
+        }
+    }
+}
+.content {
+    width: 990px;
+    margin: 0 auto;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ajax的大纲</title>
+</head>
+<body>
+    用户名：<input id="username" type="text" /><br/>
+    密码：<input id="userpass" type="password" /><br/>
+    <input id="btnLogin" type="button" value="登录" />
+    <div id="msgBox"></div>
+</body>
+</html>
+<script src="js/cookieTools.js"></script>
+<script>
+
+//作为前端人员，如果需要和后端交互，必须明确四个信息:
+//1、请求方式：get或者post。   post方式
+//2、请求的地址: loginCheck.php
+//3、请求数据：（前端传给后端的键值对） 
+//   username：表示用户名
+//   userpass：表示密码
+//4、后端给前端响应的数据（格式）：
+//  字符串：
+//    "1":登录成功
+//    "0":登录失败
+
+//用ajax发请求
+$("#btnLogin").onclick = function(){
+    //
+    let xhr = new XMLHttpRequest();
+        
+    //2、设置请求参数
+    xhr.open("post","loginCheck.php",true);
+
+    //3、设置回调函数
+    xhr.onreadystatechange = function(){
+        if(xhr.readyState==4 && xhr.status==200){
+            //5、接收后端响应
+            if(xhr.responseText=="1"){
+                //保存cookie
+                addCookie("uname",$("#username").value,7);
+                //跳转到首页
+                location.href = "index.html";
+            }else{
+                $("#msgBox").innerHTML = "亲，登录失败，请重新登录!";
+            }
+        }
+    }
+
+    //post方式增加下面一句代码：
+    xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+    //post方式把发送给后端数据，作为send函数的参数
+    let sendstr = "username="+$("#username").value+"&userpass="+$("#userpass").value;
+    //4、发送请求
+    xhr.send(sendstr);
+
+}
+
+
+function $(str){
+	if(str.charAt(0)=="#"){
+		return document.getElementById(str.substring(1));
+	}else if(str.charAt(0)=="."){
+		return document.getElementsByClassName(str.substring(1));
+	}else{
+		return document.getElementsByTagName(str);
+	}
+}	
+
+
+</script>

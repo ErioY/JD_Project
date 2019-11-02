@@ -1,0 +1,61 @@
+<!--
+ * @Autor: ErioY
+ * @Date: 2019-09-19 19:10:43
+ * @Email: 1973545559@qq.com
+ * @Github: https://github.com/ErioY
+ * @LastEditors: ErioY
+ * @LastEditTime: 2019-09-19 20:49:16
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>京东_注册</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style1.css" />
+</head>
+<body>
+    <header class="clearfix">
+        <div class="logo">
+            <img src="img/logo.jpg" alt="">
+            <h1>欢迎注册</h1>
+            <h6>已有账号? <a href="login.html">请登录&gt;</a></h6>
+        </div>
+        <hr />
+    </header>
+    <article>
+        <form class="content" name="registerForm" onsubmit="mySubmit()">
+            <div><span>用&nbsp;户&nbsp;名</span><input type="text" placeholder="您的账户名和登录名" name="username"></div> 
+            <div><span>设 置 密 码</span><input type="password" placeholder="建议使用两种或两种以上字符组合" name="password"></div>
+            <div><span>确 认 密 码</span><input type="password" placeholder="请再次输入密码" name="password"></div>
+            <div><span>邮 箱 验 证</span><input type="text" placeholder="请输入邮箱" name="femail"></div>
+            <div class="other"><span>邮箱验证码</span><input type="text" placeholder="请输入邮箱验证码" name="confirm"></div>
+            <button id="get">获取验证码</button>
+            <button type="submit" id="register">立即注册</button>
+            <div class="clearfix">
+                <a href="">企业用户注册</a>
+                <a href="">海外用户注册</a>
+            </div>
+        </form>
+    </article>
+    <footer>
+        <hr />
+        <ul class="menu clearfix">
+            <li><a href="#">关于我们</a></li>
+            <li><a href="#">联系我们</a></li>
+            <li><a href="#">人才招聘</a></li>
+            <li><a href="#">商家入驻</a></li>
+            <li><a href="#">广告服务</a></li>
+            <li><a href="#">手机京东</a></li>
+            <li><a href="#">友情链接</a></li>
+            <li><a href="#">销售联盟</a></li>
+            <li><a href="#">京东社区</a></li>
+            <li><a href="#">京东公益</a></li>
+            <li><a href="#">English Site</a></li>
+        </ul>
+    </footer>
+    <script src="js/register.js"></script>
+</body>
+</html>

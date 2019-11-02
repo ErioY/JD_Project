@@ -1,0 +1,2250 @@
+<!--
+ * @Autor: ErioY
+ * @Date: 2019-10-21 15:05:17
+ * @Email: 1973545559@qq.com
+ * @Github: https://github.com/ErioY
+ * @LastEditors: ErioY
+ * @LastEditTime: 2019-11-01 23:39:25
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>京东(JD.COM)-正品低价、品质保障、配送及时、轻松购物！</title>
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+</head>
+<body>
+    <header>
+        <div id="head-top">
+            <nav class="clearfix">
+                <ul class="left">
+                    <li class="place" >
+                        <i class="fa fa-map-marker" style="color: #f10215"></i>
+                        <a href="" id="area" titie="北京">北京</a>
+                    </li>
+                </ul>
+                <!-- 隐藏的地区 -->
+                <div id="hidden-area">
+                    <ul>
+                        <li><a href="" class="selected">北京</a></li>
+                        <li><a href="">上海</a></li>
+                        <li><a href="">天津</a></li>
+                        <li><a href="">重庆</a></li>
+                        <li><a href="">河北</a></li>
+                        <li><a href="">山西</a></li>
+                        <li><a href="">河南</a></li>
+                        <li><a href="">辽宁</a></li>
+                        <li><a href="">吉林</a></li>
+                        <li><a href="">黑龙江</a></li>
+                        <li><a href="">内蒙古</a></li>
+                        <li><a href="">江苏</a></li>
+                        <li><a href="">山东</a></li>
+                        <li><a href="">安徽</a></li>
+                        <li><a href="">浙江</a></li>
+                        <li><a href="">福建</a></li>
+                        <li><a href="">湖北</a></li>
+                        <li><a href="">湖南</a></li>
+                        <li><a href="">广东</a></li>
+                        <li><a href="">广西</a></li>
+                        <li><a href="">江西</a></li>
+                        <li><a href="">四川</a></li>
+                        <li><a href="">海南</a></li>
+                        <li><a href="">贵州</a></li>
+                        <li><a href="">云南</a></li>
+                        <li><a href="">西藏</a></li>
+                        <li><a href="">陕西</a></li>
+                        <li><a href="">甘肃</a></li>
+                        <li><a href="">青海</a></li>
+                        <li><a href="">宁夏</a></li>
+                        <li><a href="">新疆</a></li>
+                        <li><a href="">港澳</a></li>
+                        <li><a href="">台湾</a></li>
+                        <li><a href="">钓鱼岛</a></li>
+                        <li><a href="">海外</a></li>
+                    </ul>
+                    <hr />
+                    <div class="special">
+                        <h5>地区专享版本</h5>
+                        <a href="">中國港澳</a>
+                    </div>
+                    <hr />
+                    <div class="foreign">
+                        <h5>Available Sites</h5>
+                        <ol>
+                            <li>
+                                <i class="fa fa-globe"></i>
+                                <a href="">Global Site</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-globe"></i>
+                                <a href="">Global Site</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-globe"></i>
+                                <a href="">Global Site</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-globe"></i>
+                                <a href="">Global Site</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-globe"></i>
+                                <a href="">Global Site</a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                
+                <ul class="right clearfix">
+                    <li class="menu welcome">
+                        <a href="login.html" class="link-login">你好，请登录</a>
+                        &nbsp;&nbsp;
+                        <a href="register.html" class="link-register">免费注册</a>
+                    </li>
+                    <li class="spacer">|</li>
+                    <li class="menu red">我的订单</li>
+                    <li class="spacer">|</li>
+                    <li class="menu red">我的京东&nbsp;∨</li>
+                    <li class="spacer">|</li>
+                    <li class="menu red">京东会员</li>
+                    <li class="spacer">|</li>
+                    <li class="menu qiye">企业采购&nbsp;∨</li>
+                    <li class="spacer">|</li>
+                    <li class="menu">客户服务&nbsp;∨</li>
+                    <li class="spacer">|</li>
+                    <li class="menu">网站导航&nbsp;∨</li>
+                    <li class="spacer">|</li>
+                    <li class="menu">手机京东</li>
+                </ul>
+            </nav>
+        </div>
+        <div id="head-search">
+            <ul id="search-list"></ul>
+            <div id="logo"></div>
+            <div id="header">
+                <div id="search">
+                    <div class="search">
+                        <input type="text" name="search" id="searchTxt" placeholder="小狗吸尘器">
+                        <span class="fa fa-camera"></span>
+                        <button>
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                        
+                    </div>
+                    <!-- 不显示 -->
+                    <div class="settleup">
+                        <div class="settle">
+                            <img src="img/shoppingcar.png" alt="">
+                            <a href="">我的购物车</a>
+                            <div>0</div>
+                        </div>
+                        <div class="dropdown">
+                            <div class="cart_pop">
+                                <div class="cart_empty">
+                                        购物车中还没有商品，赶紧选购吧！
+                                      </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul id="hotwords">
+                    <li><a href="">抢手机游戏</a></li>
+                    <li><a href="">199减100</a></li>
+                    <li><a href="">冲锋衣</a></li>
+                    <li><a href="">京品志</a></li>
+                    <li><a href="">建材放价</a></li>
+                    <li><a href="">每100-50</a></li>
+                    <li><a href="">游戏手机</a></li>
+                    <li><a href="">每300-400</a></li>
+                </ul>
+            <div id="navitems">
+                <div class="spacer"></div>
+                <ul class="groups group1">
+                    <li class="first"><a href="">秒杀</a></li>
+                    <li class="second"><a href="">优惠券</a></li>
+                    <li><a href="">PLUS会员</a></li>
+                    <li><a href="">品牌闪购</a></li>
+                </ul>
+                <div class="spacer"></div>
+                <ul class="groups group2">
+                    <li><a href="">拍卖</a></li>
+                    <li><a href="">京东时尚</a></li>
+                    <li><a href="">京东超市</a></li>
+                    <li><a href="">京东生鲜</a></li>
+                </ul>
+                <div class="spacer"></div>
+                <ul class="groups group3">
+                        <li><a href="">海囤全国</a></li>
+                        <li><a href="">京东金融</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div id="section">
+            <div id="section-top" class="clearfix">
+                <div id="section-top-left">
+                    <!-- 左边的列表 -->
+                    <div class="left">
+                        <ul class="menu">
+                            <li>
+                                <a href="">家用电器</a>
+                            </li>
+                            <li>
+                                <a href="">手机</a>
+                                <span>/</span>
+                                <a href="">运营商</a>
+                                <span>/</span>
+                                <a href="">数码</a>
+                            </li>
+                            <li>
+                                <a href="">电脑</a>
+                                <span>/</span>
+                                <a href="">办公</a>
+                            </li>
+                            <li>
+                                <a href="">家居</a>
+                                <span>/</span>
+                                <a href="">家具</a>
+                                <span>/</span>
+                                <a href="">家装</a>
+                                <span>/</span>
+                                <a href="">厨具</a>
+                            </li>
+                            <li>
+                                <a href="">男装</a>
+                                <span>/</span>
+                                <a href="">女装</a>
+                                <span>/</span>
+                                <a href="">童装</a>
+                                <span>/</span>
+                                <a href="">内衣</a>
+                            </li>
+                            <li>
+                                <a href="">美妆</a>
+                                <span>/</span>
+                                <a href="">个护清洁</a>
+                                <span>/</span>
+                                <a href="">宠物</a>
+                            </li>
+                            <li>
+                                <a href="">女鞋</a>
+                                <span>/</span>
+                                <a href="">箱包</a>
+                                <span>/</span>
+                                <a href="">钟表</a>
+                                <span>/</span>
+                                <a href="">珠宝</a>
+                            </li>
+                            <li>
+                                <a href="">男鞋</a>
+                                <span>/</span>
+                                <a href="">运动</a>
+                                <span>/</span>
+                                <a href="">户外</a>
+                            </li>
+                            <li>
+                                <a href="">房产</a>
+                                <span>/</span>
+                                <a href="">汽车</a>
+                                <span>/</span>
+                                <a href="">汽车用品</a>
+                            </li>
+                            <li>
+                                <a href="">母婴</a>
+                                <span>/</span>
+                                <a href="">玩具乐器</a>
+                            </li>
+                            <li>
+                                <a href="">食品</a>
+                                <span>/</span>
+                                <a href="">酒类</a>
+                                <span>/</span>
+                                <a href="">生鲜</a>
+                                <span>/</span>
+                                <a href="">特产</a>
+                            </li>
+                            <li>
+                                <a href="">艺术</a>
+                                <span>/</span>
+                                <a href="">礼品鲜花</a>
+                                <span>/</span>
+                                <a href="">农资绿植</a>
+                            </li>
+                            <li>
+                                <a href="">医药保健</a>
+                                <span>/</span>
+                                <a href="">计生情趣</a>
+                            </li>
+                            <li>
+                                <a href="">图书</a>
+                                <span>/</span>
+                                <a href="">文娱</a>
+                                <span>/</span>
+                                <a href="">教育</a>
+                                <span>/</span>
+                                <a href="">电子书</a>
+                            </li>
+                            <li>
+                                <a href="">机票</a>
+                                <span>/</span>
+                                <a href="">酒店</a>
+                                <span>/</span>
+                                <a href="">旅游</a>
+                                <span>/</span>
+                                <a href="">生活</a>
+                            </li>
+                            <li>
+                                <a href="">理财</a>
+                                <span>/</span>
+                                <a href="">众筹</a>
+                                <span>/</span>
+                                <a href="">白条</a>
+                                <span>/</span>
+                                <a href="">保险</a>
+                            </li>
+                            <li>
+                                <a href="">安装</a>
+                                <span>/</span>
+                                <a href="">维修</a>
+                                <span>/</span>
+                                <a href="">清洗</a>
+                                <span>/</span>
+                                <a href="">二手</a>
+                            </li>
+                            <li>
+                                <a href="">工业品</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 中间轮播图 -->
+                <div id="section-top-middle">
+                    <div class="middle clearfix">
+                        <!-- 轮播图盒子 -->
+                        <div class="slideWrap" id="slide1"></div>
+                    </div>
+                </div>
+                <!-- 右边部分 -->
+                <div id="section-top-right">
+                    <div class="top">
+                        <div class="user">
+                            <div class="dog">
+                                <a href="login.html"><img src="img/JD_circle.png" alt=""></a>
+                            </div>
+                            
+                        </div>
+                        <div class="usershow">
+                            <a href="login.html">Hi~欢迎逛京东！</a>
+                            <p>
+                                <a href="login.html">登录</a>
+                                &nbsp;|&nbsp;
+                                <a href="register.html">注册</a>
+                            </p>
+                        </div>
+                        <div class="choose">
+                            <a href="" class="new">新人福利</a>
+                            <a href="" class="plus">PLUS会员</a>
+                        </div>
+                    </div>
+                    <div class="middle">
+                        <div class="newsline">
+                            <h5>京东快报</h5>
+                            <a href="">更多&nbsp;&gt;</a>
+                        </div>
+                        <div class="newslist">
+                            <ul class="news">
+                                <li><a href="">
+                                    <span>HOT</span>
+                                    iPhone SE2来了！5.5英寸+A13，售价感人
+                                </a></li>
+                                <li><a href="">
+                                    <span>热门</span>
+                                    华为P40将于12月正式发布，搭载鸿蒙OS亮相
+                                </a></li>
+                                <li><a href="">
+                                    <span>HOT</span>
+                                    华为P40官方宣布，搭载鸿蒙系统+麒麟990
+                                </a></li>
+                                <li><a href="">
+                                    <span>HOT</span>
+                                    又买早了！华为P30 Pro售价刷新底线，售价让人心疼
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <!-- 右下角服务 -->
+                        <div class="service clearfix">
+                            <ul>
+                                <li><a href="">
+                                    <i class="fa fa-fax fa-2x blue"></i>
+                                    <span>话费</span>
+                                </a></li>
+                                <li><a href="">
+                                    <i class="fa fa-plane fa-2x yellow"></i>
+                                    <span>机票</span>
+                                </a></li>
+                                <li><a href="">
+                                    <i class="fa fa-address-book fa-2x green"></i>
+                                    <span>酒店</span>
+                                </a></li>
+                                <li><a href="">
+                                    <i class="fa fa-address-book fa-2x yellow"></i>
+                                    <span>游戏</span>
+                                </a></li>
+                                <li><a href="">
+                                    <i class="fa fa-address-book fa-2x green"></i>
+                                    <span>加油卡</span>
+                                </a></li>
+                                <li><a href="">
+                                    <i class="fa fa-address-book fa-2x red"></i>
+                                    <span>火车票</span>
+                                </a></li>
+                                <li><a href="">
+                                    <i class="fa fa-address-book fa-2x green"></i>
+                                    <span>众筹</span>
+                                </a></li>
+                                <li><a href="">
+                                    <i class="fa fa-address-book fa-2x blue"></i>
+                                    <span>理财</span>
+                                </a></li>
+                                <li><a href="">
+                                    <i class="fa fa-file-word-o fa-2x red"></i>
+                                    <span>白条</span>
+                                </a></li>
+                                <li><a href="">
+                                    <i class="fa fa-address-book fa-2x red"></i>
+                                    <span>电影票</span>
+                                </a></li>
+                                <li><a href="">
+                                    <i class="fa fa-address-book fa-2x blue"></i>
+                                    <span>企业购</span>
+                                </a></li>
+                                <li><a href="">
+                                    <i class="fa fa-credit-card fa-2x yellow"></i>
+                                    <span>礼品卡</span>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="section-bottom">
+                <!-- 京东秒杀 -->
+                <div id="second">
+                    <div class="second"></div>
+                    <a href="" class="zhebu">
+                        <div class="title">京东秒杀</div>
+                        <i class="fa fa-bolt fa-3x" aria-hidden="true"></i>
+                        <div class="middle">
+                            <b>18:00</b>
+                            点场 倒计时
+                        </div>
+                        <!-- 秒杀倒计时 -->
+                        <div class="bottom">
+                            <span class="timehour"></span>
+                            <span class="timeminute"></span>
+                            <span class="timesecond"></span>
+                        </div>
+                    </a>
+                    <div></div>
+                    <!-- 按钮轮播图 -->
+                    <div class="slide1">
+                        <button class="fa fa-angle-left"></button>
+                        <div class="wrap">
+                            <ul class="menu">
+                                <li><a href=""><img src="img/slide_1.png" alt="">
+                                    <h6>四大名著 红楼梦西游记三国演义水浒传原著正版珍藏版 董卿朗读者世界名著小说</h6>
+                                    <div class="price">
+                                        <div class="now">
+                                            <i>￥</i>
+                                            <span>29.80</span>
+                                        </div>
+                                        <div class="origin">
+                                            <i>￥</i>
+                                            <span>80.00</span>
+                                        </div>
+                                    </div>
+                                </a></li>
+                                <li><a href=""><img src="img/slide_1.png" alt="">
+                                    <h6>四大名著 红楼梦西游记三国演义水浒传原著正版珍藏版 董卿朗读者世界名著小说</h6>
+                                    <div class="price">
+                                        <div class="now">
+                                            <i>￥</i>
+                                            <span>29.80</span>
+                                        </div>
+                                        <div class="origin">
+                                            <i>￥</i>
+                                            <span>80.00</span>
+                                        </div>
+                                    </div>
+                                </a></li>
+                                <li><a href=""><img src="img/slide_1.png" alt="">
+                                    <h6>四大名著 红楼梦西游记三国演义水浒传原著正版珍藏版 董卿朗读者世界名著小说</h6>
+                                    <div class="price">
+                                        <div class="now">
+                                            <i>￥</i>
+                                            <span>29.80</span>
+                                        </div>
+                                        <div class="origin">
+                                            <i>￥</i>
+                                            <span>80.00</span>
+                                        </div>
+                                    </div>
+                                </a></li>
+                                <li><a href=""><img src="img/slide_1.png" alt="">
+                                    <h6>四大名著 红楼梦西游记三国演义水浒传原著正版珍藏版 董卿朗读者世界名著小说</h6>
+                                    <div class="price">
+                                        <div class="now">
+                                            <i>￥</i>
+                                            <span>29.80</span>
+                                        </div>
+                                        <div class="origin">
+                                            <i>￥</i>
+                                            <span>80.00</span>
+                                        </div>
+                                    </div>
+                                </a></li>
+                            </ul>
+                        </div>
+                        
+                        <button class="fa fa-angle-right"></button>
+                    </div>
+                    <!-- 自动播放轮播图 -->
+                    <div id="slide2"></div>
+                </div>
+                <!-- 双十一会场 -->
+                <div id="third">
+                    <div class="main">
+                        <a class="link" href="">
+                            <!-- 在意的出行 -->
+                            <!-- <img src="img/health-left.png" alt=""> -->
+                        </a>
+                        <div class="menu">
+                                <ul class="big-menu clearfix">
+                                    <li><a href=""><img src="img/big-menu/1.jpg" alt=""></a></li>
+                                    <li><a href=""><img src="img/big-menu/2.jpg" alt=""></a></li>
+                                    <li><a href=""><img src="img/big-menu/3.jpg" alt=""></a></li>
+                                    <li><a href=""><img src="img/big-menu/4.jpg" alt=""></a></li>
+                                    <li><a href=""><img src="img/big-menu/5.jpg" alt=""></a></li>
+                                    <li><a href=""><img src="img/big-menu/6.jpg" alt=""></a></li>
+                                    <li><a href=""><img src="img/big-menu/7.jpg" alt=""></a></li>
+                                    <li><a href=""><img src="img/big-menu/8.jpg" alt=""></a></li>
+                                    <li><a href=""><img src="img/big-menu/9.jpg" alt=""></a></li>
+                                    <li><a href=""><img src="img/big-menu/10.jpg" alt=""></a></li>
+                                </ul>
+                                <ul class="small-menu clearfix">
+                                    <li><a href=""><img src="img/small-menu/1.jpg" alt=""></a></li>
+                                    <li><a href=""><img src="img/small-menu/2.jpg" alt=""></a></li>
+                                    <li><a href=""><img src="img/small-menu/3.jpg" alt=""></a></li>
+                                    <li><a href=""><img src="img/small-menu/4.jpg" alt=""></a></li>
+                                    <li><a href=""><img src="img/small-menu/5.jpg" alt=""></a></li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="fourth">
+                    <!-- 排行榜 -->
+                    <div id="core1">
+                        <div class="inner clearfix">
+                            <div class="left">
+                                <div class="title">
+                                    <a href="" class="clearfix">
+                                        <h3>排行榜</h3>
+                                        <i class=" fa fa-chevron-circle-right aria-hidden='true'"></i>
+                                    </a>
+                                    
+                                </div>
+                                <div class="content">
+                                    <ul class="menu ">
+                                        <li class="active"><a href="">休闲食品</a></li>
+                                        <li><a href="">个护健康</a></li>
+                                        <li><a href="">奶粉</a></li>
+                                        <li><a href="">香水彩妆</a></li>
+                                        <li><a href="">五金工具</a></li>
+                                    </ul>
+                                    <div class="bottomcontent">
+                                        <div class="toplist">
+                                            <div class="top1">
+                                              <a href="" class="top1k">
+                                               <img src="img/toplist/1.png" alt=""> 
+                                               <span class="name">满300减200_百草味 小香肠60g 烤肠猪肉干肉类 休闲零食小吃 MJ 烟熏味</span>
+                                              </a>  
+                                            </div>
+                                            <div class="topall top2">
+                                                <a href="" class="top">
+                                                    <img src="img/toplist/2.png" alt="">
+                                                    <span>TOP2 得力(deli) 橡胶柄两用螺丝批十字一字两用双头起子6*100mm DL626001</span>
+                                                </a>
+                                            </div>
+                                            <div class="topall top3">
+                                                <a href="" class="top">
+                                                    <img src="img/toplist/2.png" alt="">
+                                                    <span>TOP2 得力(deli) 橡胶柄两用螺丝批十字一字两用双头起子6*100mm DL626001</span>
+                                                </a>
+                                            </div>
+                                            <div class="topall top4">
+                                            <a href="" class="top">
+                                                <img src="img/toplist/2.png" alt="">
+                                                <span>TOP2 得力(deli) 橡胶柄两用螺丝批十字一字两用双头起子6*100mm DL626001</span>
+                                                </a>
+                                            </div>
+                                            <div class="leftbottom">
+                                                <a href="">
+                                                    <span>好物榜</span>
+                                                    <i class="fa fa-angle-right"></i>
+                                                </a>
+                                                <a href="">
+                                                    <span>折扣榜</span>
+                                                    <i class="fa fa-angle-right"></i>
+                                                </a>
+                                                <a href="">
+                                                    <span>店铺榜</span>
+                                                    <i class="fa fa-angle-right"></i>
+                                                </a>
+                                                <a href="">
+                                                    <span>热搜榜</span>
+                                                    <i class="fa fa-angle-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="title">
+                                        <a href="">
+                                            <h3>品牌闪购</h3>
+                                            <i class=" fa fa-chevron-circle-right aria-hidden='true'"></i>
+                                        </a>
+                                </div>
+                                <div class="content clearfix">
+                                    <a href="">
+                                        <img src="img/toplist/right-1.png" alt="">
+                                    </a>
+                                    <ul>
+                                        <li><a href="">
+                                            <img src="img/toplist/right-2.jpg" alt="">
+                                            <h6>松下家用电器专场</h6>
+                                        </a></li>
+                                        <li><a href="">
+                                            <img src="img/toplist/right-3.jpg" alt="">
+                                            <h6>欧莱雅闪购专场</h6>
+                                        </a></li>
+                                        <li><a href="">
+                                            <img src="img/toplist/right-4.jpg" alt="">
+                                            <h6>机械革命电脑专场</h6>
+                                        </a></li>
+                                        <li><a href="">
+                                            <img src="img/toplist/right-5.jpg" alt="">
+                                            <h6>家纺大牌联合闪购</h6>
+                                        </a></li>
+                                        <li><a href="">
+                                            <img src="img/toplist/right-6.jpg" alt="">
+                                            <h6>金龙鱼粮油专场</h6>
+                                        </a></li>
+                                        <li><a href="">
+                                            <img src="img/toplist/right-7.jpg" alt="">
+                                            <h6>小米品牌闪购</h6>
+                                        </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 发现好物 -->
+                    <div id="good">
+                        <div class="nice-goods clearfix">
+                            <a href=""><img src="img/banner3/big-1.jpg" alt=""></a>
+                            <div id="good-banner">
+                                <div id="good-bannerlist">
+                                    <ul>
+                                        <li><a href=""><img src="img/banner3/banner-1.jpg" alt=""></a></li>
+                                        <li><a href=""><img src="img/banner3/banner-2.jpg" alt=""></a></li>
+                                        <li><a href=""><img src="img/banner3/banner-3.jpg" alt=""></a></li>
+                                        <li><a href=""><img src="img/banner3/banner-4.jpg" alt=""></a></li>
+                                        <li><a href=""><img src="img/banner3/banner-5.jpg" alt=""></a></li>
+                                        <li><a href=""><img src="img/banner3/banner-6.jpg" alt=""></a></li>
+                                        <li><a href=""><img src="img/banner3/banner-7.jpg" alt=""></a></li>
+                                    </ul>
+                                </div>
+                                <!-- 滚动条 -->
+                                <div class="scrollbar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 领券中心 -->
+                    <div id="core2">
+                        <div class="core2 first">
+                            <div class="box_head">
+                                <a href="">
+                                    <h3>领券中心</h3>
+                                    <i class=" fa fa-chevron-circle-right aria-hidden='true'"></i>
+                                </a>
+                            </div>
+                            <div class="box_body">
+                                <div class="content">
+                                    <div class="con con_1">
+                                        <a href="">
+                                            <div class="left"><img src="img/core2/quan-1.jpg" alt=""></div>
+                                            <div class="right">
+                                                <span>更多好券</span>
+                                                <i class="fa fa-angle-right"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="con con_2">
+                                        <a href="">
+                                            <div class="left"><img src="img/core2/quan-2.jpg" alt=""></div>
+                                            <div class="right">
+                                                <span>更多好券</span>
+                                                <i class="fa fa-angle-right"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="con con_3">
+                                        <a href="">
+                                            <div class="left"><img src="img/core2/quan-3.jpg" alt=""></div>
+                                            <div class="right">
+                                                <span>更多好券</span>
+                                                <i class="fa fa-angle-right"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="core2 second">
+                            <div class="box_head">
+                                <a href="">
+                                    <h3>逛好店</h3>
+                                    <i class=" fa fa-chevron-circle-right aria-hidden='true'"></i>
+                                </a>
+                            </div>
+                            <div class="box_body_2">
+                                <div class="content_2">
+                                    <a class="top" href="">
+                                        <div class="title">
+                                            <h5>森海塞尔京东自营旗舰店</h5>
+                                            <div class="tags">
+                                                <span class="origin">自营</span>
+                                                <span class="theme">潮流3C</span>
+                                            </div>
+                                        </div>
+                                        <div class="attention"><span>438.8万</span>人关注</div>
+                                        <div class="imgs">
+                                            <img src="img/core2/good-1.jpg" alt="">
+                                        </div>
+                                    </a>
+                                    <a class="bottom" href="">
+                                        <div class="title">
+                                            <h5>伊利母婴京东自营旗舰店</h5>
+                                            <div class="tags">
+                                                <span class="origin">自营</span>
+                                                <span class="theme">育儿心经</span>
+                                            </div>
+                                        </div>
+                                        <div class="attention"><span>718.7万</span>人关注</div>
+                                        <div class="imgs">
+                                            <img src="img/core2/good-2.jpg" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="core2 third">
+                            <div class="box_head">
+                                <a href="">
+                                    <h3>发现</h3>
+                                    <i class=" fa fa-chevron-circle-right aria-hidden='true'"></i>
+                                </a>
+                            </div>
+                            <div class="box_body_2">
+                                <div class="content_3" id="slide3"></div>
+                                <div class="btnleft"></div>
+                                <div class="btnright"></div>
+                            </div>
+                        </div>
+                        <div class="core2 fourth">
+                            <div class="box_head">
+                                <a href="">
+                                    <h3>新品首发</h3>
+                                    <i class=" fa fa-chevron-circle-right aria-hidden='true'"></i>
+                                </a>
+                            </div>
+                            <div class="box_body_2">
+                                <div class="content_4 clearfix">
+                                    <a class="main" href="">
+                                        <div class="aside">
+                                            <span>人气新品</span>
+                                            <p>索尼（SONY） PS4 Pro 1TB游戏机 PlayStation 4《西游记之大圣归来》游戏套装（黑色）</p>
+                                        </div>
+                                        <div class="imgs">
+                                            <img src="img/core2/fourth-0.jpg" alt="">
+                                        </div>
+                                    </a>
+                                    <a href="">
+                                        <img src="img/core2/fourth-1.jpg" alt="">
+                                    </a>
+                                    <a href="">
+                                        <img src="img/core2/fourth-2.jpg" alt="">
+                                    </a>
+                                    <a href="">
+                                        <img src="img/core2/fourth-3.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 频道广场 -->
+                <div id="fifth">
+                    <div class="channels">
+                        <div class="head">
+                            <div class="head-inner">
+                                <h3><i class="fa fa-skyatlas"></i>频道广场<i class="fa fa-skyatlas"></i></h3>
+                            </div>
+                        </div>
+                        <div class="main">
+                            <button class="left">
+                                <i class="fa fa-angle-left"></i>
+                            </button>
+                            <div class="slide clearfix">
+                                <div class="item item2 item-1 item-imgs">
+                                    <a href=""><img src="img/fifth/item-1.jpg" alt=""></a>
+                                </div>
+                                <div class="item item2 item-1 item-imgs">
+                                    <a href=""><img src="img/fifth/item-2.jpg" alt=""></a>
+                                </div>
+                                <div class="right-menu">
+                                    <div class="item same">
+                                        <a class="title" href="">
+                                            <span class="big">玩3C</span>
+                                            <span class="small">潮流电子 炫酷来袭</span>
+                                        </a>
+                                        <div class="item-imgs">
+                                            <a href="">
+                                                <div><img src="img/fifth/item-3.jpg" alt=""></div>
+                                            </a>
+                                            <a href="">
+                                                <div><img src="img/fifth/item-4.jpg" alt=""></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item none same">
+                                        <a class="title" href="">
+                                            <span class="big">食品饮料</span>
+                                            <span class="small">吃货嘉年华</span>
+                                        </a>
+                                        <div class="item-imgs">
+                                            <a href="">
+                                                <div><img src="img/fifth/item-5.jpg" alt=""></div>
+                                            </a>
+                                            <a href="">
+                                                <div><img src="img/fifth/item-6.jpg" alt=""></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item same">
+                                        <a class="title" href="">
+                                            <span class="big">家用电器</span>
+                                            <span class="small">买家电 上京东</span>
+                                        </a>
+                                        <div class="item-imgs">
+                                            <a href="">
+                                                <div><img src="img/fifth/item-7.jpg" alt=""></div>
+                                            </a>
+                                            <a href="">
+                                                <div><img src="img/fifth/item-8.jpg" alt=""></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item none same">
+                                        <a class="title" href="">
+                                            <span class="big">京东时尚</span>
+                                            <span class="small">服饰美妆好物</span>
+                                        </a>
+                                        <div class="item-imgs">
+                                            <a href="">
+                                                <div><img src="img/fifth/item-9.jpg" alt=""></div>
+                                            </a>
+                                            <a href="">
+                                                <div><img src="img/fifth/item-10.jpg" alt=""></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li class="item same">
+                                        <a class="title" href="">
+                                            <span class="big">企业购</span>
+                                            <span class="small">让采购更简单</span>
+                                        </a>
+                                        <div class="item-imgs">
+                                            <a href="">
+                                                <div><img src="img/fifth/item-11.jpg" alt=""></div>
+                                            </a>
+                                            <a href="">
+                                                <div><img src="img/fifth/item-12.jpg" alt=""></div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="item same">
+                                        <a class="title" href="">
+                                            <span class="big">冰箱洗衣机</span>
+                                            <span class="small">品质生活必备</span>
+                                        </a>
+                                        <div class="item-imgs">
+                                            <a href="">
+                                                <div><img src="img/fifth/item-13.jpg" alt=""></div>
+                                            </a>
+                                            <a href="">
+                                                <div><img src="img/fifth/item-14.jpg" alt=""></div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="item same">
+                                        <a class="title" href="">
+                                            <span class="big">运动城</span>
+                                            <span class="small">生命在于运动</span>
+                                        </a>
+                                        <div class="item-imgs">
+                                            <a href="">
+                                                <div><img src="img/fifth/item-15.jpg" alt=""></div>
+                                            </a>
+                                            <a href="">
+                                                <div><img src="img/fifth/item-16.jpg" alt=""></div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="item none same">
+                                        <a class="title" href="">
+                                            <span class="big">厨房电器</span>
+                                            <span class="small">百变厨房大换新</span>
+                                        </a>
+                                        <div class="item-imgs">
+                                            <a href="">
+                                                <div><img src="img/fifth/item-17.jpg" alt=""></div>
+                                            </a>
+                                            <a href="">
+                                                <div><img src="img/fifth/item-18.jpg" alt=""></div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="item same">
+                                        <a class="title" href="">
+                                            <span class="big">Joy寻宝</span>
+                                            <span class="small">懂你的Joy</span>
+                                        </a>
+                                        <div class="item-imgs">
+                                            <a href="">
+                                                <div><img src="img/fifth/item-19.jpg" alt=""></div>
+                                            </a>
+                                            <a href="">
+                                                <div><img src="img/fifth/item-20.jpg" alt=""></div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="item same">
+                                        <a class="title" href="">
+                                            <span class="big">家装城</span>
+                                            <span class="small">用心装好家一站式购齐</span>
+                                        </a>
+                                        <div class="item-imgs">
+                                            <a href="">
+                                                <div><img src="img/fifth/item-21.jpg" alt=""></div>
+                                            </a>
+                                            <a href="">
+                                                <div><img src="img/fifth/item-22.jpg" alt=""></div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="item same">
+                                        <a class="title" href="">
+                                            <span class="big">京东手机</span>
+                                            <span class="small">一个极客的诞生</span>
+                                        </a>
+                                        <div class="item-imgs">
+                                            <a href="">
+                                                <div><img src="img/fifth/item-23.jpg" alt=""></div>
+                                            </a>
+                                            <a href="">
+                                                <div><img src="img/fifth/item-24.jpg" alt=""></div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="item none same">
+                                        <a class="title" href="">
+                                            <span class="big">新机首发</span>
+                                            <span class="small">有新机更有范</span>
+                                        </a>
+                                        <div class="item-imgs">
+                                            <a href="">
+                                                <div><img src="img/fifth/item-25.jpg" alt=""></div>
+                                            </a>
+                                            <a href="">
+                                                <div><img src="img/fifth/item-26.jpg" alt=""></div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="right">
+                                <i class="fa fa-angle-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 为你推荐 -->
+                <div id="sixth">
+                    <div class="channels six">
+                        <div class="head">
+                            <div class="head-inner">
+                                <h3><i class="fa fa-skyatlas"></i>为你推荐<i class="fa fa-skyatlas"></i></h3>
+                            </div>
+                        </div>
+                        <div class="tab clearfix">
+                            <ul>
+                                <li class="high">
+                                    <div class="title">
+                                        <span>精选</span>
+                                    </div>
+                                    <div class="desc">猜你喜欢</div>
+                                    <div class="hrs"></div>
+                                </li>
+                                <li>
+                                    <div class="title">
+                                        <span>智能先锋</span>
+                                    </div>
+                                    <div class="desc">3C家电</div>
+                                    <div class="hrs"></div>
+                                </li>
+                                <li>
+                                    <div class="title">
+                                        <span>居家优品</span>
+                                    </div>
+                                    <div class="desc">居家日用</div>
+                                    <div class="hrs"></div>
+                                </li>
+                                <li>
+                                    <div class="title">
+                                        <span>生活百货</span>
+                                    </div>
+                                    <div class="desc">百货生鲜</div>
+                                    <div class="hrs"></div>
+                                </li>
+                                <li>
+                                    <div class="title">
+                                        <span>时尚达人</span>
+                                    </div>
+                                    <div class="desc">美妆穿搭</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 最多的部分 -->
+                        <div class="main">
+                            <div>
+                                <ul class="longmenu clearfix">
+                                    <li><a href="">
+                                        <div class="longimg">
+                                            <img src="img/sixth/item-1.jpg" alt="">
+                                        </div>
+                                        <div class="detail clearfix">
+                                            <p>Samsonite/新秀丽拉杆箱女行李箱男新品 时尚商务旅行箱包密码箱 耐磨万向轮飞机登机箱DK7 宝石红 20英寸</p>
+                                            <div class="more clearfix">
+                                                <div class="price">
+                                                    <i>￥</i>
+                                                    <span>1680.00</span>
+                                                </div>
+                                                <div class="plus">
+                                                    <div class="discount">券</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 找相似 -->
+                                        <div class="item_hover">
+                                            <div class="delete fa fa-times"></div>
+                                            <div class="search_same">
+                                                <div class="btn_find">
+                                                    <i class="fa fa-eye"></i>
+                                                    <span>找相似</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="">
+                                        <div class="longimg">
+                                            <img src="img/sixth/item-2.jpg" alt="">
+                                        </div>
+                                        <div class="detail clearfix">
+                                            <p>吉米家居 JM-G13102 电工胶布电气绝缘胶带汽修家装无铅阻燃PVC防水胶布黑色10米10卷装</p>
+                                            <div class="more clearfix">
+                                                <div class="price">
+                                                    <i>￥</i>
+                                                    <span>19.80</span>
+                                                </div>
+                                                <div class="plus">
+                                                    <div class="discount">券</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 找相似 -->
+                                        <div class="item_hover">
+                                            <div class="delete fa fa-times"></div>
+                                            <div class="search_same">
+                                                <div class="btn_find">
+                                                    <i class="fa fa-eye"></i>
+                                                    <span>找相似</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="">
+                                        <div class="longimg">
+                                            <img src="img/sixth/item-3.jpg" alt="">
+                                        </div>
+                                        <div class="detail clearfix">
+                                            <p>【预售】Samsonite/新秀丽背包男时尚多功能电脑包韩版休闲书包商务通勤双肩包旅行包女潮36B 黑色</p>
+                                            <div class="more clearfix">
+                                                <div class="price">
+                                                    <i>￥</i>
+                                                    <span>599.00</span>
+                                                </div>
+                                                <div class="plus">
+                                                    <div class="discount">券</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 找相似 -->
+                                        <div class="item_hover">
+                                            <div class="delete fa fa-times"></div>
+                                            <div class="search_same">
+                                                <div class="btn_find">
+                                                    <i class="fa fa-eye"></i>
+                                                    <span>找相似</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="">
+                                        <div class="longimg">
+                                            <img src="img/sixth/item-4.jpg" alt="">
+                                        </div>
+                                        <div class="detail clearfix">
+                                            <p>西域骆驼2019秋季新款真皮系带小白鞋女平底百搭休闲单鞋韩版学生小皮鞋 白色 37</p>
+                                            <div class="more clearfix">
+                                                <div class="price">
+                                                    <i>￥</i>
+                                                    <span>148.00</span>
+                                                </div>
+                                                <div class="plus">
+                                                    <div class="discount">券</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 找相似 -->
+                                        <div class="item_hover">
+                                            <div class="delete fa fa-times"></div>
+                                            <div class="search_same">
+                                                <div class="btn_find">
+                                                    <i class="fa fa-eye"></i>
+                                                    <span>找相似</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="">
+                                        <div class="longimg">
+                                            <img src="img/sixth/item-5.jpg" alt="">
+                                        </div>
+                                        <div class="detail clearfix">
+                                            <p>久林 餐桌 实木餐桌 圆形餐桌椅组合 中式大圆桌带转盘家用夕桌 浅胡桃色 1.3米 餐桌</p>
+                                            <div class="more clearfix">
+                                                <div class="price">
+                                                    <i>￥</i>
+                                                    <span>1299.00</span>
+                                                </div>
+                                                <div class="plus">
+                                                    <div class="discount">券</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 找相似 -->
+                                        <div class="item_hover">
+                                            <div class="delete fa fa-times"></div>
+                                            <div class="search_same">
+                                                <div class="btn_find">
+                                                    <i class="fa fa-eye"></i>
+                                                    <span>找相似</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="">
+                                        <div class="longimg">
+                                            <img src="img/sixth/item-6.jpg" alt="">
+                                        </div>
+                                        <div class="detail clearfix">
+                                            <p>带娃无忧 让妈妈省心</p>
+                                            <div class="more clearfix">
+                                                <div class="price">
+                                                    <i>￥</i>
+                                                    <span>128.00</span>
+                                                </div>
+                                                <div class="plus">
+                                                    <div class="discount">券</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 找相似 -->
+                                        <div class="item_hover">
+                                            <div class="delete fa fa-times"></div>
+                                            <div class="search_same">
+                                                <div class="btn_find">
+                                                    <i class="fa fa-eye"></i>
+                                                    <span>找相似</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="">
+                                        <div class="longimg">
+                                            <img src="img/sixth/item-7.jpg" alt="">
+                                        </div>
+                                        <div class="detail clearfix">
+                                            <p>Samsonite/新秀丽镁铝合金铝框拉杆箱万向轮行李箱男女旅行箱登机箱 DB3 20英寸银色</p>
+                                            <div class="more clearfix">
+                                                <div class="price">
+                                                    <i>￥</i>
+                                                    <span>4979.00</span>
+                                                </div>
+                                                <div class="plus">
+                                                    <div class="discount">券</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 找相似 -->
+                                        <div class="item_hover">
+                                            <div class="delete fa fa-times"></div>
+                                            <div class="search_same">
+                                                <div class="btn_find">
+                                                    <i class="fa fa-eye"></i>
+                                                    <span>找相似</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="">
+                                        <div class="longimg">
+                                            <img src="img/sixth/item-8.jpg" alt="">
+                                        </div>
+                                        <div class="detail clearfix">
+                                            <p>赛拓（SANTO）生料带聚四氟乙烯 密封胶带 防水胶带 水胶布 角阀龙头 15米10卷装1949</p>
+                                            <div class="more clearfix">
+                                                <div class="price">
+                                                    <i>￥</i>
+                                                    <span>25.8.00</span>
+                                                </div>
+                                                <div class="plus">
+                                                    <div class="discount">券</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 找相似 -->
+                                        <div class="item_hover">
+                                            <div class="delete fa fa-times"></div>
+                                            <div class="search_same">
+                                                <div class="btn_find">
+                                                    <i class="fa fa-eye"></i>
+                                                    <span>找相似</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="">
+                                        <div class="longimg">
+                                            <img src="img/sixth/item-9.jpg" alt="">
+                                        </div>
+                                        <div class="detail clearfix">
+                                            <p>华文世家 沙发 实木沙发 中式沙发客厅整装实木布艺沙发转角沙发组合 经济型小户型多功能沙发床橡胶木 中箱（不单卖）</p>
+                                            <div class="more clearfix">
+                                                <div class="price">
+                                                    <i>￥</i>
+                                                    <span>1500.00</span>
+                                                </div>
+                                                <div class="plus">
+                                                    <div class="discount">券</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 找相似 -->
+                                        <div class="item_hover">
+                                            <div class="delete fa fa-times"></div>
+                                            <div class="search_same">
+                                                <div class="btn_find">
+                                                    <i class="fa fa-eye"></i>
+                                                    <span>找相似</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="">
+                                        <div class="longimg">
+                                            <img src="img/sixth/item-10.jpg" alt="">
+                                        </div>
+                                        <div class="detail clearfix">
+                                            <p>西州蜜瓜25号哈密瓜 2粒装 单果1.5kg以上 新鲜水果</p>
+                                            <div class="more clearfix">
+                                                <div class="price">
+                                                    <i>￥</i>
+                                                    <span>49.9.00</span>
+                                                </div>
+                                                <div class="plus">
+                                                    <div class="discount">券</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 找相似 -->
+                                        <div class="item_hover">
+                                            <div class="delete fa fa-times"></div>
+                                            <div class="search_same">
+                                                <div class="btn_find">
+                                                    <i class="fa fa-eye"></i>
+                                                    <span>找相似</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="">
+                                        <div class="longimg">
+                                            <img src="img/sixth/item-11.jpg" alt="">
+                                        </div>
+                                        <div class="detail clearfix">
+                                            <p>赛拓（SANTO）1141 30合1螺丝刀套装 手机维修工具套装多功能精密起子组拆机工具</p>
+                                            <div class="more clearfix">
+                                                <div class="price">
+                                                    <i>￥</i>
+                                                    <span>18.00</span>
+                                                </div>
+                                                <div class="plus">
+                                                    <div class="discount">券</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 找相似 -->
+                                        <div class="item_hover">
+                                            <div class="delete fa fa-times"></div>
+                                            <div class="search_same">
+                                                <div class="btn_find">
+                                                    <i class="fa fa-eye"></i>
+                                                    <span>找相似</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="">
+                                        <div class="longimg">
+                                            <img src="img/sixth/item-12.jpg" alt="">
+                                        </div>
+                                        <div class="detail clearfix">
+                                            <p>摩天 床 真皮床榻榻米床双人床皮艺婚床储物实木床家具 榻榻米床 1800*2000【升级储物联系客服】</p>
+                                            <div class="more clearfix">
+                                                <div class="price">
+                                                    <i>￥</i>
+                                                    <span>3280.00</span>
+                                                </div>
+                                                <div class="plus">
+                                                    <div class="discount">券</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 找相似 -->
+                                        <div class="item_hover">
+                                            <div class="delete fa fa-times"></div>
+                                            <div class="search_same">
+                                                <div class="btn_find">
+                                                    <i class="fa fa-eye"></i>
+                                                    <span>找相似</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="">
+                                        <div class="longimg">
+                                            <img src="img/sixth/item-13.jpg" alt="">
+                                        </div>
+                                        <div class="detail clearfix">
+                                            <p>天然环保椰棕床垫3E椰梦维棕垫席梦思1.5米1.8,米1.2米成人 针织面料+环保椰棕板 厚度8厘米 默认对折发货 1000mm*1900mm</p>
+                                            <div class="more clearfix">
+                                                <div class="price">
+                                                    <i>￥</i>
+                                                    <span>638.00</span>
+                                                </div>
+                                                <div class="plus">
+                                                    <div class="discount">券</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 找相似 -->
+                                        <div class="item_hover">
+                                            <div class="delete fa fa-times"></div>
+                                            <div class="search_same">
+                                                <div class="btn_find">
+                                                    <i class="fa fa-eye"></i>
+                                                    <span>找相似</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="">
+                                        <div class="longimg">
+                                            <img src="img/sixth/item-14.jpg" alt="">
+                                        </div>
+                                        <div class="detail clearfix">
+                                            <p>天逸TINYAT腰包男健身斜挎包跑步骑行背包多功能小包T205银灰色</p>
+                                            <div class="more clearfix">
+                                                <div class="price">
+                                                    <i>￥</i>
+                                                    <span>29.90</span>
+                                                </div>
+                                                <div class="plus">
+                                                    <div class="discount">券</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 找相似 -->
+                                        <div class="item_hover">
+                                            <div class="delete fa fa-times"></div>
+                                            <div class="search_same">
+                                                <div class="btn_find">
+                                                    <i class="fa fa-eye"></i>
+                                                    <span>找相似</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="">
+                                        <div class="longimg">
+                                            <img src="img/sixth/item-15.jpg" alt="">
+                                        </div>
+                                        <div class="detail clearfix">
+                                            <p>锐能 （RAYENR）生料带密封胶带 聚乙烯密封胶带 防水胶带 10卷装 NR0040</p>
+                                            <div class="more clearfix">
+                                                <div class="price">
+                                                    <i>￥</i>
+                                                    <span>19.00</span>
+                                                </div>
+                                                <div class="plus">
+                                                    <div class="discount">券</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 找相似 -->
+                                        <div class="item_hover">
+                                            <div class="delete fa fa-times"></div>
+                                            <div class="search_same">
+                                                <div class="btn_find">
+                                                    <i class="fa fa-eye"></i>
+                                                    <span>找相似</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="">
+                                        <div class="longimg">
+                                            <img src="img/sixth/item-16.jpg" alt="">
+                                        </div>
+                                        <div class="detail clearfix">
+                                            <p>俞兆林 3条女士内裤女无痕收腹蜂巢无缝包臀女内裤纯色裆部3D立体提臀三角裤 粉色+肤色+灰色 均码</p>
+                                            <div class="more clearfix">
+                                                <div class="price">
+                                                    <i>￥</i>
+                                                    <span>49.90</span>
+                                                </div>
+                                                <div class="plus">
+                                                    <div class="discount">券</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 找相似 -->
+                                        <div class="item_hover">
+                                            <div class="delete fa fa-times"></div>
+                                            <div class="search_same">
+                                                <div class="btn_find">
+                                                    <i class="fa fa-eye"></i>
+                                                    <span>找相似</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="">
+                                        <div class="longimg">
+                                            <img src="img/sixth/item-17.jpg" alt="">
+                                        </div>
+                                        <div class="detail clearfix">
+                                            <p>德欧老头2019休闲皮鞋男青年男士新款内增高时尚休闲鞋商务套脚镂空皮凉鞋 棕色镂空不增高 38</p>
+                                            <div class="more clearfix">
+                                                <div class="price">
+                                                    <i>￥</i>
+                                                    <span>176.00</span>
+                                                </div>
+                                                <div class="plus">
+                                                    <div class="discount">券</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 找相似 -->
+                                        <div class="item_hover">
+                                            <div class="delete fa fa-times"></div>
+                                            <div class="search_same">
+                                                <div class="btn_find">
+                                                    <i class="fa fa-eye"></i>
+                                                    <span>找相似</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="">
+                                        <div class="longimg">
+                                            <img src="img/sixth/item-18.jpg" alt="">
+                                        </div>
+                                        <div class="detail clearfix">
+                                            <p>狐狸爸爸 进口洗衣机槽清洗剂清洁剂750ml 滚筒波轮洗衣机内胆杀菌除垢清洁剂</p>
+                                            <div class="more clearfix">
+                                                <div class="price">
+                                                    <i>￥</i>
+                                                    <span>39.00</span>
+                                                </div>
+                                                <div class="plus">
+                                                    <div class="discount">券</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 找相似 -->
+                                        <div class="item_hover">
+                                            <div class="delete fa fa-times"></div>
+                                            <div class="search_same">
+                                                <div class="btn_find">
+                                                    <i class="fa fa-eye"></i>
+                                                    <span>找相似</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="">
+                                        <div class="longimg">
+                                            <img src="img/sixth/item-19.jpg" alt="">
+                                        </div>
+                                        <div class="detail clearfix">
+                                            <p>慕滋嗨吃家酸辣粉大食桶106g*1桶 重庆风味 酸辣粉</p>
+                                            <div class="more clearfix">
+                                                <div class="price">
+                                                    <i>￥</i>
+                                                    <span>19.15</span>
+                                                </div>
+                                                <div class="plus">
+                                                    <div class="discount">券</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 找相似 -->
+                                        <div class="item_hover">
+                                            <div class="delete fa fa-times"></div>
+                                            <div class="search_same">
+                                                <div class="btn_find">
+                                                    <i class="fa fa-eye"></i>
+                                                    <span>找相似</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="">
+                                        <div class="longimg">
+                                            <img src="img/sixth/item-20.jpg" alt="">
+                                        </div>
+                                        <div class="detail clearfix">
+                                            <p>【品质保证】【上新特惠】便携拖鞋出门出国泰国旅游旅行必备用品创意多功能出差旅行神器 蓝色(42/43码)</p>
+                                            <div class="more clearfix">
+                                                <div class="price">
+                                                    <i>￥</i>
+                                                    <span>59.00</span>
+                                                </div>
+                                                <div class="plus">
+                                                    <div class="discount">券</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 找相似 -->
+                                        <div class="item_hover">
+                                            <div class="delete fa fa-times"></div>
+                                            <div class="search_same">
+                                                <div class="btn_find">
+                                                    <i class="fa fa-eye"></i>
+                                                    <span>找相似</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="">
+                                        <div class="longimg">
+                                            <img src="img/sixth/item-21.jpg" alt="">
+                                        </div>
+                                        <div class="detail clearfix">
+                                            <p>赛拓（SANTO）PVC电气绝缘胶带 电工胶布  耐寒耐磨抗老化家装19mm*9m  黑色10卷装 1942</p>
+                                            <div class="more clearfix">
+                                                <div class="price">
+                                                    <i>￥</i>
+                                                    <span>19.00</span>
+                                                </div>
+                                                <div class="plus">
+                                                    <div class="discount">券</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 找相似 -->
+                                        <div class="item_hover">
+                                            <div class="delete fa fa-times"></div>
+                                            <div class="search_same">
+                                                <div class="btn_find">
+                                                    <i class="fa fa-eye"></i>
+                                                    <span>找相似</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="">
+                                        <div class="longimg">
+                                            <img src="img/sixth/item-22.jpg" alt="">
+                                        </div>
+                                        <div class="detail clearfix">
+                                            <p>摩登时“带”，为腕间高级感造势</p>
+                                            <div class="more clearfix">
+                                                <div class="price">
+                                                    <i>￥</i>
+                                                    <span>1680.00</span>
+                                                </div>
+                                                <div class="plus">
+                                                    <div class="discount">券</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 找相似 -->
+                                        <div class="item_hover">
+                                            <div class="delete fa fa-times"></div>
+                                            <div class="search_same">
+                                                <div class="btn_find">
+                                                    <i class="fa fa-eye"></i>
+                                                    <span>找相似</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="">
+                                        <div class="longimg">
+                                            <img src="img/sixth/item-23.jpg" alt="">
+                                        </div>
+                                        <div class="detail clearfix">
+                                            <p>【品牌特惠】夏季速干棒球帽子女韩版百搭速干棒球帽休闲鸭舌帽防晒太阳帽户外遮阳帽潮 帽子BQM-206黑色 可调节</p>
+                                            <div class="more clearfix">
+                                                <div class="price">
+                                                    <i>￥</i>
+                                                    <span>96.00</span>
+                                                </div>
+                                                <div class="plus">
+                                                    <div class="discount">券</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 找相似 -->
+                                        <div class="item_hover">
+                                            <div class="delete fa fa-times"></div>
+                                            <div class="search_same">
+                                                <div class="btn_find">
+                                                    <i class="fa fa-eye"></i>
+                                                    <span>找相似</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="">
+                                        <div class="longimg">
+                                            <img src="img/sixth/item-24.jpg" alt="">
+                                        </div>
+                                        <div class="detail clearfix">
+                                            <p>威克（vico）WK-D18A 电工胶布电气绝缘胶带汽修家装无铅阻燃PVC防水胶布黑色10米10卷装</p>
+                                            <div class="more clearfix">
+                                                <div class="price">
+                                                    <i>￥</i>
+                                                    <span>26.00</span>
+                                                </div>
+                                                <div class="plus">
+                                                    <div class="discount">券</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 找相似 -->
+                                        <div class="item_hover">
+                                            <div class="delete fa fa-times"></div>
+                                            <div class="search_same">
+                                                <div class="btn_find">
+                                                    <i class="fa fa-eye"></i>
+                                                    <span>找相似</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="">
+                                        <div class="longimg">
+                                            <img src="img/sixth/item-25.jpg" alt="">
+                                        </div>
+                                        <div class="detail clearfix">
+                                            <p>天逸 TINYAT 轻便旅游背包抽绳束口袋户外学生运动健身包T118黑色</p>
+                                            <div class="more clearfix">
+                                                <div class="price">
+                                                    <i>￥</i>
+                                                    <span>59.00</span>
+                                                </div>
+                                                <div class="plus">
+                                                    <div class="discount">券</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 找相似 -->
+                                        <div class="item_hover">
+                                            <div class="delete fa fa-times"></div>
+                                            <div class="search_same">
+                                                <div class="btn_find">
+                                                    <i class="fa fa-eye"></i>
+                                                    <span>找相似</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="">
+                                        <div class="longimg">
+                                            <img src="img/sixth/item-26.jpg" alt="">
+                                        </div>
+                                        <div class="detail clearfix">
+                                            <p>【精选】双肩包男旅游大容量大高中学生书包时尚潮流旅行包休闲电脑背包女 大号升级充电灰色</p>
+                                            <div class="more clearfix">
+                                                <div class="price">
+                                                    <i>￥</i>
+                                                    <span>156.00</span>
+                                                </div>
+                                                <div class="plus">
+                                                    <div class="discount">券</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 找相似 -->
+                                        <div class="item_hover">
+                                            <div class="delete fa fa-times"></div>
+                                            <div class="search_same">
+                                                <div class="btn_find">
+                                                    <i class="fa fa-eye"></i>
+                                                    <span>找相似</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="">
+                                        <div class="longimg">
+                                            <img src="img/sixth/item-27.jpg" alt="">
+                                        </div>
+                                        <div class="detail clearfix">
+                                            <p>云南白药三七粉 豹七 超细粉 260g*2礼盒装 配小勺 云南文山三七头打粉</p>
+                                            <div class="more clearfix">
+                                                <div class="price">
+                                                    <i>￥</i>
+                                                    <span>395.00</span>
+                                                </div>
+                                                <div class="plus">
+                                                    <div class="discount">券</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 找相似 -->
+                                        <div class="item_hover">
+                                            <div class="delete fa fa-times"></div>
+                                            <div class="search_same">
+                                                <div class="btn_find">
+                                                    <i class="fa fa-eye"></i>
+                                                    <span>找相似</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="">
+                                        <div class="longimg">
+                                            <img src="img/sixth/item-28.jpg" alt="">
+                                        </div>
+                                        <div class="detail clearfix">
+                                            <p>【品质保证】旅行洗漱包旅游用品必备神器便携大容量多功能防水收纳包化妆包 透明中号手拿包</p>
+                                            <div class="more clearfix">
+                                                <div class="price">
+                                                    <i>￥</i>
+                                                    <span>29.00</span>
+                                                </div>
+                                                <div class="plus">
+                                                    <div class="discount">券</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 找相似 -->
+                                        <div class="item_hover">
+                                            <div class="delete fa fa-times"></div>
+                                            <div class="search_same">
+                                                <div class="btn_find">
+                                                    <i class="fa fa-eye"></i>
+                                                    <span>找相似</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="">
+                                        <div class="longimg">
+                                            <img src="img/sixth/item-29.jpg" alt="">
+                                        </div>
+                                        <div class="detail clearfix">
+                                            <p>Samsonite/新秀丽拉杆箱万向轮行李箱男女旅行箱进口登机箱CURV材质密码箱 U72 20英寸 碳黑色</p>
+                                            <div class="more clearfix">
+                                                <div class="price">
+                                                    <i>￥</i>
+                                                    <span>3479.00</span>
+                                                </div>
+                                                <div class="plus">
+                                                    <div class="discount">券</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 找相似 -->
+                                        <div class="item_hover">
+                                            <div class="delete fa fa-times"></div>
+                                            <div class="search_same">
+                                                <div class="btn_find">
+                                                    <i class="fa fa-eye"></i>
+                                                    <span>找相似</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="">
+                                        <div class="longimg">
+                                            <img src="img/sixth/item-30.jpg" alt="">
+                                        </div>
+                                        <div class="detail clearfix">
+                                            <p>旺旺 旺仔牛奶糖 480g 原味</p>
+                                            <div class="more clearfix">
+                                                <div class="price">
+                                                    <i>￥</i>
+                                                    <span>24.90</span>
+                                                </div>
+                                                <div class="plus">
+                                                    <div class="discount">券</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 找相似 -->
+                                        <div class="item_hover">
+                                            <div class="delete fa fa-times"></div>
+                                            <div class="search_same">
+                                                <div class="btn_find">
+                                                    <i class="fa fa-eye"></i>
+                                                    <span>找相似</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="">
+                                        <div class="longimg">
+                                            <img src="img/sixth/item-31.jpg" alt="">
+                                        </div>
+                                        <div class="detail clearfix">
+                                            <p>PLAYYOUNG男士外套秋冬季2019新款潮流男装加绒加厚上衣服秋季休闲夹克春秋 灰色-加绒中厚保暖（适合0°C以上 M</p>
+                                            <div class="more clearfix">
+                                                <div class="price">
+                                                    <i>￥</i>
+                                                    <span>279.00</span>
+                                                </div>
+                                                <div class="plus">
+                                                    <div class="discount">券</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 找相似 -->
+                                        <div class="item_hover">
+                                            <div class="delete fa fa-times"></div>
+                                            <div class="search_same">
+                                                <div class="btn_find">
+                                                    <i class="fa fa-eye"></i>
+                                                    <span>找相似</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="">
+                                        <div class="longimg">
+                                            <img src="img/sixth/item-32.jpg" alt="">
+                                        </div>
+                                        <div class="detail clearfix">
+                                            <p>网红同款帆布鞋女春秋季2019新款潮韩版百搭学生踩脚两穿软底舒适 白色 35</p>
+                                            <div class="more clearfix">
+                                                <div class="price">
+                                                    <i>￥</i>
+                                                    <span>136.00</span>
+                                                </div>
+                                                <div class="plus">
+                                                    <div class="discount">券</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 找相似 -->
+                                        <div class="item_hover">
+                                            <div class="delete fa fa-times"></div>
+                                            <div class="search_same">
+                                                <div class="btn_find">
+                                                    <i class="fa fa-eye"></i>
+                                                    <span>找相似</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="">
+                                        <div class="longimg">
+                                            <img src="img/sixth/item-33.jpg" alt="">
+                                        </div>
+                                        <div class="detail clearfix">
+                                            <p>PLAY-KING皮肤包超轻折叠防水双肩包女背包收纳户外登山三级包健身旅行背囊13寸电脑包 蓝色（新升级有隔层）</p>
+                                            <div class="more clearfix">
+                                                <div class="price">
+                                                    <i>￥</i>
+                                                    <span>49.90</span>
+                                                </div>
+                                                <div class="plus">
+                                                    <div class="discount">券</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 找相似 -->
+                                        <div class="item_hover">
+                                            <div class="delete fa fa-times"></div>
+                                            <div class="search_same">
+                                                <div class="btn_find">
+                                                    <i class="fa fa-eye"></i>
+                                                    <span>找相似</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="">
+                                        <div class="longimg">
+                                            <img src="img/sixth/item-34.jpg" alt="">
+                                        </div>
+                                        <div class="detail clearfix">
+                                            <p>盘古老爹鞋女鞋子ins潮鞋2019秋季新款网红超火厚底泫雅同款秋鞋 M1718灰色 35</p>
+                                            <div class="more clearfix">
+                                                <div class="price">
+                                                    <i>￥</i>
+                                                    <span>236.00</span>
+                                                </div>
+                                                <div class="plus">
+                                                    <div class="discount">券</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 找相似 -->
+                                        <div class="item_hover">
+                                            <div class="delete fa fa-times"></div>
+                                            <div class="search_same">
+                                                <div class="btn_find">
+                                                    <i class="fa fa-eye"></i>
+                                                    <span>找相似</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="">
+                                        <div class="longimg">
+                                            <img src="img/sixth/item-35.jpg" alt="">
+                                        </div>
+                                        <div class="detail clearfix">
+                                            <p>阿迪达斯官网adidas ENERGY CLOUD 2男鞋跑步运动鞋B44750 如图 42</p>
+                                            <div class="more clearfix">
+                                                <div class="price">
+                                                    <i>￥</i>
+                                                    <span>629.00</span>
+                                                </div>
+                                                <div class="plus">
+                                                    <div class="discount">券</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 找相似 -->
+                                        <div class="item_hover">
+                                            <div class="delete fa fa-times"></div>
+                                            <div class="search_same">
+                                                <div class="btn_find">
+                                                    <i class="fa fa-eye"></i>
+                                                    <span>找相似</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="service">
+            <div class="service_inner">
+                <ul>
+                    <li><div>
+                        <img src="img/footer/footer-1.png" alt="">
+                        <p>品类齐全，轻松购物</p>
+                    </div></li>
+                    <li><div>
+                        <img src="img/footer/footer-2.png" alt="">
+                        <p>多仓直发，极速配送</p>
+                    </div></li>
+                    <li><div>
+                        <img src="img/footer/footer-3.png" alt="">
+                        <p>正品行货，精致服务</p>
+                    </div></li>
+                    <li><div>
+                        <img src="img/footer/footer-4.png" alt="">
+                        <p>天天低价，畅选无忧</p>
+                    </div></li>
+                </ul>
+            </div>
+        </div>
+        <div class="help">
+            <div class="help_inner">
+                <div class="help_nav">
+                    <h5>购物指南</h5>
+                    <ul>
+                        <li><a href="">购物流程</a></li>
+                        <li><a href="">会员介绍</a></li>
+                        <li><a href="">生活旅行</a></li>
+                        <li><a href="">常见问题</a></li>
+                        <li><a href="">大家电</a></li>
+                        <li><a href="">联系客服</a></li>
+                    </ul>
+                </div>
+                <div class="help_nav">
+                    <h5>配送方式</h5>
+                    <ul>
+                        <li><a href="">上门自提</a></li>
+                        <li><a href="">211即时达</a></li>
+                        <li><a href="">配送服务查询</a></li>
+                        <li><a href="">配送费收取标准</a></li>
+                        <li><a href="">海外配送</a></li>
+                    </ul>
+                </div>
+                <div class="help_nav">
+                    <h5>支付方式</h5>
+                    <ul>
+                        <li><a href="">货到付款</a></li>
+                        <li><a href="">在线支付</a></li>
+                        <li><a href="">分期付款</a></li>
+                        <li><a href="">邮局汇款</a></li>
+                        <li><a href="">公司转账</a></li>
+                    </ul>
+                </div>
+                <div class="help_nav">
+                    <h5>售后服务</h5>
+                    <ul>
+                        <li><a href="">售后政策</a></li>
+                        <li><a href="">价格保护</a></li>
+                        <li><a href="">退款说明</a></li>
+                        <li><a href="">返修/退换货</a></li>
+                        <li><a href="">取消订单</a></li>
+                    </ul>
+                </div>
+                <div class="help_nav">
+                    <h5>特色服务</h5>
+                    <ul>
+                        <li><a href="">夺宝岛</a></li>
+                        <li><a href="">DIY装机</a></li>
+                        <li><a href="">延保服务</a></li>
+                        <li><a href="">京东E卡</a></li>
+                        <li><a href="">京东通信</a></li>
+                        <li><a href="">京鱼座智能</a></li>
+                    </ul>
+                </div>
+                <div class="help_cover">
+                    <h5>京东自营覆盖县区</h5>
+                    <div class="icon">
+                        <p>京东已向全国2661个区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。</p>
+                        <a href="">查看详情<i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="copyright_inner">
+                <ul class="menu clearfix">
+                    <li>
+                        <a href="">关于我们</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="">联系我们</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="">联系客服</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="">合作招商</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="">商家帮助</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="">营销中心</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="">手机京东</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="">友情链接</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="">销售联盟</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="">京东社区</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="">风险监测</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="">隐私政策</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="">京东公益</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="">English Site</a>
+                        <span>|</span>
+                    </li>
+                    <li><a href="">Media & IR</a></li>
+                </ul>
+                <div class="info">
+                    <div class="first">
+                        <p>
+                            <a href="">京公网安备 11000002000088号</a>
+                            <span class="split">|</span>
+                            <span>京ICP证070359号</span>
+                            <span class="split">|</span>
+                            <a href="">互联网药品信息服务资格证编号(京)-经营性-2014-0008</a>
+                            <span class="split">|</span>
+                            <span>新出发京零&nbsp;字第大120007号</span>
+                        </p>
+                        <p>
+                            <span>互联网出版许可证编号新出网证(京)字150号</span>
+                            <span class="split">|</span>
+                            <a href="">出版物经营许可证</a>
+                            <span class="split">|</span>
+                            <a href="">网络文化经营许可证京网文[2014]2148-348号</a>
+                            <span class="split">|</span>
+                            <span>违法和不良信息举报电话：4006561155</span>
+                        </p>
+                        <p>
+                            <span>Copyright&nbsp;©&nbsp;2004&nbsp;-&nbsp;2019&emsp;京东JD.com&nbsp;版权所有</span>
+                            <span class="split">|</span>
+                            <span>消费者维权热线：4006067733</span>
+                            &emsp;
+                            <a href="">经营证照</a>
+                            <span class="split">|</span>
+                            <span>(京)网械平台备字(2018)第00003号</span>
+                            <span class="split">|</span>
+                            <a href="">营业执照</a>
+                        </p>
+                    </div>
+                    <div class="second">
+                        <p>
+                            <a href=""><i class="fa fa-globe"></i>&nbsp;Global Site</a>
+                            <span class="split">|</span>
+                            <a href=""><i class="fa fa-flag"></i>&nbsp;Сайт России</a>
+                            <span class="split">|</span>
+                            <a href=""><i class="fa fa-flag-checkered"></i>&nbsp;Situs Indonesia</a>
+                            <span class="split">|</span>
+                            <a href=""><i class="fa fa-flag-o"></i>&nbsp;Sitio de España</a>
+                            <span class="split">|</span>
+                            <a href=""><i class="fa fa-leanpub"></i>&nbsp;เว็บไซต์ประเทศไทย</a>
+                        </p>
+                    </div>
+                    <div class="third">
+                        <p>
+                            <span>京东旗下网站：</span>
+                            <a href="">京东钱包</a>
+                            <span class="split">|</span>
+                            <a href="">京东云</a>
+                        </p>
+                    </div>
+                </div>
+                <p class="auth">
+                    <a href="">
+                        <img src="img/footer/footer_last-1.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="img/footer/footer_last-2.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="img/footer/footer_last-3.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="img/footer/footer_last-4.png" alt="">
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- 楼层导航 -->
+    <div id="nav">
+        <ul>
+            <li class="not"><p>京东秒杀</p></li>
+            <li id="nav_1"><p>11.11会场</p></li>
+            <li id="nav_2"><p>特色优选</p></li>
+            <li class="high" id="nav_3"><p>频道广场</p></li>
+            <li id="nav_4"><p>为你推荐</p></li>
+            <li><a href="">
+                <p><i class="fa fa-user-o"></i>客服</p>
+            </a></li>
+            <li><a href="">
+                <p><i class="fa fa-envelope-o"></i>反馈</p>
+            </a></li>
+            <li id="back_top">
+                <p><i class="fa fa-angle-up fa-lg"></i>顶部</p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/myjs.js"></script>
+<script src="js/velocity.min.js"></script>
+<script src="js/index.js"></script>

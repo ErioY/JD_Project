@@ -1,0 +1,145 @@
+footer {
+    position: relative;
+    background-color: #f4f4f4;
+    margin-top: -30px;
+}
+footer .service {
+    width: 100%;
+    padding: 30px 0;
+    border-bottom: 1px solid #dedede;
+    margin: 0 auto;
+    margin-left: 100px;
+}
+footer .service_inner {
+    margin: 0 auto;
+}
+footer .service_inner ul {
+    overflow: hidden;
+    height: 42px;
+}
+footer .service_inner ul li {
+    float: left;
+    width: 297px;
+}
+footer .service_inner ul li>div {
+    position: relative;
+    margin: 0 auto;
+    padding-left: 45px;
+    width: 220px;
+}
+footer .service_inner ul li>div img {
+    display: inline-block;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 36px;
+    height: 42px;
+}
+footer .service_inner ul li>div p {
+    overflow: hidden;
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #444;
+}
+
+footer .help {
+    padding: 20px 0;
+}
+footer .help .help_inner {
+    margin: 0 auto;
+    width: 1190px;
+    height: 160px;
+    overflow: hidden;
+}
+footer .help .help_nav {
+    float: left;
+    width: 198px;
+    line-height: 22px;
+}
+footer .help .help_nav h5 {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #666666;
+}
+footer .help .help_nav ul li a {
+    color: #666666;
+}
+footer .help .help_cover {
+    float: right;
+    width: 200px;
+    height: 150px;
+}
+footer .help .help_cover h5 {
+    margin-bottom: 15px;
+    font-size: 14px;
+    text-align: center;
+    color: #666666;
+}
+footer .help .help_cover .icon {
+    padding: 0 10px;
+}
+footer .help .help_cover .icon p {
+    color: #666666;
+}
+footer .help .help_cover .icon a {
+    display: block;
+    width: 100%;
+    text-align: right;
+    color: #666666;
+}
+footer .help .help_cover .icon a i {
+    color: #666666;
+    margin-left: 3px;
+}
+footer .help .help_cover .icon a:hover, footer .help .help_cover .icon a:hover i, footer .help .help_nav ul li:hover a, footer .copyright_inner ul li:hover a {
+    color: #c81623;
+}
+footer .copyright_inner {
+    padding: 15px 0;
+    border-top: 1px solid #e1e1e1;
+    text-align: center;
+    margin: 0 auto;
+    width: 1190px;
+}
+footer .copyright_inner ul li {
+    float: left;
+}
+footer .copyright_inner ul a {
+    color: #666;
+}
+footer .copyright_inner ul span {
+    margin: 0 5px;
+    color: #ccc;
+}
+footer .copyright_inner .info {
+    padding: 10px 0;
+    line-height: 22px;
+    color: #999;
+}
+footer .copyright_inner .info a, footer .copyright_inner .info  span {
+    color: #999;
+}
+footer .copyright_inner .info  .split {
+    margin: 0 10px;
+    color: #ccc;
+}
+footer .copyright_inner .info  a:hover {
+    color: #c81623;
+}
+footer .copyright_inner .info .second i {
+    color: #c81623;
+}
+footer .copyright_inner .auth {
+    margin: 25px 0;
+}
+footer .copyright_inner .auth a {
+    margin-right: 4px;
+}
+footer .copyright_inner .auth a img {
+    width: 103px;
+    height: 32px;
+}

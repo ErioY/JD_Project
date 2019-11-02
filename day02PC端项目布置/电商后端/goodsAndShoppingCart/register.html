@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ajax的大纲</title>
+</head>
+<body>
+    用户名：<input id="username" type="text" /><span></span><br/>
+    密码：<input id="userpass" type="password" /><br/>
+    重复密码：<input  type="password" /><br/>
+    <input id="btnReg" type="button" value="注册" />
+    <div id="msgBox"></div>
+</body>
+</html>
+<script>
+ 
+ $("#username").onblur = function(){
+    //1、前端验证（格式规范验证）
+    if(this.value.length<6 || this.value.length>20){
+        this.nextElementSibling.innerHTML = "亲，用户名长度必须在6-20位";
+        return;
+    }else{
+        this.nextElementSibling.innerHTML = "";
+    }
+
+    //2、后端存在性验证
+    //请求方式，地址，请求参数，返回数据
+    //
+    let xhr =new XMLHttpRequest();
+    //2 设置请求参数
+    xhr.open("get","checkuser02.php?username="+$("#username").value,true);
+
+    //3 设置回调函数
+    xhr.onreadystatechange = ()=>{
+        if(xhr.readyState==4 && xhr.status==200){
+            //5 接收请求
+            if(xhr.responseText=="1"){
+                this.nextElementSibling.innerHTML ="用户名已存在";
+            }else{
+                this.nextElementSibling.innerHTML ="用户名可以使用";
+            }
+        }
+    }
+    //4 发送请求
+    xhr.send();
+ }
+
+
+$("#btnReg").onclick = function(){
+    //
+    let xhr = new XMLHttpRequest();
+    
+    //2、设置请求参数
+    xhr.open("get","regSave.php?username="+$("#username").value+"&userpass="+$("#userpass").value,true);
+    
+    //3、设置回调函数
+    xhr.onreadystatechange = function(){
+        if(xhr.readyState==4 && xhr.status==200){
+            //5、接收后端响应
+            if(xhr.responseText=="1"){
+                location.href = "login.html";
+            }else{
+                $("#msgBox").innerHTML = "亲，注册失败!";
+            }
+        }
+    }
+    
+    //4、发送请求
+    xhr.send();
+}
+
+
+function $(str){
+	if(str.charAt(0)=="#"){
+		return document.getElementById(str.substring(1));
+	}else if(str.charAt(0)=="."){
+		return document.getElementsByClassName(str.substring(1));
+	}else{
+		return document.getElementsByTagName(str);
+	}
+}	
+
+
+</script>

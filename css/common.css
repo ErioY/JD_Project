@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	box-sizing:border-box;
+	color:#000;
+}
+body{
+	font-size:14px;
+	font-family:Arial,Verdana,Tahoma,"微软雅黑","黑体";
+	line-height:1.2em;
+	background:#fff;
+	margin:0;
+	overflow-x:hidden;
+}
+p,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,form,table{
+	margin:0;
+	padding:0;
+}
+img{
+	vertical-align:middle;
+}
+li{
+	list-style:none;
+}
+i,em{
+	font-style:normal;
+}
+a{
+	text-decoration:none; 
+	color:#000000;
+}
+a:link{
+	text-decoration:none; 
+	color:#000000;
+}
+a:visited{
+	text-decoration:none; 
+	color:#000000;
+}
+a:hover{
+	text-decoration:none; 
+	color:#000000;
+}
+a:active{
+	text-decoration:none; 
+	color:#000000;
+}
+.clearfix:after{
+	display:block;
+	content:"";
+	clear:both;
+}
+.clearfix{
+	*zoom:1;
+}

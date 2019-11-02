@@ -1,0 +1,109 @@
+header h6 {
+    position: absolute;
+    top: 30px;
+    right: 150px;
+    font-size: 18px;
+    color: #999999;
+    font-weight: normal;
+}
+header h6 a {
+    color: #ee2222;
+    text-decoration: none;
+}
+header h6 a:hover {
+    color: #a81010;
+    text-decoration: underline;
+}
+header>hr {
+    border: 3px rgba(163, 146, 146, 0.2) solid;
+}
+article .content {
+    width: 354px;
+    margin: 0 auto;
+    position: relative;
+}
+.content>div {
+    width: 420px;
+    height: 60px;
+    border: 1px #999999 solid;
+    margin-bottom: 42px;
+}
+.content>div>span {
+    padding: 20px;
+    font-size: 18px;
+    color: #666666;
+    text-align: center;
+    line-height: 60px;
+}
+.content>div>input {
+    width: 253px;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+.content> .other {
+    width: 290px;
+    border: 1px #dddddd solid;
+}
+
+.content .other input {
+    width: 140px;
+}
+#get {
+    width: 130px;
+    height: 62px;
+    position: absolute;
+    top: 416px;
+    right: -68px;
+    border: 1px #dddddd solid;
+    border-left: none;
+    background: #fff;
+    font-size: 18px;
+}
+.content .other:hover,#get:hover  {
+    border: 1px #999999 solid;
+}
+#register {
+    width: 420px;
+    height: 60px;
+    background: #e2231a;
+    font-size: 22px;
+    color: #fff;
+    border: none;
+}
+#register:hover {
+    background: #bd2018;
+}
+.content>div:nth-last-of-type(1) {
+    height: 30px;
+    margin-top: 50px;
+    border: none;
+}
+.content>div:nth-last-of-type(1)>a {
+    display: block;
+    font-size: 15px;
+    color: #333333;
+    text-indent: 35px;
+    line-height: 30px;
+    text-decoration: none;
+
+}
+.content>div:nth-last-of-type(1)>a:hover {
+    color: #ee2222;
+}
+.content>div:nth-last-of-type(1)>a:nth-of-type(1) {
+    float: left;
+    background: url('../img/register-1.png') no-repeat left;
+}
+.content>div:nth-last-of-type(1)>a:nth-of-type(2) {
+    float: right;
+    background: url('../img/register-2.png') no-repeat left;
+}
+footer {
+    margin-top: 246px;
+    height: 130px;
+}
+footer hr {
+    border: 1px #e6e6e6 solid;
+}

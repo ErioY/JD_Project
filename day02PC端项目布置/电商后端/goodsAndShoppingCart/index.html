@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    #welcomeBox,#loginBox{
+        display: none;
+    }
+    </style>
+</head>
+<body>
+    <input id="btnGo" type="button" value="注册">
+    <div id="welcomeBox">
+        欢迎您：<span id="username">张三疯</span>
+        <input id="btnLogout" type="button" value="注销" />
+    </div>
+    <div id="loginBox">
+        请<a href="login.html">登录</a>
+    </div>
+</body>
+</html>
+<script src="js/cookieTools.js"></script>
+<script>
+
+//根据cookie里是否保存用户名，来决定显示哪个div
+function showBox(){
+    let str = getCookie("uname");
+    if(str==null){
+        $("#loginBox").style.display = "block";
+        $("#welcomeBox").style.display = "none";
+    }else{
+        $("#username").innerHTML = str;
+        $("#welcomeBox").style.display = "block";
+        $("#loginBox").style.display = "none";
+    }
+}
+
+window.onload = function(){
+    showBox();
+
+    $("#btnGo").onclick = function(){
+        location.href ="register.html";
+    }
+
+    $("#btnLogout").onclick = function(){
+        //删除cookie
+        removeCookie("uname");
+        
+        showBox();
+    }
+}
+
+function $(str){
+	if(str.charAt(0)=="#"){
+		return document.getElementById(str.substring(1));
+	}else if(str.charAt(0)=="."){
+		return document.getElementsByClassName(str.substring(1));
+	}else{
+		return document.getElementsByTagName(str);
+	}
+}	
+
+
+</script>
