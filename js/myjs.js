@@ -272,3 +272,90 @@ function ajax_xk(obj) {
         xhr.send();
     }
 }
+
+/**
+ * 显示隐藏的地区
+ */
+function display(ele, show) {
+    $(ele).css("display", show);
+}
+function placeCss(ele, bgc, border) {
+    $(ele).css({
+        "background": bgc,
+        "border-top": border
+    });
+}
+function place() {
+    $("#head-top .place").mouseover(() => {
+        display("#hidden-area", "block");
+        placeCss("#head-top .place", "#fff");
+        placeCss("#hidden-area", "", "none");
+        $("#hidden-area").mouseover(() => { 
+            display("#hidden-area", "block");
+            placeCss("#head-top .place", "#fff");
+            placeCss("#hidden-area", "", "none");
+        });
+    });
+    $("#head-top .place").mouseout(() => {
+        display("#hidden-area", "none");
+        placeCss("#head-top .place", "#e3e4e5");
+        $("#hidden-area").mouseout(() => { 
+            display("#hidden-area", "none");
+            placeCss("#head-top .place", "#e3e4e5");
+        });
+    });
+}
+
+/**
+ * 清空搜索框
+ */
+function search(searchInput) {
+    inVal = searchInput.val();
+    searchInput.focus(function() {
+        searchInput.val("");
+    });
+    searchInput.blur(function() {
+        searchInput.val(inVal);
+    });
+}
+
+/**
+ * 增加、减少商品数量
+ *  increment:增加按钮
+ *  decrement：减少按钮
+ *  numinput：数字输入框
+ *  sumprice：商品总价（保留小数点后两位）
+ *  singleprice：商品单价
+ *  hasSelect：已选择商品的数量
+ *  disabled：类名，减到1时减少按钮不能变灰(需要写css样式)
+ *  secondSum: 第二个商品总价
+ *  
+*/
+function AddDeShop(increment, decrement, numinput , sumprice, singleprice, hasSelect, disabled, secondSum) {
+    // 点击加号时
+    increment.click(function() {
+        decrement.removeClass(disabled);
+        numinput.val( parseInt(numinput.val())+1);
+        // 商品数量
+        let shopNum = numinput.val();
+        // 总价=单价*数量(保留两位小数)
+        sumprice.html("￥" + (singleprice.html().substring(1) * shopNum).toFixed(2));
+        hasSelect.html(shopNum);
+        secondSum.html(sumprice.html());
+    });
+    // 点击减号时
+    decrement.click(function() {
+        if (numinput.val() > 1) {
+            numinput.val( parseInt(numinput.val())-1);
+        }
+        if (numinput.val() == 1) {
+            decrement.addClass(disabled);
+        }
+        // 商品数量
+        let shopNum = numinput.val();
+        // 总价=单价*数量
+        sumprice.html("￥" + (singleprice.html().substring(1) * shopNum).toFixed(2));
+        hasSelect.html(shopNum);
+        secondSum.html(sumprice.html());
+    });
+}

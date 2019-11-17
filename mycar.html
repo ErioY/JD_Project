@@ -1,0 +1,1096 @@
+<!--
+ * @Autor: ErioY
+ * @Date: 2019-11-13 19:58:15
+ * @Email: 1973545559@qq.com
+ * @Github: https://github.com/ErioY
+ * @LastEditors: ErioY
+ * @LastEditTime: 2019-11-16 09:08:24
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的购物车 - 京东商城</title>
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/mycar.css" />
+</head>
+<body>
+    <header>
+        <div id="head-top">
+            <nav class="clearfix">
+                <ul class="left">
+                    <li class="place" >
+                        <i class="fa fa-map-marker" style="color: #f10215"></i>
+                        <a href="" id="area" titie="北京">北京</a>
+                    </li>
+                </ul>
+                <!-- 隐藏的地区 -->
+                <div id="hidden-area">
+                    <ul>
+                        <li><a href="" class="selected">北京</a></li>
+                        <li><a href="">上海</a></li>
+                        <li><a href="">天津</a></li>
+                        <li><a href="">重庆</a></li>
+                        <li><a href="">河北</a></li>
+                        <li><a href="">山西</a></li>
+                        <li><a href="">河南</a></li>
+                        <li><a href="">辽宁</a></li>
+                        <li><a href="">吉林</a></li>
+                        <li><a href="">黑龙江</a></li>
+                        <li><a href="">内蒙古</a></li>
+                        <li><a href="">江苏</a></li>
+                        <li><a href="">山东</a></li>
+                        <li><a href="">安徽</a></li>
+                        <li><a href="">浙江</a></li>
+                        <li><a href="">福建</a></li>
+                        <li><a href="">湖北</a></li>
+                        <li><a href="">湖南</a></li>
+                        <li><a href="">广东</a></li>
+                        <li><a href="">广西</a></li>
+                        <li><a href="">江西</a></li>
+                        <li><a href="">四川</a></li>
+                        <li><a href="">海南</a></li>
+                        <li><a href="">贵州</a></li>
+                        <li><a href="">云南</a></li>
+                        <li><a href="">西藏</a></li>
+                        <li><a href="">陕西</a></li>
+                        <li><a href="">甘肃</a></li>
+                        <li><a href="">青海</a></li>
+                        <li><a href="">宁夏</a></li>
+                        <li><a href="">新疆</a></li>
+                        <li><a href="">港澳</a></li>
+                        <li><a href="">台湾</a></li>
+                        <li><a href="">钓鱼岛</a></li>
+                        <li><a href="">海外</a></li>
+                    </ul>
+                    <hr />
+                    <div class="special">
+                        <h5>地区专享版本</h5>
+                        <a href="">中國港澳</a>
+                    </div>
+                    <hr />
+                    <div class="foreign">
+                        <h5>Available Sites</h5>
+                        <ol>
+                            <li>
+                                <i class="fa fa-globe"></i>
+                                <a href="">Global Site</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-globe"></i>
+                                <a href="">Global Site</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-globe"></i>
+                                <a href="">Global Site</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-globe"></i>
+                                <a href="">Global Site</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-globe"></i>
+                                <a href="">Global Site</a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                
+                <ul class="right clearfix">
+                    <li class="menu welcome">
+                        <a href="login.html" class="link-login">你好，请登录</a>
+                        &nbsp;&nbsp;
+                        <a href="register.html" class="link-register">免费注册</a>
+                    </li>
+                    <li class="spacer">|</li>
+                    <li class="menu red"><a href="myorder.html" style="color:#999">我的订单</a></li>
+                    <li class="spacer">|</li>
+                    <li class="menu red">我的京东&nbsp;∨</li>
+                    <li class="spacer">|</li>
+                    <li class="menu red">京东会员</li>
+                    <li class="spacer">|</li>
+                    <li class="menu qiye">企业采购&nbsp;∨</li>
+                    <li class="spacer">|</li>
+                    <li class="menu">客户服务&nbsp;∨</li>
+                    <li class="spacer">|</li>
+                    <li class="menu">网站导航&nbsp;∨</li>
+                    <li class="spacer">|</li>
+                    <li class="menu">手机京东</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="w w1 header clearfix">
+            <div id="logo">
+                <a href="index.html" class="logo"></a>
+                <a href="#" class="title">购物车</a>
+            </div>
+            <div class="search">
+                <div class="form">
+                    <!-- 商品搜索 -->
+                    <input type="text" value="自营" id="key" style="color: rgb(153, 153, 153);">
+                    <input type="button" value="搜索" onclick="javascript:void(0);">
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <!-- 全部商品标题 -->
+        <div class="w">
+            <div class="mb10"></div>
+            <div class="cart-filter-bar">
+                <div class="total-cart">
+                    <em>全部商品</em>
+                    <span>1</span>
+                </div>
+                <div class="cart-addr clearfix">
+                    <span class="lable">配送至：</span>
+                    <div id="jd-area" class="ui-area-wrap ui-area-oversea-mode">
+                        <div class="area-text-wrap clearfix">
+                            <div class="area-text" titl="江苏盐城市东台市南沈灶镇">江苏盐城市东台市南沈灶镇</div>
+                            <i class="fa fa-angle-down"></i>
+                        </div>
+                        <div class="area-choose clearfix" style="left: -312px;">
+                            <div class="area-tab clearfix">
+                                <a href="#" title="江苏">
+                                    <em>江苏</em>
+                                    <i class="fa fa-angle-down"></i>
+                                </a>
+                                <a href="#" title="盐城市">
+                                    <em>盐城市</em>
+                                    <i class="fa fa-angle-down"></i>
+                                </a>
+                                <a href="#" title="东台市">
+                                    <em>东台市</em>
+                                    <i class="fa fa-angle-down"></i>
+                                </a>
+                                <a href="#" title="南沈灶镇" class="area-current">
+                                    <em>南沈灶镇</em>
+                                    <i class="fa fa-angle-down"></i>
+                                </a>
+                            </div>
+                            <div class="area-content">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-line">
+                    <div class="floater" style="width: 79px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 商品内容 -->
+        <div class="cart-wrap">
+            <div class="w">
+                <div id="jd-cart">
+                    <div class="cart-thead clearfix">
+                        <div class="column t-checkbox">
+                            <div class="cart-checkbox">
+                                <input type="checkbox" class="jd-checkbox selectAll" checked="checked">
+                            </div>
+                            全选
+                        </div>
+                        <div class="column t-goods">商品</div>
+                        <div class="column t-blank"></div>
+                        <div class="column t-price">单价</div>
+                        <div class="column t-quantity">数量</div>
+                        <div class="column t-sum">小计</div>
+                        <div class="column t-action">操作</div>
+                    </div>
+                    <div class="cart-list">
+                        <div class="cart-item-list" id="cart-item-list-01">
+                            <div class="cart-tbody">
+                                <div class="shop">
+                                    <div class="cart-checkbox">
+                                        <input type="checkbox" name="checkShop" checked="checked" class="jd-checkbox">
+                                    </div>
+                                    <span class="shop-txt">
+                                        <a href="#">京东自营</a>
+                                    </span>
+                                    <div class="extra-r">
+                                        <span>
+                                            <i class="fa fa-exclamation-circle"></i>
+                                            已免运费
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="item-list clearfix">
+                                    <div class="item-single  item-item  item-selected clearfix" id="">
+                                        <div class="item-form clearfix">
+                                            <div class="cell p-checkbox clearfix">
+                                                <div class="cart-checkbox">
+                                                    <input type="checkbox" name="checkItem" checked="checked" class="jd-checkbox">
+                                                </div>
+                                            </div>
+                                            <div class="cell p-goods clearfix">
+                                                <div class="goods-item clearfix">
+                                                    <div class="p-img">
+                                                        <a href="#"><img src="img/shopping/fruit/01.jpg" alt="" width="80" height="80"></a>
+                                                    </div>
+                                                    <div class="item-msg">
+                                                        <div class="p-name">
+                                                            <a href="#">
+                                                                乐灵珠宝  黄金貔貅手链女3D硬金足金999本命年转运珠手镯石榴石皮丘手串XYGF054-1</a>
+                                                        </div>
+                                                        <div class="p-extend">
+                                                            <span>
+                                                                <i class="fa fa-cog"></i>
+                                                                <a href="#" class="jd-service">选服务</a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cell p-props">
+                                                <div class="props-txt" title="3D硬金貔貅">3D硬金貔貅</div>
+                                                <div class="props-txt" title="八方来财">八方来财</div>
+                                            </div>
+                                            <div class="cell p-price">
+                                                <p class="plus-switch">
+                                                    <strong>¥999.00</strong>
+                                                </p>
+                                                <div>
+                                                    <div class="clr"></div>
+                                                </div>
+                                            </div>
+                                            <div class="cell p-quantity">
+                                                <div class="quantity-form">
+                                                    <a href="javascript:void(0);" class="decrement disabled">-</a>
+                                                    <input type="text" value="1" class="itxt">
+                                                    <a href="javascript:void(0);" class="increment">+</a>
+                                                </div>
+                                                <div class="quantity-txt">有货</div>
+                                            </div>
+                                            <div class="cell p-sum">
+                                                <strong>¥999.00</strong>
+                                            </div>
+                                            <div class="cell p-ops">
+                                                <a href="javascript:void(0);" class="cart-remove">删除</a>
+                                                <a href="javascript:void(0);" class="cart-follow">移到我的关注</a>
+                                            </div>
+                                        </div>
+                                        <div class="item-extra mb10"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 去结算 -->
+                <div id="cart-floatbar" class="clearfix" style="width: 990px; height: 52px;">
+                    <div class="options-box clearfix">
+                        <div class="select-all">
+                            <div class="cart-checkbox">
+                                <input type="checkbox" class="jd-checkbox selectAll" checked="checked">
+                                全选
+                            </div>
+                        </div>
+                        <div class="operation">
+                            <a href="#" class="remove-batch">删除选中商品</a>
+                            <a href="#" class="follow-batch">移到关注</a>
+                            <a href="#" class="cleaner-opt J_clr_all" title="亲，点我可快速清理购物车商品哦！">清理购物车</a>
+                        </div>
+                        <div class="clr"></div>
+                        <div class="toolbar-right clearfix">
+                            <div class="comm-right clearfix">
+                                <div class="btn-area">
+                                    <a href="javascript: void(0);" class="submit-btn">去结算</a>
+                                </div>
+                                <div class="price-sum clearfix">
+                                    <div class="clearfix">
+                                        <span class="txt">总价：</span>
+                                        <span class="sumPrice">
+                                            <em>¥999.00</em>
+                                        </span>
+                                        <i class="fa fa-lightbulb-o  fa-lg"></i>
+                                        <div class="price-sum-extra">
+                                            <span>促销：</span>
+                                            <span>-￥0.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="amount-sum">
+                                    已选择<em>1</em>件商品
+                                    <i class="fa fa-angle-up  fa-lg"></i>
+                                </div>
+                                <div class="clr"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 购物车帮你选 -->
+        <div class="w">
+            <div id="cart-smart">
+                <div class="cart-smart-main clearfix">
+                    <h3 class="ac ftx-06">
+                        <b class="smart-head hl"></b>
+                        <i class="fa fa-shopping-cart  fa-lg"></i>
+                        购物车帮你选
+                        <b class="smart-head hr"></b>
+                    </h3>
+                    <p class="ac ftx-10 same">看看加购过该商品的人还喜欢哪些</p>
+                    <div class="cart-smart-cont clearfix">
+                        <div class="item-main">
+                            <div class="item-pic fl">
+                                <a href="#"><img src="img/mycar/item-0.jpg" alt="" width="48" height="48"></a>
+                            </div>
+                            <div class="item-cont fl ml10">
+                                <p class="ftx-07">
+                                    <a href="#" style="color: #333;">【超级爆品】荣耀10青春版 幻彩渐变 2400万AI自拍 全网通版4GB+64GB 渐变蓝 移动联通电信4G全面屏手机</a>
+                                </p>
+                                <p class="ftx-10">渐变蓝 全网通（4GB 64GB）</p>
+                                <p class="item-price">
+                                    <em>￥</em>
+                                    <i>899.00</i>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="smart-items">
+                            <ul class="clearfix">
+                                <li>
+                                    <div class="smart-item">
+                                        <div class="mt20 mb10 ac pic">
+                                            <a href="#"><img src="img/mycar/item-1.jpg" alt="" width="150" height="150"></a>
+                                        </div>
+                                        <div class="item-name">
+                                            <a href="#" class="ftx-07" title="荣耀20i 3200万AI自拍 超广角三摄 全网通版6GB+64GB 渐变蓝 移动联通电信4G全面屏手机">荣耀20i 3200万AI自拍 超广角三摄 全网通版6GB+64GB 渐变蓝 移动联通电信4G全面屏手机</a>
+                                        </div>
+                                        <div class="mt5">
+                                            <span class="item-price">
+                                                <em>￥</em>
+                                                <i>1199.00</i>
+                                            </span>
+                                        </div>
+                                        <br />
+                                        <div class="mt5">
+                                            <span class="buy-num">
+                                                <em>30236</em>
+                                                人已购买
+                                            </span>
+                                            <a href="#" class="fr btn-append"><i class="fa fa-cart-arrow-down  fa-lg addtocart-btn"></i></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="smart-item">
+                                        <div class="mt20 mb10 ac pic">
+                                            <a href="#"><img src="img/mycar/item-2.jpg" alt="" width="150" height="150"></a>
+                                        </div>
+                                        <div class="item-name">
+                                            <a href="#" class="ftx-07" title="荣耀Play3e 5.71英寸珍珠全面屏 3020mAh长续航1300万大光圈相机 3GB+64GB 幻夜黑 移动联通电信4G">荣耀Play3e 5.71英寸珍珠全面屏 3020mAh长续航1300万大光圈相机 3GB+64GB 幻夜黑 移动联通电信4G</a>
+                                        </div>
+                                        <div class="mt5">
+                                            <span class="item-price">
+                                                <em>￥</em>
+                                                <i>889.00</i>
+                                            </span>
+                                        </div>
+                                        <br />
+                                        <div class="mt5">
+                                            <span class="buy-num">
+                                                <em>486</em>
+                                                人已购买
+                                            </span>
+                                            <a href="#" class="fr btn-append"><i class="fa fa-cart-arrow-down  fa-lg addtocart-btn"></i></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="smart-item">
+                                        <div class="mt20 mb10 ac pic">
+                                            <a href="#"><img src="img/mycar/item-3.jpg" alt="" width="150" height="150"></a>
+                                        </div>
+                                        <div class="item-name">
+                                            <a href="#" class="ftx-07" title="荣耀20i 3200万AI自拍 超广角三摄 全网通版6GB+64GB 渐变蓝 移动联通电信4G全面屏手机">荣耀20i 3200万AI自拍 超广角三摄 全网通版6GB+64GB 渐变蓝 移动联通电信4G全面屏手机</a>
+                                        </div>
+                                        <div class="mt5">
+                                            <span class="item-price">
+                                                <em>￥</em>
+                                                <i>1199.00</i>
+                                            </span>
+                                        </div>
+                                        <br />
+                                        <div class="mt5">
+                                            <span class="buy-num">
+                                                <em>30236</em>
+                                                人已购买
+                                            </span>
+                                            <a href="#" class="fr btn-append"><i class="fa fa-cart-arrow-down  fa-lg addtocart-btn"></i></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="smart-item">
+                                        <div class="mt20 mb10 ac pic">
+                                            <a href="#"><img src="img/mycar/item-4.jpg" alt="" width="150" height="150"></a>
+                                        </div>
+                                        <div class="item-name">
+                                            <a href="#" class="ftx-07" title="荣耀畅玩8C两天一充 莱茵护眼 刘海屏 全网通版4GB+32GB 极光蓝 移动联通电信4G全面屏手机 双卡双待">荣耀畅玩8C两天一充 莱茵护眼 刘海屏 全网通版4GB+32GB 极光蓝 移动联通电信4G全面屏手机 双卡双待</a>
+                                        </div>
+                                        <div class="mt5">
+                                            <span class="item-price">
+                                                <em>￥</em>
+                                                <i>799.00</i>
+                                            </span>
+                                        </div>
+                                        <br />
+                                        <div class="mt5">
+                                            <span class="buy-num">
+                                                <em>31480</em>
+                                                人已购买
+                                            </span>
+                                            <a href="#" class="fr btn-append"><i class="fa fa-cart-arrow-down  fa-lg addtocart-btn"></i></a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="item-main">
+                            <div class="item-pic fl">
+                                <a href="#"><img src="img/mycar/item-01.jpg" alt="" width="48" height="48"></a>
+                            </div>
+                            <div class="item-cont fl ml10">
+                                <p class="ftx-07">
+                                    <a href="#" style="color: #333;">【乐灵珠宝  黄金貔貅手链女3D硬金足金999本命年转运珠手镯石榴石皮丘手串XYGF054-1</a>
+                                </p>
+                                <p class="ftx-10">3D硬金貔貅 八方来财</p>
+                                <p class="item-price">
+                                    <em>￥</em>
+                                    <i>999.00</i>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="smart-items">
+                            <ul class="clearfix">
+                                <li>
+                                    <div class="smart-item">
+                                        <div class="mt20 mb10 ac pic">
+                                            <a href="#"><img src="img/mycar/item-5.jpg" alt="" width="150" height="150"></a>
+                                        </div>
+                                        <div class="item-name">
+                                            <a href="#" class="ftx-07" title="乐灵珠宝 黄金貔貅手链女3D硬金足金999本命年转运珠手镯石榴石皮丘男士手串XYGF183">乐灵珠宝 黄金貔貅手链女3D硬金足金999本命年转运珠手镯石榴石皮丘男士手串XYGF183</a>
+                                        </div>
+                                        <div class="mt5">
+                                            <span class="item-price">
+                                                <em>￥</em>
+                                                <i>1236.00</i>
+                                            </span>
+                                        </div>
+                                        <br />
+                                        <div class="mt5">
+                                            <span class="buy-num">
+                                                <em>61</em>
+                                                人已购买
+                                            </span>
+                                            <a href="#" class="fr btn-append"><i class="fa fa-cart-arrow-down  fa-lg addtocart-btn"></i></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="smart-item">
+                                        <div class="mt20 mb10 ac pic">
+                                            <a href="#"><img src="img/mycar/item-6.jpg" alt="" width="150" height="150"></a>
+                                        </div>
+                                        <div class="item-name">
+                                            <a href="#" class="ftx-07" title="周大福 礼物 大版日月星云电足金黄金转运珠/吊坠(工费:168计价)F217480 足金 约3.20g">周大福 礼物 大版日月星云电足金黄金转运珠/吊坠(工费:168计价)F217480 足金 约3.20g</a>
+                                        </div>
+                                        <div class="mt5">
+                                            <span class="item-price">
+                                                <em>￥</em>
+                                                <i>1544.00</i>
+                                            </span>
+                                        </div>
+                                        <br />
+                                        <div class="mt5">
+                                            <span class="buy-num">
+                                                <em>41</em>
+                                                人已购买
+                                            </span>
+                                            <a href="#" class="fr btn-append"><i class="fa fa-cart-arrow-down  fa-lg addtocart-btn"></i></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="smart-item">
+                                        <div class="mt20 mb10 ac pic">
+                                            <a href="#"><img src="img/mycar/item-7.jpg" alt="" width="150" height="150"></a>
+                                        </div>
+                                        <div class="item-name">
+                                            <a href="#" class="ftx-07" title="蒂蔻 T0361招财貔貅黄金转运珠手链女士款3D硬金红玛瑙路路通手串自戴足金饰品生日礼物送老婆">蒂蔻 T0361招财貔貅黄金转运珠手链女士款3D硬金红玛瑙路路通手串自戴足金饰品生日礼物送老婆</a>
+                                        </div>
+                                        <div class="mt5">
+                                            <span class="item-price">
+                                                <em>￥</em>
+                                                <i>598.00</i>
+                                            </span>
+                                        </div>
+                                        <br />
+                                        <div class="mt5">
+                                            <span class="buy-num">
+                                                <em>110</em>
+                                                人已购买
+                                            </span>
+                                            <a href="#" class="fr btn-append"><i class="fa fa-cart-arrow-down  fa-lg addtocart-btn"></i></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="smart-item">
+                                        <div class="mt20 mb10 ac pic">
+                                            <a href="#"><img src="img/mycar/item-8.jpg" alt="" width="150" height="150"></a>
+                                        </div>
+                                        <div class="item-name">
+                                            <a href="#" class="ftx-07" title="周六福珠宝 3D硬金黄金貔貅转运珠石榴石女款黄金手链路路通  定价 ADSL193193 金重约2-2.19g">周六福珠宝 3D硬金黄金貔貅转运珠石榴石女款黄金手链路路通  定价 ADSL193193 金重约2-2.19g</a>
+                                        </div>
+                                        <div class="mt5">
+                                            <span class="item-price">
+                                                <em>￥</em>
+                                                <i>1477.00</i>
+                                            </span>
+                                        </div>
+                                        <br />
+                                        <div class="mt5">
+                                            <span class="buy-num">
+                                                <em>150</em>
+                                                人已购买
+                                            </span>
+                                            <a href="#" class="fr btn-append"><i class="fa fa-cart-arrow-down  fa-lg addtocart-btn"></i></a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 猜你喜欢 -->
+        <div class="w">
+            <div id="c-tabs-new">
+                <div class="mt">
+                    <div class="extra-l">
+                        <a href="#" class="c-item curr">猜你喜欢</a>
+                        <a href="#" class="c-item">随手购</a>
+                    </div>
+                </div>
+                <div class="mc c-panel-main" style="position: relative;">
+                    <div class="goods-list-tab clearfix">
+                        <!-- 鼠标触碰a时当前类名切换为curr -->
+                        <a href="javascript:void(0);" class="s-item curr">&nbsp;</a>
+                        <a href="javascript:void(0);" class="s-item">&nbsp;</a>
+                        <a href="javascript:void(0);" class="s-item">&nbsp;</a>
+                    </div>
+                    <div class="c-panel">
+                        <!-- .now透明度为1  其余透明度为0 -->
+                        <ul class="goods-list now clearfix">
+                            <li>
+                                <div class="item first">
+                                    <div class="p-img">
+                                        <a href="#"><img src="img/mycar/item-9.jpg" alt="金士顿（Kingston）32GB USB3.0 U盘 DTSE9G2  银色 金属外壳 高速读写" width="160" height="160"></a>
+                                    </div>
+                                    <div class="p-name">
+                                        <a href="#" title="金士顿（Kingston）32GB USB3.0 U盘 DTSE9G2  银色 金属外壳 高速读写">金士顿（Kingston）32GB USB3.0 U盘 DTSE9G2  银色 金属外壳 高速读写</a>
+                                    </div>
+                                    <div class="p-price">
+                                        <strong>
+                                            <em>￥</em>
+                                            <i>48.80</i>
+                                        </strong>
+                                    </div>
+                                    <div class="p-btn">
+                                        <a href="#" class="btn-append">
+                                            <i class="fa fa-cart-arrow-down"></i>
+                                            加入购物车
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <div class="p-img">
+                                        <a href="#"><img src="img/mycar/item-10.jpg" alt="乐灵珠宝  黄金貔貅手链女款999足金3D硬金本命年转运珠石榴石手串XYGF072" width="160" height="160"></a>
+                                    </div>
+                                    <div class="p-name">
+                                        <a href="#" title="乐灵珠宝  黄金貔貅手链女款999足金3D硬金本命年转运珠石榴石手串XYGF072">乐灵珠宝  黄金貔貅手链女款999足金3D硬金本命年转运珠石榴石手串XYGF072</a>
+                                    </div>
+                                    <div class="p-price">
+                                        <strong>
+                                            <em>￥</em>
+                                            <i>299.00</i>
+                                        </strong>
+                                    </div>
+                                    <div class="p-btn">
+                                        <a href="#" class="btn-append">
+                                            <i class="fa fa-cart-arrow-down"></i>
+                                            加入购物车
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <div class="p-img">
+                                        <a href="#"><img src="img/mycar/item-11.jpg" alt="闪迪(SanDisk) 128GB Type-C USB3.1 手机U盘 DDC2至尊高速版 读速150MB/s 便携伸缩双接口 智能APP管理软件" width="160" height="160"></a>
+                                    </div>
+                                    <div class="p-name">
+                                        <a href="#" title="闪迪(SanDisk) 128GB Type-C USB3.1 手机U盘 DDC2至尊高速版 读速150MB/s 便携伸缩双接口 智能APP管理软件">闪迪(SanDisk) 128GB Type-C USB3.1 手机U盘 DDC2至尊高速版 读速150MB/s 便携伸缩双接口 智能APP管理软件</a>
+                                    </div>
+                                    <div class="p-price">
+                                        <strong>
+                                            <em>￥</em>
+                                            <i>119.00</i>
+                                        </strong>
+                                    </div>
+                                    <div class="p-btn">
+                                        <a href="#" class="btn-append">
+                                            <i class="fa fa-cart-arrow-down"></i>
+                                            加入购物车
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <div class="p-img">
+                                        <a href="#"><img src="img/mycar/item-12.jpg" alt="荣耀10青春版 幻彩渐变 2400万AI自拍 全网通版6GB+128GB 渐变蓝 移动联通电信4G全面屏手机 双卡双待" width="160" height="160"></a>
+                                    </div>
+                                    <div class="p-name">
+                                        <a href="#" title="荣耀10青春版 幻彩渐变 2400万AI自拍 全网通版6GB+128GB 渐变蓝 移动联通电信4G全面屏手机 双卡双待">荣耀10青春版 幻彩渐变 2400万AI自拍 全网通版6GB+128GB 渐变蓝 移动联通电信4G全面屏手机 双卡双待</a>
+                                    </div>
+                                    <div class="p-price">
+                                        <strong>
+                                            <em>￥</em>
+                                            <i>1689.00</i>
+                                        </strong>
+                                    </div>
+                                    <div class="p-btn">
+                                        <a href="#" class="btn-append">
+                                            <i class="fa fa-cart-arrow-down"></i>
+                                            加入购物车
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="goods-list clearfix">
+                                <li>
+                                    <div class="item first">
+                                        <div class="p-img">
+                                            <a href="#"><img src="img/mycar/item-13.jpg" alt="黑甲虫 （KINGIDISK)多彩版K系列2.5英寸便携式USB3.0移动硬盘 商务黑 320GB" width="160" height="160"></a>
+                                        </div>
+                                        <div class="p-name">
+                                            <a href="#" title="黑甲虫 （KINGIDISK)多彩版K系列2.5英寸便携式USB3.0移动硬盘 商务黑 320GB">黑甲虫 （KINGIDISK)多彩版K系列2.5英寸便携式USB3.0移动硬盘 商务黑 320GB</a>
+                                        </div>
+                                        <div class="p-price">
+                                            <strong>
+                                                <em>￥</em>
+                                                <i>129.00</i>
+                                            </strong>
+                                        </div>
+                                        <div class="p-btn">
+                                            <a href="#" class="btn-append">
+                                                <i class="fa fa-cart-arrow-down"></i>
+                                                加入购物车
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="p-img">
+                                            <a href="#"><img src="img/mycar/item-14.jpg" alt="乐灵珠宝 黄金貔貅手链女3D硬金足金999本命年转运珠手镯石榴石皮丘男士手串XYGF183-6" width="160" height="160"></a>
+                                        </div>
+                                        <div class="p-name">
+                                            <a href="#" title="乐灵珠宝 黄金貔貅手链女3D硬金足金999本命年转运珠手镯石榴石皮丘男士手串XYGF183-6">乐灵珠宝 黄金貔貅手链女3D硬金足金999本命年转运珠手镯石榴石皮丘男士手串XYGF183-6</a>
+                                        </div>
+                                        <div class="p-price">
+                                            <strong>
+                                                <em>￥</em>
+                                                <i>1076.00</i>
+                                            </strong>
+                                        </div>
+                                        <div class="p-btn">
+                                            <a href="#" class="btn-append">
+                                                <i class="fa fa-cart-arrow-down"></i>
+                                                加入购物车
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="p-img">
+                                            <a href="#"><img src="img/mycar/item-15.jpg" alt="广益金福古法黄金 生生不息 手工花丝福禄寿三元金豆黄金吊坠项坠足金项链男女礼寓意古法黄金吊坠 3.35g" width="160" height="160"></a>
+                                        </div>
+                                        <div class="p-name">
+                                            <a href="#" title="广益金福古法黄金 生生不息 手工花丝福禄寿三元金豆黄金吊坠项坠足金项链男女礼寓意古法黄金吊坠 3.35g">广益金福古法黄金 生生不息 手工花丝福禄寿三元金豆黄金吊坠项坠足金项链男女礼寓意古法黄金吊坠 3.35g</a>
+                                        </div>
+                                        <div class="p-price">
+                                            <strong>
+                                                <em>￥</em>
+                                                <i>1839.00</i>
+                                            </strong>
+                                        </div>
+                                        <div class="p-btn">
+                                            <a href="#" class="btn-append">
+                                                <i class="fa fa-cart-arrow-down"></i>
+                                                加入购物车
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="p-img">
+                                            <a href="#"><img src="img/mycar/item-16.jpg" alt="荣耀Play3 6.39英寸魅眼全视屏 4000mAh大电池 真4800万AI三摄 麒麟710F自研芯片 畅玩全网通4GB+64GB 幻夜黑" width="160" height="160"></a>
+                                        </div>
+                                        <div class="p-name">
+                                            <a href="#" title="荣耀Play3 6.39英寸魅眼全视屏 4000mAh大电池 真4800万AI三摄 麒麟710F自研芯片 畅玩全网通4GB+64GB 幻夜黑">荣耀Play3 6.39英寸魅眼全视屏 4000mAh大电池 真4800万AI三摄 麒麟710F自研芯片 畅玩全网通4GB+64GB 幻夜黑</a>
+                                        </div>
+                                        <div class="p-price">
+                                            <strong>
+                                                <em>￥</em>
+                                                <i>889.00</i>
+                                            </strong>
+                                        </div>
+                                        <div class="p-btn">
+                                            <a href="#" class="btn-append">
+                                                <i class="fa fa-cart-arrow-down"></i>
+                                                加入购物车
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                        </ul>
+                        <ul class="goods-list clearfix">
+                                <li>
+                                    <div class="item first">
+                                        <div class="p-img">
+                                            <a href="#"><img src="img/mycar/item-17.jpg" alt="爱国者（aigo）64GB Micro USB USB3.0 手机U盘 U385 银色 双接口手机电脑两用" width="160" height="160"></a>
+                                        </div>
+                                        <div class="p-name">
+                                            <a href="#" title="爱国者（aigo）64GB Micro USB USB3.0 手机U盘 U385 银色 双接口手机电脑两用">爱国者（aigo）64GB Micro USB USB3.0 手机U盘 U385 银色 双接口手机电脑两用</a>
+                                        </div>
+                                        <div class="p-price">
+                                            <strong>
+                                                <em>￥</em>
+                                                <i>65.90</i>
+                                            </strong>
+                                        </div>
+                                        <div class="p-btn">
+                                            <a href="#" class="btn-append">
+                                                <i class="fa fa-cart-arrow-down"></i>
+                                                加入购物车
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="p-img">
+                                            <a href="#"><img src="img/mycar/item-18.jpg" alt="荣耀20S 李现同款 3200万人像超级夜景 4800万超广角AI三摄 麒麟810 全网通版6GB+128GB 蝶羽白" width="160" height="160"></a>
+                                        </div>
+                                        <div class="p-name">
+                                            <a href="#" title="荣耀20S 李现同款 3200万人像超级夜景 4800万超广角AI三摄 麒麟810 全网通版6GB+128GB 蝶羽白">荣耀20S 李现同款 3200万人像超级夜景 4800万超广角AI三摄 麒麟810 全网通版6GB+128GB 蝶羽白</a>
+                                        </div>
+                                        <div class="p-price">
+                                            <strong>
+                                                <em>￥</em>
+                                                <i>1589.00</i>
+                                            </strong>
+                                        </div>
+                                        <div class="p-btn">
+                                            <a href="#" class="btn-append">
+                                                <i class="fa fa-cart-arrow-down"></i>
+                                                加入购物车
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="p-img">
+                                            <a href="#"><img src="img/mycar/item-19.jpg" alt="金雅福 黄金貔貅手链女款3d硬金黄金转运珠手链999足金貔貅黄金石榴石手链路路通手串 附赠鉴定证书 石榴石貔貅1g" width="160" height="160"></a>
+                                        </div>
+                                        <div class="p-name">
+                                            <a href="#" title="金雅福 黄金貔貅手链女款3d硬金黄金转运珠手链999足金貔貅黄金石榴石手链路路通手串 附赠鉴定证书 石榴石貔貅1g">金雅福 黄金貔貅手链女款3d硬金黄金转运珠手链999足金貔貅黄金石榴石手链路路通手串 附赠鉴定证书 石榴石貔貅1g</a>
+                                        </div>
+                                        <div class="p-price">
+                                            <strong>
+                                                <em>￥</em>
+                                                <i>599.00</i>
+                                            </strong>
+                                        </div>
+                                        <div class="p-btn">
+                                            <a href="#" class="btn-append">
+                                                <i class="fa fa-cart-arrow-down"></i>
+                                                加入购物车
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="p-img">
+                                            <a href="#"><img src="img/mycar/item-20.jpg" alt="周生生CHOW SANG SANG黄金转运珠足金Charme XL 串珠系列貔貅黄金转运珠黄金手链 男女款 86330C定价" width="160" height="160"></a>
+                                        </div>
+                                        <div class="p-name">
+                                            <a href="#" title="周生生CHOW SANG SANG黄金转运珠足金Charme XL 串珠系列貔貅黄金转运珠黄金手链 男女款 86330C定价">周生生CHOW SANG SANG黄金转运珠足金Charme XL 串珠系列貔貅黄金转运珠黄金手链 男女款 86330C定价</a>
+                                        </div>
+                                        <div class="p-price">
+                                            <strong>
+                                                <em>￥</em>
+                                                <i>2200.00</i>
+                                            </strong>
+                                        </div>
+                                        <div class="p-btn">
+                                            <a href="#" class="btn-append">
+                                                <i class="fa fa-cart-arrow-down"></i>
+                                                加入购物车
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                        </ul>
+                        <!-- 隐藏的按钮 -->
+                        <div class="c-page">
+                            <a href="javascript:void(0);" class="c-prev">&lt;</a>
+                            <a href="javascript:void(0);" class="c-next">&gt;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="service">
+            <div class="service_inner">
+                <ul>
+                    <li><div>
+                        <img src="img/footer/footer-1.png" alt="">
+                        <p>品类齐全，轻松购物</p>
+                    </div></li>
+                    <li><div>
+                        <img src="img/footer/footer-2.png" alt="">
+                        <p>多仓直发，极速配送</p>
+                    </div></li>
+                    <li><div>
+                        <img src="img/footer/footer-3.png" alt="">
+                        <p>正品行货，精致服务</p>
+                    </div></li>
+                    <li><div>
+                        <img src="img/footer/footer-4.png" alt="">
+                        <p>天天低价，畅选无忧</p>
+                    </div></li>
+                </ul>
+            </div>
+        </div>
+        <div class="help">
+            <div class="help_inner">
+                <div class="help_nav">
+                    <h5>购物指南</h5>
+                    <ul>
+                        <li><a href="">购物流程</a></li>
+                        <li><a href="">会员介绍</a></li>
+                        <li><a href="">生活旅行</a></li>
+                        <li><a href="">常见问题</a></li>
+                        <li><a href="">大家电</a></li>
+                        <li><a href="">联系客服</a></li>
+                    </ul>
+                </div>
+                <div class="help_nav">
+                    <h5>配送方式</h5>
+                    <ul>
+                        <li><a href="">上门自提</a></li>
+                        <li><a href="">211即时达</a></li>
+                        <li><a href="">配送服务查询</a></li>
+                        <li><a href="">配送费收取标准</a></li>
+                        <li><a href="">海外配送</a></li>
+                    </ul>
+                </div>
+                <div class="help_nav">
+                    <h5>支付方式</h5>
+                    <ul>
+                        <li><a href="">货到付款</a></li>
+                        <li><a href="">在线支付</a></li>
+                        <li><a href="">分期付款</a></li>
+                        <li><a href="">邮局汇款</a></li>
+                        <li><a href="">公司转账</a></li>
+                    </ul>
+                </div>
+                <div class="help_nav">
+                    <h5>售后服务</h5>
+                    <ul>
+                        <li><a href="">售后政策</a></li>
+                        <li><a href="">价格保护</a></li>
+                        <li><a href="">退款说明</a></li>
+                        <li><a href="">返修/退换货</a></li>
+                        <li><a href="">取消订单</a></li>
+                    </ul>
+                </div>
+                <div class="help_nav">
+                    <h5>特色服务</h5>
+                    <ul>
+                        <li><a href="">夺宝岛</a></li>
+                        <li><a href="">DIY装机</a></li>
+                        <li><a href="">延保服务</a></li>
+                        <li><a href="">京东E卡</a></li>
+                        <li><a href="">京东通信</a></li>
+                        <li><a href="">京鱼座智能</a></li>
+                    </ul>
+                </div>
+                <div class="help_cover">
+                    <h5>京东自营覆盖县区</h5>
+                    <div class="icon">
+                        <p>京东已向全国2661个区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。</p>
+                        <a href="">查看详情<i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="copyright_inner">
+                <ul class="menu clearfix">
+                    <li>
+                        <a href="">关于我们</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="">联系我们</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="">联系客服</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="">合作招商</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="">商家帮助</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="">营销中心</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="">手机京东</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="">友情链接</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="">销售联盟</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="">京东社区</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="">风险监测</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="">隐私政策</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="">京东公益</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="">English Site</a>
+                        <span>|</span>
+                    </li>
+                    <li><a href="">Media & IR</a></li>
+                </ul>
+                <div class="info">
+                    <div class="first">
+                        <p>
+                            <a href="">京公网安备 11000002000088号</a>
+                            <span class="split">|</span>
+                            <span>京ICP证070359号</span>
+                            <span class="split">|</span>
+                            <a href="">互联网药品信息服务资格证编号(京)-经营性-2014-0008</a>
+                            <span class="split">|</span>
+                            <span>新出发京零&nbsp;字第大120007号</span>
+                        </p>
+                        <p>
+                            <span>互联网出版许可证编号新出网证(京)字150号</span>
+                            <span class="split">|</span>
+                            <a href="">出版物经营许可证</a>
+                            <span class="split">|</span>
+                            <a href="">网络文化经营许可证京网文[2014]2148-348号</a>
+                            <span class="split">|</span>
+                            <span>违法和不良信息举报电话：4006561155</span>
+                        </p>
+                        <p>
+                            <span>Copyright&nbsp;©&nbsp;2004&nbsp;-&nbsp;2019&emsp;京东JD.com&nbsp;版权所有</span>
+                            <span class="split">|</span>
+                            <span>消费者维权热线：4006067733</span>
+                            &emsp;
+                            <a href="">经营证照</a>
+                            <span class="split">|</span>
+                            <span>(京)网械平台备字(2018)第00003号</span>
+                            <span class="split">|</span>
+                            <a href="">营业执照</a>
+                        </p>
+                    </div>
+                    <div class="second">
+                        <p>
+                            <a href=""><i class="fa fa-globe"></i>&nbsp;Global Site</a>
+                            <span class="split">|</span>
+                            <a href=""><i class="fa fa-flag"></i>&nbsp;Сайт России</a>
+                            <span class="split">|</span>
+                            <a href=""><i class="fa fa-flag-checkered"></i>&nbsp;Situs Indonesia</a>
+                            <span class="split">|</span>
+                            <a href=""><i class="fa fa-flag-o"></i>&nbsp;Sitio de España</a>
+                            <span class="split">|</span>
+                            <a href=""><i class="fa fa-leanpub"></i>&nbsp;เว็บไซต์ประเทศไทย</a>
+                        </p>
+                    </div>
+                    <div class="third">
+                        <p>
+                            <span>京东旗下网站：</span>
+                            <a href="">京东钱包</a>
+                            <span class="split">|</span>
+                            <a href="">京东云</a>
+                        </p>
+                    </div>
+                </div>
+                <p class="auth">
+                    <a href="">
+                        <img src="img/footer/footer_last-1.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="img/footer/footer_last-2.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="img/footer/footer_last-3.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="img/footer/footer_last-4.png" alt="">
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/velocity.min.js"></script>
+<script src="js/myjs.js"></script>
+<script src="js/mycar.js"></script>

@@ -4,7 +4,7 @@
  * @Email: 1973545559@qq.com
  * @Github: https://github.com/ErioY
  * @LastEditors: ErioY
- * @LastEditTime: 2019-11-01 23:40:24
+ * @LastEditTime: 2019-11-13 19:58:52
  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -13,47 +13,895 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>我的京东--我的订单</title>
-    <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/font-awesome.css" />
-    <!-- <link rel="stylesheet" href="css/footer.css" /> -->
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/myorder.css" />
 </head>
 <body>
     <header>
-        <div class="content">
-            <ul class="fl">
-                <li>
-                    <i class="fa fa-home"></i>
-                    <a href="index.html">京东首页</a>&emsp;
-                </li>
-                <li>
-                    <i class="fa fa-map-marker"></i>
-                    <a href="">北京</a>
-                </li>
-            </ul>
-            <ul class="fr">
-                <li id="top_login"></li>
-                <li class="spacer"></li>
-                <li></li>
-                <li class="spacer"></li>
-                <li></li>
-                <li class="spacer"></li>
-                <li></li>
-                <li class="spacer"></li>
-                <li></li>
-                <li class="spacer"></li>
-                <li></li>
-                <li class="spacer"></li>
-                <li></li>
-                <li class="spacer"></li>
-                <li></li>
-            </ul>
+        <div id="head-top">
+            <nav class="clearfix">
+                <ul class="left">
+                    <li class="place" >
+                        <i class="fa fa-map-marker" style="color: #f10215"></i>
+                        <a href="" id="area" titie="北京">北京</a>
+                    </li>
+                </ul>
+                <!-- 隐藏的地区 -->
+                <div id="hidden-area">
+                    <ul>
+                        <li><a href="" class="selected">北京</a></li>
+                        <li><a href="">上海</a></li>
+                        <li><a href="">天津</a></li>
+                        <li><a href="">重庆</a></li>
+                        <li><a href="">河北</a></li>
+                        <li><a href="">山西</a></li>
+                        <li><a href="">河南</a></li>
+                        <li><a href="">辽宁</a></li>
+                        <li><a href="">吉林</a></li>
+                        <li><a href="">黑龙江</a></li>
+                        <li><a href="">内蒙古</a></li>
+                        <li><a href="">江苏</a></li>
+                        <li><a href="">山东</a></li>
+                        <li><a href="">安徽</a></li>
+                        <li><a href="">浙江</a></li>
+                        <li><a href="">福建</a></li>
+                        <li><a href="">湖北</a></li>
+                        <li><a href="">湖南</a></li>
+                        <li><a href="">广东</a></li>
+                        <li><a href="">广西</a></li>
+                        <li><a href="">江西</a></li>
+                        <li><a href="">四川</a></li>
+                        <li><a href="">海南</a></li>
+                        <li><a href="">贵州</a></li>
+                        <li><a href="">云南</a></li>
+                        <li><a href="">西藏</a></li>
+                        <li><a href="">陕西</a></li>
+                        <li><a href="">甘肃</a></li>
+                        <li><a href="">青海</a></li>
+                        <li><a href="">宁夏</a></li>
+                        <li><a href="">新疆</a></li>
+                        <li><a href="">港澳</a></li>
+                        <li><a href="">台湾</a></li>
+                        <li><a href="">钓鱼岛</a></li>
+                        <li><a href="">海外</a></li>
+                    </ul>
+                    <hr />
+                    <div class="special">
+                        <h5>地区专享版本</h5>
+                        <a href="">中國港澳</a>
+                    </div>
+                    <hr />
+                    <div class="foreign">
+                        <h5>Available Sites</h5>
+                        <ol>
+                            <li>
+                                <i class="fa fa-globe"></i>
+                                <a href="">Global Site</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-globe"></i>
+                                <a href="">Global Site</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-globe"></i>
+                                <a href="">Global Site</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-globe"></i>
+                                <a href="">Global Site</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-globe"></i>
+                                <a href="">Global Site</a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                
+                <ul class="right clearfix">
+                    <li class="menu welcome">
+                        <a href="login.html" class="link-login">你好，请登录</a>
+                        &nbsp;&nbsp;
+                        <a href="register.html" class="link-register">免费注册</a>
+                    </li>
+                    <li class="spacer">|</li>
+                    <li class="menu red"><a href="myorder.html" style="color:#999">我的订单</a></li>
+                    <li class="spacer">|</li>
+                    <li class="menu red">我的京东&nbsp;∨</li>
+                    <li class="spacer">|</li>
+                    <li class="menu red">京东会员</li>
+                    <li class="spacer">|</li>
+                    <li class="menu qiye">企业采购&nbsp;∨</li>
+                    <li class="spacer">|</li>
+                    <li class="menu">客户服务&nbsp;∨</li>
+                    <li class="spacer">|</li>
+                    <li class="menu">网站导航&nbsp;∨</li>
+                    <li class="spacer">|</li>
+                    <li class="menu">手机京东</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="head-bottom">
+            <div class="w">
+                <div class="logo">
+                    <a class="dog"  href="index.html"></a>
+                    <a class="_self" href="">我的京东</a>
+                    <a href="index.html" class="_blank">返回京东首页</a>
+                </div>
+                <div class="nav">
+                    <ul class="clearfix">
+                        <li class="fore_1"><a href="index.html">首页</a></li>
+                        <li class="fore_2">
+                            <div class="dl">
+                                <div class="dt">
+                                    <span>账户设置</span>
+                                    <i class="fa fa-angle-down"></i>
+                                </div>
+                                <!-- 隐藏 -->
+                                <div class="dd">
+                                    <a href=""><span>个人信息</span></a>
+                                    <a href=""><span>账户安全</span></a>
+                                    <a href=""><span>我的尺码</span></a>
+                                    <a href=""><span>账号绑定</span></a>
+                                    <a href=""><span>收货地址</span></a>
+                                    <a href=""><span>健康档案</span></a>
+                                    <a href=""><span>分享绑定</span></a>
+                                    <a href=""><span>邮件订阅</span></a>
+                                    <a href=""><span>授权管理</span></a>
+                                    <a href=""><span>我的银行卡</span></a>
+                                    <a href=""><span>增票资质</span></a>
+                                    <a href=""><span>企业发票</span></a>
+                                    <a href=""><span>采购需求单</span></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="fore_3">
+                            <div class="dl myjd">
+                                <div class="dt">
+                                    <span>评价</span>
+                                    <i class="fa fa-angle-down"></i>
+                                </div>
+                                <!-- 隐藏 -->
+                                <div class="dd">
+                                    <a href=""><span>待评价</span></a>
+                                    <a href=""><span>服务评价</span></a>
+                                    <a href=""><span>待追评</span></a>
+                                    <a href=""><span>已评价</span></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="fore_4"><a href="">消息</a></li>
+                    </ul>
+                </div>
+                <div class="rbtn">
+                    <div id="search">
+                        <!-- 查询商品关键字 -->
+                        <ul class="result"></ul>
+                        <div class="form">
+                            <input type="text">
+                            <button>搜索</button>
+                        </div>
+                    </div>
+                    <!-- 购物车 -->
+                    <div id="settleup">
+                        <div class="icon">
+                            <i class="i_left "></i>
+                            <i class="fa fa-angle-right i_right"></i>
+                            <i class="count">0</i>
+                            <a href="">我的购物车</a>
+                        </div>
+                        <!-- 隐藏购物车详情 -->
+                        <div class="dropdown">
+                            <div class="prompt">
+                                <div class="nogoods">
+                                    <b></b>
+                                    购物车中还没有商品，快选购吧！
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <section>
-        <div class="content"></div>
+        <div id="container" class="clearfix">
+            <div class="w">
+                <div class="content">
+                    <div class="left">
+                        <!-- 左侧导航栏 -->
+                        <div id="menu">
+                            <dl class="fore1">
+                                <dt id="JD_order">订单中心</dt>
+                                <dd class="order"><a href="">我的订单</a></dd>
+                                <dd><a href="">我的活动</a></dd>
+                                <dd><a href="">评价晒单</a></dd>
+                                <dd><a href="">我的常购商品</a></dd>
+                                <dd><a href="">代下单</a></dd>
+                            </dl>
+                            <dl class="fore2">
+                                    <dt>关注中心</dt>
+                                    <dd><a href="">关注的商品</a></dd>
+                                    <dd><a href="">关注的店铺</a></dd>
+                                    <dd><a href="">关注的专辑</a></dd>
+                                    <dd><a href="">收藏的内容</a></dd>
+                                    <dd><a href="">关注的活动</a></dd>
+                            </dl>
+                            <dl class="fore3">
+                                    <dt>资产中心</dt>
+                                    <dd><a href="">小金库</a></dd>
+                                    <dd><a href="">京东白条</a></dd>
+                                    <dd><a href="">领货码</a></dd>
+                                    <dd><a href="">余额</a></dd>
+                                    <dd><a href="">红包</a></dd>
+                                    <dd><a href="">银行卡</a></dd>
+                                    <dd><a href="">优惠券</a></dd>
+                                    <dd><a href="">礼品卡</a></dd>
+                                    <dd><a href="">京豆</a></dd>
+                                    <dd><a href="">京东钢镚</a></dd>
+                            </dl>
+                            <dl class="fore4">
+                                    <dt>特色业务</dt>
+                                    <dd><a href="">我的营业厅</a></dd>
+                                    <dd><a href="">京东通信</a></dd>
+                                    <dd><a href="">定期购</a></dd>
+                                    <dd><a href="">我的回收单</a></dd>
+                                    <dd><a href="">节能补贴</a></dd>
+                                    <dd><a href="">医药服务</a></dd>
+                                    <dd><a href="">流量加油站</a></dd>
+                                    <dd><a href="">我的课程</a></dd>
+                                    <dd><a href="">海外房产预约</a></dd>
+                                    <dd><a href="">我的海囤全球</a></dd>
+                                    <dd><a href="">装修服务</a></dd>
+                                    <dd><a href="">我的拍卖</a></dd>
+                                    <dd><a href="">我的集运</a></dd>
+                                    <dd><a href="">耗材自动递送</a></dd>
+                                    <dd><a href="">京东机票</a></dd>
+                            </dl>
+                            <dl class="fore5">
+                                    <dt>客户服务</dt>
+                                    <dd><a href="">返修退换货</a></dd>
+                                    <dd><a href="">价格保护</a></dd>
+                                    <dd><a href="">意见修改</a></dd>
+                                    <dd><a href="">我的问答</a></dd>
+                                    <dd><a href="">购买咨询</a></dd>
+                                    <dd><a href="">交易纠纷</a></dd>
+                                    <dd><a href="">京东维修</a></dd>
+                                    <dd><a href="">我的发票</a></dd>
+                                    <dd><a href="">举报中心</a></dd>
+                            </dl>
+                            <dl class="fore6">
+                                    <dt>设置</dt>
+                                    <dd><a href="">个人信息</a></dd>
+                                    <dd><a href="">收货地址</a></dd>
+                            </dl>
+                        </div>
+                        <div id="ads">
+                            <!-- 广告放这里 -->
+                            <div>
+                                <a href="">
+                                    <img width="90" height="70" src="img/ads/ads-1.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="top"></div>
+                        <div class="main common order_title">
+                            <div class="mt">
+                                <h3>我的订单</h3>
+                                <div class="extra"></div>
+                            </div>
+                        </div>
+                        <div class="main common order-bottom">
+                            <div class="mt" style="height:45px;">
+                                <ul class="clearfix">
+                                    <li class="fore_1 point">
+                                        <a href="">全部订单</a>
+                                    </li>
+                                    <li>
+                                        <a href="">待付款</a>
+                                    </li>
+                                    <li>
+                                        <a href="">待收款</a>
+                                    </li>
+                                    <li>
+                                        <a href="">待评价</a>
+                                    </li>
+                                    <li class="fore_2">
+                                        <a href="">
+                                            <strong>我的常购商品</strong>
+                                        </a>
+                                    </li>
+                                    <li class="fore_2">
+                                        <a href="">订单回收站</a>
+                                    </li>
+                                </ul>
+                                <div class="extra-search">
+                                    <div class="search">
+                                        <input type="text" value="商品名称/商品编号/订单号" style="color: rgb(204, 204, 204);" id="goods-search">
+                                        <a href=""><i class=" fa fa-search"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mc">
+                                <nav class="clearfix">
+                                    <li class="title first">
+                                        <div class="order-time">
+                                            <div class="time-txt">近三个月订单
+                                                <i class="fa fa-angle-down"></i>
+                                            </div>
+                                            <!-- 隐藏 -->
+                                            <div class="time-list">
+                                                <ul>
+                                                    <li class="list"><a href=""><b></b>近三个月订单</a></li>
+                                                    <li class="list"><a href=""><b></b>今年内订单</a></li>
+                                                    <li class="list"><a href=""><b></b>2017年订单</a></li>
+                                                    <li class="list"><a href=""><b></b>2016年订单</a></li>
+                                                    <li class="list"><a href=""><b></b>2015年订单</a></li>
+                                                    <li class="list"><a href=""><b></b>2014年订单</a></li>
+                                                    <li class="list"><a href=""><b></b>2014年以前订单</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="order-detail">订单详情</div>
+                                    </li>
+                                    <li class="title second">收货人</li>
+                                    <li class="title second">金额</li>
+                                    <li class="title second">
+                                        <div class="total-state">
+                                            <div class="state-txt">
+                                                全部状态
+                                                <i class="fa fa-angle-down"></i>
+
+                                            </div>
+                                            <!-- 隐藏 -->
+                                            <div class="state-list">
+                                                <ul>
+                                                    <li class="curr"><a href="">
+                                                        <i class="fa fa-check"></i>
+                                                        全部状态
+                                                    </a></li>
+                                                    <li><a href="">
+                                                        <i class="fa fa-check"></i>
+                                                        等待付款
+                                                    </a></li>
+                                                    <li><a href="">
+                                                        <i class="fa fa-check"></i>
+                                                        等待收货
+                                                    </a></li>
+                                                    <li><a href="">
+                                                        <i class="fa fa-check"></i>
+                                                        已完成
+                                                    </a></li>
+                                                    <li><a href="">
+                                                        <i class="fa fa-check"></i>
+                                                        已取消
+                                                    </a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="title third">操作</li>
+                                </nav>
+                                <div class="order">
+                                    <div class="row"></div>
+                                    <!-- 购买日期 -->
+                                    <div id="date">
+                                        <div class="contentall clearfix">
+                                            <span class="gap"></span>
+                                            <span class="dealtime">2019-07-08 00:03:00</span>
+                                            <span class="number">
+                                                订单号：<a href="" name="orderIdLinks">99100496660</a>
+                                            </span>
+                                            <div class="operate">
+                                                <span class="order-shop">
+                                                    <span class="shop-txt">京东</span>
+                                                    <a href="" title="联系客服"><i class="fa fa-user-circle"></i></a>
+                                                </span>
+                                                <a href="javascript:void(0);" title="删除" class="del" id="del"><i class="fa fa-trash-o"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 购买的商品 -->
+                                    <div id="goods" class="clearfix">
+                                        <ul class="clearfix">
+                                            <li style="width: 395px;">
+                                                <div class="goods-item">
+                                                    <div class="p-img">
+                                                        <a href=""><img src="img/shopping/fruit/01.jpg" alt="" width="60" height="60" title="华硕(ASUS) 灵耀Deluxe14 英特尔酷睿i7 14.0英寸创意设计轻薄笔记本电脑(i7-8565U 8G 512G 2G独显 IPS)蓝"></a>
+                                                    </div>
+                                                    <div class="p-msg">
+                                                        <div class="p-name">
+                                                            <a href="" title="华硕(ASUS) 灵耀Deluxe14 英特尔酷睿i7 14.0英寸创意设计轻薄笔记本电脑(i7-8565U 8G 512G 2G独显 IPS)蓝">华硕(ASUS) 灵耀Deluxe14 英特尔酷睿i7 14.0英寸创意设计轻薄笔记本电脑(i7-8565U 8G 512G 2G独显 IPS)蓝</a>
+                                                        </div>
+                                                        <div class="p-extra"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="goods-number">×1</div>
+                                                <div class="goods-repair">
+                                                    <a href="">申请售后</a>
+                                                    <a href="">卖了换钱</a>
+                                                </div>
+                                            </li>
+                                            <li  style="width: 105px;">
+                                                <!-- 收件人姓名 -->
+                                                <div class="consignee">
+                                                    <span class="txt" title="陕西西安市临潼区斜口街道秦唐大道48号西安科技大学">杨丽霞</span>
+                                                    <i class="fa fa-user"></i>
+                                                </div>
+                                                <!-- 收件人具体信息 隐藏，有问题  无法显示 -->
+                                                <div class="all-msg">
+                                                    <div class="pc">
+                                                        <strong>杨丽霞</strong>
+                                                        <p class="addr">陕西西安市临潼区斜口街道秦唐大道48号西安科技大学</p>
+                                                        <p class="phone">135****9075</p>
+                                                    </div>
+                                                    <div class="add"></div>
+                                                </div>
+                                            </li>
+                                            <li style="width: 105px;">
+                                                <div class="amount">
+                                                    <p>总额 ¥<span>7999.00</span></p>
+                                                    <!-- <br /> -->
+                                                    <span class="online-pay">在线支付</span>
+                                                </div>
+                                            </li>
+                                            <li style="width: 105px;">
+                                                <div class="status">
+                                                    <span>已完成</span>
+                                                    <br />
+                                                    <a href="" class="jd-dou">
+                                                        <i><img src="img/doudou.png" alt="" width="18" height="18"></i>
+                                                        +<span>719</span>
+                                                    </a>
+                                                    <br />
+                                                    <a href="">订单详情</a>
+                                                </div>
+                                            </li>
+                                            <li style="width: 118px;">
+                                                <a href="" class="choose-service">选购京东服务</a>
+                                                <br />
+                                                <div class="operate">
+                                                    <a href="">查看发票</a>
+                                                    <br />
+                                                    <a href="" class="btn-buynow">
+                                                        <i class="fa fa-bolt"></i>
+                                                        立即购买
+                                                    </a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- 分页按钮 -->
+                                <div class="btn-paging">
+                                    <div class="pagin">
+                                        <span class="prev-disabled">
+                                            <i class="fa fa-angle-double-left"></i>
+                                            上一页
+                                        </span>
+                                        <a class="current" href="" id="page-number">1</a>
+                                        <span class="next-disabled">
+                                            下一页
+                                            <i class="fa fa-angle-double-right"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 买什么 -->
+                        <div class="wtb clearfix">
+                            <div class="buy-main">
+                                <div class="buy-show">
+                                    <div class="buy-cont">
+                                        <div class="buy-list clearfix">
+                                            <div class="buy-title">
+                                                <h3>买什么</h3>
+                                                <a href="">查看更多商品专辑</a>
+                                            </div>
+                                            <div class="buy-item">
+                                                <div class="item-inner">
+                                                    <div class="item-name"><a href="">如何带着妹子去吃鸡？</a></div>
+                                                    <div class="item-ti"><a href=""><em>五个橙子的故事5</em></a></div>
+                                                    <div class="item-goods">
+                                                        <div class="goods-cover">
+                                                            <a href=""><img src="img/myorder/goods-cover.jpg" alt="" width="155" height="155"></a>
+                                                        </div>
+                                                        <div class="goods-list">
+                                                            <div class="goods-ul">
+                                                                <div class="goods-li">
+                                                                    <a href=""><img src="img/myorder/goods-list-1.jpg" alt="" width="50" height="50"></a>
+                                                                </div>
+                                                                <div class="goods-li">
+                                                                    <a href=""><img src="img/myorder/goods-list-2.jpg" alt="" width="50" height="50"></a>
+                                                                </div>
+                                                                <div class="goods-li">
+                                                                    <a href=""><img src="img/myorder/goods-list-1.jpg" alt="" width="50" height="50"></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item-info">
+                                                        <div class="info">
+                                                            <a href="" class="btn-follow">
+                                                                <i class="fa fa-heart"></i>
+                                                                关注
+                                                                <em class="sum">1586</em>
+                                                            </a>
+                                                            <div class="gap"></div>
+                                                            <a href="" class="btn-like">
+                                                                <i class="fa fa-thumbs-up"></i>
+                                                                赞
+                                                                <em class="sum">2562</em>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="buy-item">
+                                                <div class="item-inner">
+                                                    <div class="item-name"><a href="">禅茶</a></div>
+                                                    <div class="item-ti"><a href=""><em>不入魔不成仙</em></a></div>
+                                                    <div class="item-goods">
+                                                        <div class="goods-cover">
+                                                            <a href=""><img src="img/myorder/goods-cover-2.jpg" alt="" width="155" height="155"></a>
+                                                        </div>
+                                                        <div class="goods-list">
+                                                            <div class="goods-ul">
+                                                                <div class="goods-li">
+                                                                    <a href=""><img src="img/myorder/goods-list-4.jpg" alt="" width="50" height="50"></a>
+                                                                </div>
+                                                                <div class="goods-li">
+                                                                    <a href=""><img src="img/myorder/goods-list-5.jpg" alt="" width="50" height="50"></a>
+                                                                </div>
+                                                                <div class="goods-li">
+                                                                    <a href=""><img src="img/myorder/goods-list-4.jpg" alt="" width="50" height="50"></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item-info">
+                                                        <div class="info">
+                                                            <a href="" class="btn-follow">
+                                                                <i class="fa fa-heart"></i>
+                                                                关注
+                                                                <em class="sum">1586</em>
+                                                            </a>
+                                                            <div class="gap"></div>
+                                                            <a href="" class="btn-like">
+                                                                <i class="fa fa-thumbs-up"></i>
+                                                                赞
+                                                                <em class="sum">2562</em>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="buy-item">
+                                                <div class="item-inner">
+                                                    <div class="item-name"><a href="">厨房小工具</a></div>
+                                                    <div class="item-ti"><a href=""><em>大海全都是水啊</em></a></div>
+                                                    <div class="item-goods">
+                                                        <div class="goods-cover">
+                                                            <a href=""><img src="img/myorder/goods-cover-3.jpg" alt="" width="155" height="155"></a>
+                                                        </div>
+                                                        <div class="goods-list">
+                                                            <div class="goods-ul">
+                                                                <div class="goods-li">
+                                                                    <a href=""><img src="img/myorder/goods-list-7.jpg" alt="" width="50" height="50"></a>
+                                                                </div>
+                                                                <div class="goods-li">
+                                                                    <a href=""><img src="img/myorder/goods-list-8.jpg" alt="" width="50" height="50"></a>
+                                                                </div>
+                                                                <div class="goods-li">
+                                                                    <a href=""><img src="img/myorder/goods-list-7.jpg" alt="" width="50" height="50"></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item-info">
+                                                        <div class="info">
+                                                            <a href="" class="btn-follow">
+                                                                <i class="fa fa-heart"></i>
+                                                                关注
+                                                                <em class="sum">1586</em>
+                                                            </a>
+                                                            <div class="gap"></div>
+                                                            <a href="" class="btn-like">
+                                                                <i class="fa fa-thumbs-up"></i>
+                                                                赞
+                                                                <em class="sum">2562</em>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 猜你喜欢 -->
+                        <div class="main common" id="guessing-liked">
+                            <div class="mt">
+                                <h3>猜你喜欢</h3>
+                                <div class="small-btn">
+                                    <div class="btn-items" id="small-btn">
+                                        <a href="javascript:void(0);" class="point">1</a>
+                                        <a href="javascript:void(0);">2</a>
+                                        <a href="javascript:void(0);">3</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mc">
+                                <!-- 轮播图 -->
+                                <div class="goods-slide" id="goods-slide">
+                                    <ul class="clearfix">
+                                        <li>
+                                            <div class="con-item">
+                                                <div class="slide-img">
+                                                    <a href=""><img src="img/myorder/guess-u-like-1.jpg" alt="" width="160" height="160"></a>
+                                                </div>
+                                                <div class="slide-name">
+                                                    <a href="" title="华为 HUAWEI Mate 30 5G 麒麟990 4000万超感光徕卡影像双超级快充8GB+256GB亮黑色5G全网通版">华为 HUAWEI Mate 30 5G 麒麟990 4000万超感光徕卡影像双超级快充8GB+256GB亮黑色5G全网通版</a>
+                                                </div>
+                                                <div class="slide-price">
+                                                    <strong>¥5499.00</strong>
+                                                </div>
+                                                <div class="slide-extra">
+                                                    <a href="">(已有<span>1</span>人评价)</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="con-item">
+                                                <div class="slide-img">
+                                                    <a href=""><img src="img/myorder/guess-u-like-2.jpg" alt="" width="160" height="160"></a>
+                                                </div>
+                                                <div class="slide-name">
+                                                    <a href="" title="美若康硅水凝胶透明隐形眼镜月抛盒 沐氧2片 明基护眼科技舒适水润高透氧近视散光度 官方旗舰店正品 1200">美若康硅水凝胶透明隐形眼镜月抛盒 沐氧2片 明基护眼科技舒适水润高透氧近视散光度 官方旗舰店正品 1200</a>
+                                                </div>
+                                                <div class="slide-price">
+                                                    <strong>¥76.00</strong>
+                                                </div>
+                                                <div class="slide-extra">
+                                                    <a href="">(已有<span>344</span>人评价)</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="con-item">
+                                                <div class="slide-img">
+                                                    <a href=""><img src="img/myorder/guess-u-like-3.jpg" alt="" width="160" height="160"></a>
+                                                </div>
+                                                <div class="slide-name">
+                                                    <a href="" title="联想ThinkPad 翼480（0UCD）英特尔酷睿i5 14英寸轻薄笔记本电脑（i5-8250U 8G 256GSSD 2G独显）冰原银">联想ThinkPad 翼480（0UCD）英特尔酷睿i5 14英寸轻薄笔记本电脑（i5-8250U 8G 256GSSD 2G独显）冰原银</a>
+                                                </div>
+                                                <div class="slide-price">
+                                                    <strong>¥4499.00</strong>
+                                                </div>
+                                                <div class="slide-extra">
+                                                    <a href="">(已有<span>173384</span>人评价)</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="con-item">
+                                                <div class="slide-img">
+                                                    <a href=""><img src="img/myorder/guess-u-like-4.jpg" alt="" width="160" height="160"></a>
+                                                </div>
+                                                <div class="slide-name">
+                                                    <a href="" title="赛拓（SANTO）生料带聚四氟乙烯 密封胶带 防水胶带 水胶布 角阀龙头 15米10卷装1949">赛拓（SANTO）生料带聚四氟乙烯 密封胶带 防水胶带 水胶布 角阀龙头 15米10卷装1949</a>
+                                                </div>
+                                                <div class="slide-price">
+                                                    <strong>¥25.80</strong>
+                                                </div>
+                                                <div class="slide-extra">
+                                                    <a href="">(已有<span>70767</span>人评价)</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <!-- 第二个 -->
+                                    <ul class="clearfix"  style="display: none;">
+                                        <li>
+                                            <div class="con-item">
+                                                <div class="slide-img">
+                                                    <a href=""><img src="img/myorder/guess-u-like-5.jpg" alt="" width="160" height="160"></a>
+                                                </div>
+                                                <div class="slide-name">
+                                                    <a href="" title="瑞恩钻饰 鹿角精灵系列 18K金钻石项链 一鹿有你钻石吊坠 人气单品">瑞恩钻饰 鹿角精灵系列 18K金钻石项链 一鹿有你钻石吊坠 人气单品</a>
+                                                </div>
+                                                <div class="slide-price">
+                                                    <strong>¥1199.00</strong>
+                                                </div>
+                                                <div class="slide-extra">
+                                                    <a href="">(已有<span>10</span>人评价)</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="con-item">
+                                                <div class="slide-img">
+                                                    <a href=""><img src="img/myorder/guess-u-like-6.jpg" alt="" width="160" height="160"></a>
+                                                </div>
+                                                <div class="slide-name">
+                                                    <a href="" title="西州蜜瓜25号哈密瓜 2粒装 单果1.25kg以上 新鲜水果">西州蜜瓜25号哈密瓜 2粒装 单果1.25kg以上 新鲜水果</a>
+                                                </div>
+                                                <div class="slide-price">
+                                                    <strong>¥49.90</strong>
+                                                </div>
+                                                <div class="slide-extra">
+                                                    <a href="">(已有<span>1344143</span>人评价)</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="con-item">
+                                                <div class="slide-img">
+                                                    <a href=""><img src="img/myorder/guess-u-like-7.jpg" alt="" width="160" height="160"></a>
+                                                </div>
+                                                <div class="slide-name">
+                                                    <a href="" title="优派 23.8英寸IPS窄边框显示器 爱眼不闪办公设计24寸显示器2k HDMI+DP显示器自营VX2478-smhd-2">优派 23.8英寸IPS窄边框显示器 爱眼不闪办公设计24寸显示器2k HDMI+DP显示器自营VX2478-smhd-2</a>
+                                                </div>
+                                                <div class="slide-price">
+                                                    <strong>¥949.00</strong>
+                                                </div>
+                                                <div class="slide-extra">
+                                                    <a href="">(已有<span>26913</span>人评价)</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="con-item">
+                                                <div class="slide-img">
+                                                    <a href=""><img src="img/myorder/guess-u-like-8.jpg" alt="" width="160" height="160"></a>
+                                                </div>
+                                                <div class="slide-name">
+                                                    <a href="" title="乐灵珠宝  黄金貔貅手链女3D硬金足金999本命年转运珠手镯石榴石皮丘手串XYGF054-1">乐灵珠宝  黄金貔貅手链女3D硬金足金999本命年转运珠手镯石榴石皮丘手串XYGF054-1</a>
+                                                </div>
+                                                <div class="slide-price">
+                                                    <strong>¥999.00</strong>
+                                                </div>
+                                                <div class="slide-extra">
+                                                    <a href="">(已有<span>955</span>人评价)</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <!-- 第三个 -->
+                                    <ul class="clearfix" style="display: none;">
+                                    <li>
+                                        <div class="con-item">
+                                            <div class="slide-img">
+                                                <a href=""><img src="img/myorder/guess-u-like-9.jpg" alt="" width="160" height="160"></a>
+                                            </div>
+                                            <div class="slide-name">
+                                                <a href="" title="华为平板M6电脑 10.8英寸 安卓平板电脑二合一4G通话手机 AI智能超薄2019新款ipad WiFi 4G+64G 银钻灰 原装手写笔">华为平板M6电脑 10.8英寸 安卓平板电脑二合一4G通话手机 AI智能超薄2019新款ipad WiFi 4G+64G 银钻灰 原装手写笔</a>
+                                            </div>
+                                            <div class="slide-price">
+                                                <strong>¥2568.00</strong>
+                                            </div>
+                                            <div class="slide-extra">
+                                                <a href="">(已有<span>1687</span>人评价)</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="con-item">
+                                            <div class="slide-img">
+                                                <a href=""><img src="img/myorder/guess-u-like-10.jpg" alt="" width="160" height="160"></a>
+                                            </div>
+                                            <div class="slide-name">
+                                                <a href="" title="越南进口红心火龙果 4个装 单果约330-420g 新鲜水果">越南进口红心火龙果 4个装 单果约330-420g 新鲜水果</a>
+                                            </div>
+                                            <div class="slide-price">
+                                                <strong>¥44.90</strong>
+                                            </div>
+                                            <div class="slide-extra">
+                                                <a href="">(已有<span>1832567</span>人评价)</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="con-item">
+                                            <div class="slide-img">
+                                                <a href=""><img src="img/myorder/guess-u-like-11.jpg" alt="" width="160" height="160"></a>
+                                            </div>
+                                            <div class="slide-name">
+                                                <a href="" title="奢蒂 999纯银手链女一鹿路有你时尚饰品学生刻字月光石情侣首饰套装生日礼物送女友 一鹿有你手链（镶蓝锆）">奢蒂 999纯银手链女一鹿路有你时尚饰品学生刻字月光石情侣首饰套装生日礼物送女友 一鹿有你手链（镶蓝锆）</a>
+                                            </div>
+                                            <div class="slide-price">
+                                                <strong>¥208.00</strong>
+                                            </div>
+                                            <div class="slide-extra">
+                                                <a href="">(已有<span>38</span>人评价)</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="con-item">
+                                            <div class="slide-img">
+                                                <a href=""><img src="img/myorder/guess-u-like-12.jpg" alt="" width="160" height="160"></a>
+                                            </div>
+                                            <div class="slide-name">
+                                                <a href="" title="澳大利亚直采鲜橙 精品澳橙12粒 单果130-180g 水果生鲜进口橙子">澳大利亚直采鲜橙 精品澳橙12粒 单果130-180g 水果生鲜进口橙子</a>
+                                            </div>
+                                            <div class="slide-price">
+                                                <strong>¥59.90</strong>
+                                            </div>
+                                            <div class="slide-extra">
+                                                <a href="">(已有<span>1265788</span>人评价)</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="main pic">
+                            <div class="daily-second" style="margin-bottom: 10px;">
+                                <div>
+                                    <a href=""><img src="img/myorder/good-food.jpg" alt="" width="849" height="100"></a>
+                                </div>
+                            </div>
+                            <div class="daily-sport">
+                                <div>
+                                    <a href=""><img src="img/myorder/health.jpg" alt="" width="849" height="100"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 楼层导航 -->
+                <div class="slidebar">
+                    <div class="dd">
+                        <ul>
+                            <li>
+                                <div class="service">
+                                    <a href="#">
+                                        <i>特色 服务</i>
+                                        <b>▶</b>
+                                    </a>
+                                </div>
+                                <div class="defi">
+                                    <a href="#">宽带</a>
+                                    <a href="#">我的旅行订单</a>
+                                    <a href="#">夺宝箱</a>
+                                    <a href="#">我的定期送</a>
+                                    <a href="#">我的竞拍保证金</a>
+                                    <a href="#">京东白条</a>
+                                    <a href="#">京东回收</a>
+                                    <a href="#">装机大师</a>
+                                    <a href="#">黄金托管业务</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="service">
+                                    <a href="#">
+                                        <i>我要 反馈</i>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="back_to_top">
+                                <div class="service ee">
+                                    <a href="#">
+                                        <i class="fa fa-angle-up  fa-lg"></i>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <!-- <footer>
+    <footer>
         <div class="service">
             <div class="service_inner">
                 <ul>
@@ -270,8 +1118,10 @@
                 </p>
             </div>
         </div>
-    </footer> -->
+    </footer>
 </body>
 </html>
 <script src="js/jquery-3.2.1.min.js"></script>
-<script src=""></script>
+<script src="js/velocity.min.js"></script>
+<script src="js/myjs.js"></script>
+<script src="js/myorder.js"></script>

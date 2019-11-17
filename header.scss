@@ -1,0 +1,143 @@
+header {
+    height: 180px;
+    border-bottom: 1px #dddddd solid;
+}
+#head-top {
+    height: 31px;
+    background-color: #e3e4e5;
+    border-bottom: 1px #dddddd solid;
+}
+#head-top nav {
+    height: 30px;
+    width: 990px;
+    margin: 0 auto;
+}
+#head-top nav .left {
+    width: 58px;
+    height: 100%;
+    float: left;
+}
+#head-top nav .left .place {
+    width: 100%;
+    height: 100%;
+}
+
+/* 显示地区 */
+#hidden-area {
+    width: 300px;
+    height: 365px;
+    border:1px #cccccc solid;
+    position: absolute;
+    top: 31px;
+    z-index: 20;
+    background-color: #fff;
+    display: none;
+}
+#hidden-area ul {
+    overflow: hidden;
+}
+#hidden-area ul li {
+    float: left;
+}
+#hidden-area ul li a {
+    display: block;
+    width: 47px;
+    height: 20px;
+    color: #acacac;
+    margin: 3px 6px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+}
+#hidden-area ul li a.selected {
+    background-color: #f10215;
+    color: #fff;
+}
+#hidden-area ul li a:not(.selected):hover {
+    background-color: #f4f4f4;
+    color: #f10215;
+}
+#hidden-area hr {
+    width: 200px;
+    border: 0.5px #eeeeee dotted;
+}
+#hidden-area .special {
+    width: 100%;
+    height: 60px;
+}
+#hidden-area .special h5, #hidden-area .special a {
+    color: #acacac;
+    font-size: 12px;
+    font-weight: normal;
+    margin: 10px 6px;
+}
+#hidden-area .special a:hover, #hidden-area .foreign a:hover {
+    color: #f10215;
+}
+#hidden-area .foreign {
+    width: 100%;
+    height: 100px;
+    margin: 10px 6px;
+}
+#hidden-area .foreign  ol {
+    overflow: hidden;
+}
+#hidden-area .foreign ol li {
+    float: left;
+    margin: 3px 5px;
+}
+#hidden-area .foreign ol li i {
+    color: #f10215;
+}
+#hidden-area .foreign h5 , #hidden-area .foreign  ol li a {
+    color: #acacac;
+    font-size: 12px;
+    font-weight: normal;
+    margin: 10px 6px;
+}
+#area {
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+    color: #999999;
+    text-align: center;
+    line-height: 30px;
+}
+#area:hover {
+    color: #f10215;
+}
+#head-top nav .right {
+    height: 100%;
+    text-align: center;
+    line-height: 30px;
+    float: right;
+}
+#head-top nav .right>li {
+    float: left;
+    font-size: 13px;
+    cursor: pointer;
+}
+#head-top nav .right .menu {
+    margin-right: 8px;
+    z-index: 20;
+    color: #999;
+}
+#head-top nav .right .menu {
+    margin-left: 8px;
+}
+#head-top nav .right .welcome .link-login {
+    color: #999;
+}
+#head-top nav .right .welcome .link-login:hover, #head-top nav .right .red:hover {
+    color: #f10215
+}
+#head-top nav .right .welcome .link-register, #head-top nav .right .qiye {
+    color: #f10215;
+}
+.spacer {
+    overflow: hidden;
+    margin: 11px 5px 0;
+    width: 1px;
+    height: 10px;
+    background-color: #ccc;
+}

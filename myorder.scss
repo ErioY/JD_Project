@@ -1,52 +1,1404 @@
+.w {
+    width: 990px;
+    margin: 0 auto;
+}
 header {
-    width: 100%;
-    height: 30px;
-    line-height: 30px;
-    background: #e3e4e5;
-    border-bottom: solid 1px #ddd;
-    .content {
-        color: #999;
-        background: #e3e4e5;
-        overflow: hidden;
-        .fl {
-            float: left;
-            width: 152px;
-            height: 30px;
-            overflow: hidden;
-            li {
+    height: 101px;
+    .head-top {
+        height: 31px;
+    }
+    .head-bottom {
+        height: 80px;
+        position: relative;
+        background-color: #e2231a;
+        .w {
+            background-color: #e2231a;
+            height: 100%;
+            .logo {
+                position: relative;
                 float: left;
-                height: 100%;
-                padding: 0 2px;
-                i {
-                    position: relative;
-                    display: inline;
-                    font-size: 16px;
-                    color: #5c5452;
-                    padding-right: 5px;
+                width: 272px;
+                height: 80px;
+                overflow: hidden;
+                a {
+                    color: #fff;
+                }
+                .dog {
+                    float: left;
+                    margin-right: 10px;
+                    width: 158px;
+                    height: 80px;
+                    background: url(../img/logo2.jpg) no-repeat;
+                    background-size: 158px 80px;
+                }
+                ._self {
+                    float: left;
+                    font-size: 20px;
+                    font-family: "Microsoft YaHei";
+                    margin: 20px 0 0 6px;
+                    height: 22px;
+                }
+                ._blank {
+                    margin: 5px 0 0;
+                    color: #ffb2b2;
+                    border: 1px solid #ffb2b2;
+                    height: 20px;
+                    line-height: 18px;
+                    padding: 0 10px;
+                    border-radius: 10px;
+                    position: absolute;
+                    right: 10px;
+                    bottom: 13px;
+                }
+                ._blank:hover {
+                    background-color: #fff;
+                    color: #e2231a;
+                }
+            }
+            .nav {
+                float: left;
+                height: 36px;
+                width: 342px;
+                line-height: 36px;
+                padding: 22px 0;
+                margin: 0 0 0 30px;
+                font-size: 14px;
+                li {
+                    float: left;
+                    margin: 0 20px 0 0;
+                    cursor: pointer;
                 }
                 a {
-                    color: #999;
+                    color: #fff;
+                    position: relative;
+                    font-weight: 540;
+                }
+                ul {
+                    display: block;
+                }
+                .dl .dt {
+                    span {
+                        color: #fff;
+                    }
+                    i {
+                        display: inline-block;
+                        width: 9px;
+                        height: 6px;
+                        color: #fff;
+                        margin-left: 5px;
+                        transition: transform .2s ease-in 0s,-webkit-transform .2s ease-in 0s;
+                    }
+                }
+                .dd {
+                    z-index: 3;
+                    position: absolute;
+                    top: 34px;
+                    left: 0;
+                    display: none;
+                    background-color: #fff;
+                    border: 1px solid #ddd;
+                    border-top: 0;
+                    font-size: 12px;
+                    a {
+                        display: block;
+                        width: 88px;
+                        padding: 0 0 0 16px;
+                        line-height: 30px;
+                    }
+                }
+                .dl:hover {
+                    background-color: #fff;
+                    
+                }
+                .dl:hover span, .dl:hover i {
+                    color: #333;
+                }
+                .fore_1:hover a, .fore_4:hover a {
+                    text-decoration: underline;
+                }
+                .fore_2 {
+                    margin: 0;
+                    width: 106px;
+                    height: 36px;
+                    .dl {
+                        position: relative;
+                        width: 90px;;
+                        height: 100%;
+                        .dt {
+                            position: relative;
+                            white-space: nowrap;
+                            height: 100%;
+                            width: 100%;
+                            line-height: 18px;
+                            padding: 9px 16px;
+                        }
+                    }
+                    
+                }
+                .fore_3 {
+                    margin-right: 5px;
+                    width: 88px;
+                    height: 36px;
+                    .myjd {
+                        position: relative;
+                        .dt {
+                            width: 100%;
+                            white-space: nowrap;
+                            height: 100%;
+                            line-height: 18px;
+                            padding: 9px 16px;
+                        }
+                    }
+                }
+                .dl:hover .dd {
+                    display: block;
+                }
+                .dd>a:hover {
+                    background-color: #f5f5f5;
+                }
+                .dd>a:hover span {
+                    color: #e2231a;
+                }
+
+            }
+            .rbtn {
+                float: right;
+                width: 340px;
+                margin-right: 5px;
+                #search {
+                    width: 186px;
+                    position: relative;
+                    z-index: 11;
+                    float: left;
+                    margin-top: 25px;
+                    .result {
+                        ul {
+                            width: 338px;
+                            top: 32px;
+                            overflow: hidden;
+                            position: absolute;
+                            left: 0;
+                            border: 1px solid #CCC;
+                            background: #fff;
+                        }
+                    }
+                    .form {
+                        width: auto;
+                        height: 36px;
+                        input {
+                            width: 120px;
+                            border: 0;
+                            float: left;
+                            line-height: 24px;
+                            color: #666;
+                            padding: 4px;
+                            margin-bottom: 4px;
+                            border-style: solid;
+                            outline: 0;
+                            font-size: 14px;
+                            font-family: "microsoft yahei";
+                        }
+                        button {
+                            width: 56px;
+                            font-size: 12px;
+                            height: 32px;
+                            text-align: center;
+                            color: #333;
+                            background-color: #f7f7f7;
+                            float: left;
+                            border: none;
+                            border-radius: 0;
+                            line-height: 1;
+                            font-family: "Microsoft YaHei";
+                            cursor: pointer;
+                        }
+                    }
+                }
+                #settleup {
+                    float: right;
+                    margin-right: 0;
+                    z-index: 11;
+                    height: 36px;
+                    margin-top: 25px;
+                    position: relative;
+                    .icon {
+                        width: 141px;
+                        height: 32px;
+                        border: 1px solid #fff;
+                        padding: 0 28px 0 36px;
+                        background: #F9F9F9;
+                        text-align: center;
+                        line-height: 34px;
+                        position: relative;
+                        zoom: 1;
+                        .i_left {
+                            display: block;
+                            position: absolute;
+                            overflow: hidden;
+                            top: 7px;
+                            left: 18px;
+                            width: 18px;
+                            height: 16px;
+                            background: url("../img/shoppingcar.png") no-repeat;
+                        }
+                        .i_right {
+                            display: block;position: absolute;
+                            top: 9px;
+                            right: 10px;
+                            width: 7px;
+                            height: 13px;
+                            overflow: hidden;
+                            color: #999;
+                        }
+                        .count {
+                            position: absolute;
+                            top: -4px;
+                            left: 104px;
+                            display: inline-block;
+                            padding: 1px 2px;
+                            font-size: 12px;
+                            line-height: 12px;
+                            color: #fff;
+                            background-color: #c81623;
+                            border-radius: 7px 7px 7px 0;
+                            min-width: 12px;
+                            text-align: center;
+                            overflow: hidden;
+                        }
+                        a {
+                            color: #666;
+                        }
+                        a:hover {
+                            color: #c81623;
+                        }
+                    }
+                    .dropdown {
+                        top: 31px;
+                        display: none;
+                        position: absolute;
+                        display: none;
+                        right: 0;
+                        width: 310px;
+                        height: 71px;
+                        background: #fff;
+                        border: 1px solid #ddd;
+                        box-shadow: 0 0 5px rgba(0,0,0,.2);
+                        .prompt {
+                            padding: 5px 2px;
+                            height: 69px;
+                            .nogoods {
+                                padding-left: 30px;
+                                height: 49px;
+                                line-height: 49px;
+                                overflow: hidden;
+                                color: #999;
+                                b {
+                                    float: left;
+                                    width: 56px;
+                                    height: 49px;
+                                    background-image: url(../img/shopping-car-2.png);
+                                    background-size: 56px 49px;
+                                }
+                            }
+                        }
+                    }
+                }
+                #settleup:hover .dropdown {
+                    display: block;
                 }
             }
         }
-        .fr {
-            float: right;
+    }
+    .w {
+        width: 990px;
+        margin: 0 auto;
+    }
+}
+section {
+    // overflow: hidden;
+    background-color: #f5f5f5;
+    #container {
+        .w {
+            background-color: #f5f5f5;
             overflow: hidden;
-            li {
-                float: right;
-            }
-            .spacer {
-                width: 1px;
-                height: 12px;
-                margin-top: 9px;
-                padding: 0;
-                background: #ccc;
+            .content {
+                padding-left: 120px;
+                padding-top: 20px;
+                display: block;
+                overflow: hidden;
+                .left {
+                    float: left;
+                    width: 120px;
+                    position: relative;
+                    left: -120px;
+                    #menu {
+                        width: 100px;
+                        padding-left: 10px;
+                        dl {
+                            padding-bottom: 15px;
+                            display: block;
+                            dt {
+                                height: 28px;
+                                line-height: 28px;
+                                color: #333;
+                                font-weight: 700;
+                                display: block;
+                            }
+                            dd {
+                                
+                            width: 100px;
+                                height: 24px;
+                                line-height: 24px;
+                                display: block;
+                                margin-left: 0;
+                            }
+                            dd a {
+                                color: #666;
+                            }
+                            .order a {
+                                color: #e4393c;
+                                font-weight: 700;
+                            }
+                            dd:hover a {
+                                color: #e4393c;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                    #ads {
+                        width: 90px;
+                        margin-left: 10px;
+                        overflow: hidden;
+                        a {
+                            display: inline-block;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+                .right {
+                    float: left;
+                    width: 99.9%;
+                    margin-left: -120px;
+                    overflow: hidden;
+                    .top {
+                        margin-bottom: 10px;
+                    }
+                    .order_title {
+                        .mt {
+                            padding: 10px 0 0;
+                            
+                        }
+                    }
+                    .main {
+                        background-color: #fff;margin-bottom: 20px;
+                        .mt {
+                            h3 {
+                                float: left;
+                            }
+                            .extra-search {
+                                float: right;
+                                .search {
+                                    position: relative;
+                                    top: -3px;
+                                    input {
+                                        float: left;
+                                        width: 170px;
+                                        height: 23px;
+                                        line-height: 23px;
+                                        margin-top: 4px;
+                                        border: 1px solid #ccc;
+                                    }
+                                    a {
+                                        position: relative;
+                                        float: left;
+                                        width: 52px;
+                                        height: 23px;
+                                        line-height: 23px;
+                                        overflow: hidden;
+                                        border: 1px solid #ddd;
+                                        border-left: 0;
+                                        text-align: center;
+                                        background-color: #f7f7f7;
+                                        margin-top: 4px;
+                                        i {
+                                            color: #999999;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        ul {
+                            float: left;
+                            li {
+                                float: left;
+                                padding-right: 15px;
+                                a {
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    color: #333;
+                                    padding-bottom: 2px;
+                                }
+                            }
+                            li:hover a, li:hover strong {
+                                color: #e4393c;
+                            }
+                            .fore_1 {
+                                padding-right: 20px;
+                            }
+                            .fore_2 {
+                                position: relative;
+                                border-left: 1px dotted #ddd;
+                                padding: 0 15px;
+                            }
+                            .point {
+                                a {
+                                    padding-bottom: 0;
+                                    color: #e4393c;
+                                    border-bottom: 2px solid #e4393c;
+                                    font-weight: 700;
+                                    cursor: pointer;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                        .mc {
+                            overflow: visible;
+                            nav {
+                                width: 100%;
+                                border-collapse: collapse;
+                                li.title {
+                                    float: left;
+                                    background-color: #f5f5f5;
+                                    height: 32px;
+                                    color: #666;
+                                    line-height: 32px;
+                                    text-align: center;
+                                    font-weight: 400;
+                                    cursor: pointer;
+                                    .order-time {
+                                        position: relative;
+                                        float: left;
+                                        z-index: 10;
+                                        width: 138px;
+                                        cursor: pointer;
+                                        .time-txt {
+                                            position: relative;
+                                            height: 30px;
+                                            line-height: 30px;
+                                            text-align: left;
+                                            padding-left: 20px;
+                                            padding-right: 12px;
+                                            border: 1px solid #f5f5f5;
+                                            color: #666;
+                                            i {
+                                                position: absolute;
+                                                width: 7px;
+                                                height: 4px;
+                                                right: 18px;
+                                                top: 8px;
+                                                vertical-align: middle;
+                                            }
+                                            .blank {
+                                                display: block;
+                                                position: absolute;
+                                                height: 10px;
+                                                width: 136px;
+                                                top: 21px;
+                                                left: 0;
+                                                background: #fff;
+                                            }
+                                        }
+                                        // .time-txt:hover i {
+                                        //     transform: rotate(180deg);
+                                        //     transition: transform .8s linear;
+                                        // }
+                                       .time-list {
+                                            position: absolute;
+    left: 0;
+    top: 30px;
+    z-index: 2;
+    display: none;
+    width: 136px;
+    background-color: #fff;
+    border: 1px solid #f5f5f5;
+    border-top: 0;
+    li.list {
+        width: 136px;
+        height: 30px;
+        line-height: 30px;
+        text-align: left;
+        a {
+            display: block;
+            position: relative;
+            color: #666;
+            width: 136px;
+            height: 30px;
+            line-height: 30px;
+            padding-left: 20px;
+
+            b {
+                display: block;
+                position: absolute;
+                left: 5px;
+                top: 10px;
+                width: 10px;
+                height: 7px;
                 overflow: hidden;
             }
         }
     }
-}
-.content {
-    width: 990px;
-    margin: 0 auto;
+    li.list:hover {
+        background-color: #f5f5f5;
+        
+    }
+    li.list:hover a {
+        color: #e4393c;
+    }
+                                        }
+                                    }
+                                    .order-detail {
+                                        display: inline-block;vertical-align: middle;
+                                        color:#666;
+                                    }
+                                }
+                                li.first {
+                                    width: 393px;
+                                }
+                                li.second {
+                                    width: 105px;
+                                    .total-state {
+                                        position: relative;
+                                        z-index: 10;
+                                        width: 98px;
+                                        cursor: pointer;
+                                        .state-txt {
+                                            color: #666;
+                                            position: relative;
+                                            height: 30px;
+                                            line-height: 30px;
+                                            text-align: left;
+                                            padding-left: 20px;
+                                            padding-right: 12px;
+                                            border: 1px solid #f5f5f5;
+                                            i {
+                                                color:#666;
+                                                position: absolute;
+                                            width: 7px;
+                                            height: 4px;
+                                            right: 8px;
+                                            top: 8px;
+                                            vertical-align: middle;
+                                            }
+                                        }
+                                        .state-list {
+                                            position: absolute;
+                                            left: 0;
+                                            top: 30px;
+                                            z-index: 2;
+                                            display: none;
+                                            width: 96px;
+                                            background: #fff;
+                                            border: 1px solid #f5f5f5;
+                                            border-top: 0;
+                                            li {
+                                                width: 96px;
+                                                height: 30px;
+                                                line-height: 30px;
+                                                text-align: left;
+                                                a {
+                                                    display: block;
+                                                    position: relative;
+                                                    color: #666;
+                                                    height: 30px;
+                                                    line-height: 30px;
+                                                    padding-left: 20px;
+                                                    i {
+                                                        display: block;
+                                                        position: absolute;
+                                                        left: 5px;
+                                                        top: 10px;
+                                                        width: 10px;
+                                                        height: 7px;
+                                                        color: #e4393c;
+                                                    }
+                                                }
+                                                
+                                            }
+                                            li.curr a {
+                                                color: #e4393c;
+                                            }
+                                            li:hover {
+                                                background-color: #f5f5f5;
+                                            }
+                                            li:hover a {
+                                                color: #e4393c;
+                                            }
+                                            li:not(.curr) i {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                }
+                                li.third {
+                                    width: 118px;
+                                }
+                            }
+                            .order {
+                                height: 149px;
+                                .row {
+                                    height: 20px;
+                                }
+                                .contentall {
+                                    border: 1px solid #e5e5e5;
+                                }
+
+                                #date {
+                                    background: #f5f5f5;
+                                    height: 31px;
+                                    line-height: 31px;
+                                    color: #aaa;
+                                    overflow: hidden;
+                                    span {
+                                        float: left;
+                                        height: 18px;
+                                        line-height: 18px;
+                                        padding: 2px 0 0;
+                                        margin-top: 4px;
+                                    }
+                                    .dealtime {
+                                        color: #aaa;
+                                        margin-right: 30px;
+                                        
+                                        font-family: verdana;
+                                    }
+                                    .number {
+                                        color: #aaa;
+                                        width: 226px;font-family: verdana;
+                                        a {
+                                            color: #333;
+                                        }
+                                        a:hover {
+                                            color: #e4393c;
+                                        }
+                                    }
+                                    .operate {
+                                        float: right;
+                                        position: relative;
+                                        margin-right: 15px;
+                                        width: 387px;
+                                        height: 23px;
+                                    }
+                                    .order-shop {
+                                        width: 261px;
+                                        .shop-txt {
+                                            display: inline-block;
+                                            vertical-align: middle;
+                                            max-width: 124px;
+                                            overflow: hidden;
+                                            margin: 0;
+                                            margin-top: -2px;
+                                            white-space: nowrap;
+                                            text-overflow: ellipsis;
+                                            color: #aaa;
+                                        }
+                                        a {
+                                            i {
+                                                display: inline-block;
+                                                width: 16px;
+                                                height: 16px;
+                                                margin: 2px 0 0 5px;
+                                                overflow: hidden;
+                                                color: #5490ff;
+                                            }
+                                        }
+                                    }
+                                    .del {
+                                        display: none;
+                                        i {
+                                            position: absolute;
+                                            right: 0;
+                                            top: 8px;
+                                            /* display: none; */
+                                            width: 13px;
+                                            height: 13px;
+                                            color: #aaa;
+                                            overflow: hidden;
+                                            vertical-align: middle;
+                                        }
+                                    }
+                                    .del:hover i {
+                                        color: #e4393c;
+                                    }
+                                    div.contentall {
+                                        height: 31px;
+                                        border-bottom-color: #f5f5f5;
+                                        .gap {
+                                            width: 14px;
+                                        }
+                                    }
+                                }
+                                #goods {
+                                    
+                                    text-align: center;vertical-align: top;
+                                    li {
+                                        position: relative;
+                                        float: left;
+                                        height: 93px;
+                                        border: 1px solid #e5e5e5;
+                                        border-top: 0;
+                                        padding: 14px 0;
+                                        .goods-item {
+                                            float: left;
+                                            width: 255px;
+                                            margin-right: 10px;
+                                            .p-img {
+                                                float: left;
+                                                width: 60px;
+                                                height: 60px;
+                                                border: 1px solid #efefef;
+                                                margin: 0 14px;
+                                            }
+                                            .p-msg {
+                                                float: left;width: 160px;
+                                                .p-name {
+                                                    height: 51px;
+                                                    line-height: 18px;
+                                                    overflow: hidden;
+                                                    color: #333;
+                                                    text-align: left;
+                                                    a {
+                                                        display: inline-block;
+                                                        height: 68px;
+                                                        color: #333;
+                                                    }
+                                                    a:hover {
+                                                        color: #e4393c;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .goods-number {
+                                            float: left;
+                                            width: 40px;
+                                            text-align: left;
+                                            color: #aaa;
+                                            font-family: verdana;
+                                        }
+                                        .goods-repair {
+                                            float: right;
+                                            width: 84px;
+                                            text-align: center;
+                                            a {
+                                                color: #666;
+                                            }
+                                            a:hover {
+                                                color: #e4393c;
+                                            }
+                                        }
+                                        .consignee {
+                                            position: relative;
+                                            width: 100px;
+                                            margin: 0 auto;
+                                            z-index: 2;
+                                            cursor: pointer;
+                                            span.txt {
+                                                color: #333;
+                                            }
+                                            i {
+                                                display: inline-block;
+                                                width: 14px;
+                                                height: 16px;
+                                                vertical-align: middle;
+                                                margin: 0 0 0 5px;
+                                                color: #aaa;
+                                            }
+                                        }
+                                        .all-msg {
+                                            display: none;
+                                            position: absolute;
+                                            width: 220px;
+                                            right: 90px;
+                                            top: 18px;
+                                            padding: 15px 20px;
+                                            // display: none;
+                                            color: #666;
+                                            line-height: 22px;
+                                            border: 1px solid #ddd;
+                                            background: #fff;
+                                            box-shadow: 0 0 2px 2px #eee;
+                                            border-radius: 1px;
+                                            .pc {
+                                                min-height: 0;
+                                                text-align: left;
+                                                strong {
+                                                    color: #666;
+                                                }
+                                                p {
+                                                    color: #666;
+                                                }
+                                            }
+                                            .add {
+                                                position: absolute;
+                                                right: -32px;
+                                                top: 25px;
+                                                width: 8px;
+                                                height: 16px;
+                                                background-color: #fff;
+                                                // box-shadow: 0 0 2px 2px #eee;
+                                                // border-radius: 1px;
+                                                border-top: 8px rgba(0,0,0,0) solid;
+                                                border-bottom: 8px rgba(167, 47, 47,0) solid;
+                                                border-left: 16px rgb(236, 235, 235) solid;
+                                                border-right: 16px rgba(42, 202, 64,0) solid;
+                                            }
+                                        }
+                                        .consignee:hover .all-msg {
+                                            display: block;
+                                        }
+                                        .amount {
+                                            p {
+                                                color: #AAA;
+                                            }
+                                            span {
+                                                color: #AAA;
+                                            }
+                                            .online-pay {
+                                                display: block;
+                                                margin: 0 8px;
+                                                margin-top: 5px;
+                                                padding-top: 1px;
+                                                border-top: solid 1px #E5E5E5;
+                                                line-height: 19px;
+                                                height: 19px;
+                                                overflow: hidden;
+                                            }
+
+                                        }
+                                        .status {
+                                            position: relative;
+                                            z-index: 5;
+                                            color: #333;
+                                            line-height: 22px;
+                                            span {
+                                                color: #aaa;
+                                            }
+                                            .jd-dou {
+                                                color: #e4393c;
+                                                span {
+                                                    color: #e4393c;
+                                                }
+                                                i {
+                                                    display: inline-block;
+                                                    width: 18px;
+                                                    height: 18px;
+                                                    margin: -6px 3px 0 0;
+                                                    overflow: hidden;
+                                                    vertical-align: middle;
+                                                    img {
+                                                        margin-top: -5px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        a.choose-service {
+                                            color: #666;
+                                        }
+                                        a:hover {
+                                            color: #e4393c;
+                                        }
+                                        .operate {
+                                            line-height: 22px;
+                                            a {
+                                                color: #666;
+                                            }
+                                            a:hover, a:hover i {
+                                                color: #e4393c;
+                                            }
+                                            .btn-buynow {
+                                                display: inline-block;
+                                                padding: 2px 0 3px;
+                                                background: #f5f5f5;
+                                                border: 1px solid #ddd;
+                                                color: #333;
+                                                border-radius: 2px;
+                                                width: 85px;
+                                                text-align: center;
+                                                i {
+                                                    display: inline-block;
+                                                    vertical-align: middle;
+                                                    width: 12px;
+                                                    height: 17px;
+                                                    color: rgb(201, 197, 197);
+                                                    margin-right: 5px;
+                                                    margin-top: 2px;
+                                                }
+                                            }
+                                            .btn-buynow:hover {
+                                                border: 1px solid #e4393c;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .order:hover #date .del {
+                                display: block;
+                            }
+                            .btn-paging {
+                                height: 28px;
+                                margin-top: 20px;
+                                .pagin {
+                                    width: 192px;
+                                    float: right;
+                                    span {
+                                        float: left;
+                                        color: #ccc;
+                                        // height: 20px;
+                                        padding: 3px 10px;
+                                        border: 1px solid #ccc;
+                                        margin-left: 2px;
+                                        font-family: arial;
+                                        // line-height: 20px;
+                                        font-size: 14px;
+                                        overflow: hidden;
+                                        cursor: pointer;
+                                        -moz-border-radius: 5px;
+                                        -webkit-border-radius: 5px;
+                                        position: relative;
+                                        i {
+                                            display: inline-block;
+                                            width: 7px;
+                                            height: 13px;
+                                            vertical-align: middle;
+                                            color: #ccc;
+                                            position: absolute;
+                                            top: 7px;
+                                        }
+                                    }
+                                    .prev-disabled {
+                                        i {
+                                            margin-right: 5px;
+                                            left: 2px;
+                                        }
+                                    }
+                                    .current {
+                                        float: left;
+                                        display: block;
+                                        height: 28px;
+                                        padding: 3px 10px;
+                                        border: 1px solid #ccc;
+                                        margin-left: 2px;
+                                        font-family: arial;
+                                        line-height: 20px;
+                                        font-size: 14px;
+                                        overflow: hidden;
+                                        border: 0;
+                                        padding: 4px 11px;
+                                        color: #f60;
+                                        font-weight: 700;
+                                        -moz-border-radius: 5px;
+                                        -webkit-border-radius: 5px;
+                                    }
+                                    .current:hover {
+                                        background-color: #005aa0;
+                                        color: #fff;
+                                    }
+                                    .next-disabled {
+                                        i {
+                                            margin-left: 5px;
+                                            right: 2px;
+                                        }
+                                    }
+                                }
+                                .prev-disabled {
+                                    padding-left: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .common {
+                    padding: 10px 20px 20px;
+                    h3 {
+                        font-size: 12px;
+                        color: #666;
+                        font-family: '\5b8b\4f53';
+                        line-height: 18px;        
+                    }
+                    .mc {
+                        line-height: 20px;
+                    }
+                    .mt {
+                        padding: 10px 0;
+                    }
+                }
+                .order-bottom {
+                    position: relative;
+                }
+                .wtb {
+                    margin-bottom: 20px;
+                    position: relative;
+                    .buy-main {
+                        width: 869px;
+                        background-color: #fff;
+                        .buy-show {
+                            margin-left: 0;
+                            .buy-cont {
+                                padding: 20px 17px;
+                                overflow: hidden;
+                                .buy-list {
+                                    width: 828px;
+                                    height: 313px;
+                                    float: left;
+                                    .buy-title {
+                                        margin-bottom: 10px;height: 20px;
+                                        overflow: hidden;
+                                        h3 {
+                                            float: left;
+                                            color: #666;
+                                        }
+                                        a {
+                                            float:right;
+                                            color: #666;
+                                            margin-right: 0;
+                                        }
+                                        a:hover {
+                                            color: #e2231a;
+                                        }
+                                    }
+                                    .buy-item {
+                                        width: 262px;
+                                        float: left;
+                                        margin-right: 20px;
+                                        border: 1px solid #f1f1f1;
+                                        .item-inner {
+                                            width: 224px;
+                                            padding-left: 20px;
+                                            padding-right: 18px;
+                                            a {
+                                                color: #666;
+                                            }
+                                            .item-name {
+                                                width: 100%;
+                                                height: 22px;
+                                                margin-top: 15px;
+                                                margin-bottom: 3px;
+                                                text-align: center;
+                                                overflow: hidden;
+                                                text-overflow: ellipsis;
+                                                white-space: nowrap;
+                                                a {
+                                                    font: 700 16px/22px "Microsoft YaHei";
+                                                }
+                                            }
+                                            .item-ti {
+                                                width: 100%;
+                                                height: 24px;
+                                                margin-bottom: 10px;
+                                                overflow: hidden;
+                                                text-align: center;
+                                                a {
+                                                    height: 24px;
+                                                    em {
+                                                        display: inline-block;
+                                                        height: 24px;
+                                                        font: 12px/24px "Microsoft YaHei";
+                                                        color: #e4393c;
+                                                    }
+                                                }
+                                            }
+                                            .item-goods {
+                                                width: 224px;
+                                                height: 162px;
+                                                overflow: hidden;
+                                                .goods-cover {
+                                                    float: left;
+                                                    width: 155px;
+                                                    height: 155px;
+                                                    border: 1px solid #f1f1f1;
+                                                    overflow: hidden;
+                                                }
+                                                .goods-list {
+                                                    float: left;
+                                                    position: relative;
+                                                    width: 52px;
+                                                    height: 157px;
+                                                    .goods-ul {
+                                                        width: 100%;
+                                                        height: 157px;
+                                                        overflow: hidden;
+                                                        .goods-li {
+                                                            float: left;
+                                                            width: 52px;
+                                                            height: 52px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            .item-info {
+                                                width: 224px;
+                                                height: 32px;
+                                                margin-top: 5px;
+                                                margin-bottom: 7px;
+                                                overflow: hidden;
+                                                text-align: center;
+                                                .info {
+                                                    height: 32px;
+                                                    position: relative;
+                                                    padding-left: 2px;
+                                                    padding-right: 5px;
+                                                    i {
+                                                        width: 28px;
+                                                        height: 28px;
+                                                        line-height: 28px;
+                                                        margin-right: 5px;
+                                                        display: inline-block;
+                                                        position: relative;
+                                                        vertical-align: middle;
+                                                        color: #8a8a8a;
+                                                        border-radius: 50%;
+                                                        background-color: #f1f1f1;
+                                                        transition: all .4s ease;
+                                                        -webkit-transition: all .4s ease;
+                                                        -moz-transition: all .4s ease;
+                                                    }
+                                                    .sum {
+                                                        display: inline;margin-left: 5px;
+                                                    }
+                                                    .btn-follow {
+                                                        overflow: hidden;
+                                                        white-space: nowrap;
+                                                        text-overflow: ellipsis;
+                                                        float: left;
+                                                        margin: 2px 0;
+                                                        color: #333;
+                                                    }
+                                                    .gap {
+                                                        width: 1px;
+                                                        height: 32px;
+                                                        border-left: 1px solid #f1f1f1;
+                                                        position: absolute;
+                                                        left: 50%;
+                                                    }
+                                                    .btn-like {
+                                                        overflow: hidden;
+                                                        white-space: nowrap;
+                                                        text-overflow: ellipsis;
+                                                        float: right;
+                                                        margin: 2px 0;
+                                                        color: #333;
+                                                    }
+                                                    .btn-follow:hover i, .btn-like:hover i {
+                                                        background-color: #e2231a;
+                                                        color: #fff;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .buy-item:nth-last-of-type(1) {
+                                        margin-right: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                #guessing-liked {
+                    overflow: hidden;
+                    .mt {
+                        height: 50px;
+                        overflow: hidden;
+                        .small-btn {
+                            float: right;
+                            .btn-items {
+                                a {
+                                    display: inline-block;
+                                    width: 24px;
+                                    height: 24px;
+                                    line-height: 24px;
+                                    text-align: center;
+                                    overflow: hidden;
+                                    margin-left: 5px;
+                                    border-radius: 15px;
+                                    border: 1px solid #ddd;
+                                    color: #333;
+                                }
+                                a.point {
+                                    background: #e4393c;
+                                    border-color: #e4393c;
+                                    color: #fff;
+                                    font-weight: 700;
+                                }
+                            }
+                        }
+                    }
+                    .mc {
+                        .goods-slide {
+                            overflow: hidden;
+                            ul {
+                                width: 100%;
+                                overflow: hidden;
+                                li {
+                                    float: left;
+                                    width: 200px;
+                                    padding: 0 20px;
+                                    height: 251px;
+                                    margin-bottom: 20px;
+                                    a {
+                                        color: #666;
+                                    }
+                                    .con-item {
+                                        width: 160px;
+                                        line-height: 20px;
+                                        position: relative;
+                                        .slide-img {
+                                            width: 100%;
+                                            overflow: hidden;
+                                            img {
+                                                transition: opacity .4s ease;
+                                                -webkit-transition: opacity .4s ease;
+                                                -moz-transition: opacity .4s ease;
+                                            }
+                                        }
+                                        .slide-img:hover img {
+                                            opacity: 0.8;
+                                        }
+                                        .slide-name {
+                                            width: 100%;
+                                            height: 40px;
+                                            overflow: hidden;
+                                            margin-bottom: 5px;
+                                        }
+                                        .slide-name:hover a {
+                                            color: #e4393c;
+                                        }
+                                        .slide-price {
+                                            font-size: 14px;
+                                            font-family: verdana;
+                                            overflow: hidden;
+                                            strong {
+                                                color: #e4393c;
+                                            }
+                                        }
+                                        .slide-extra {
+                                            a, span {
+                                                color: #005ea7;
+                                            }
+                                            a:hover, a:hover span {
+                                                color: #e4393c;
+                                            }
+                                        }
+                                    }
+                                    
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+                .pic {
+                    padding: 10px;
+                    img {
+                        transition: opacity .4s ease;
+                        -webkit-transition: opacity .4s ease;
+                        -moz-transition: opacity .4s ease;
+                    }
+                    img:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+            .slidebar {
+                width: 86px;
+                margin-left: 405px;
+                position: fixed;
+                right: 0;
+                bottom: 150px;
+                z-index: 100;
+                .dd {
+                    float: right;
+                    width: 42px;
+                    li {
+                        position: relative;
+                        height: 42px;
+                        background-color: rgba(204,204,204,0.9);
+                        transition: background-color .4s ease;
+                        -webkit-transition: background-color .4s ease;
+                        -moz-transition: background-color .4s ease;
+                        border-bottom: 1px dotted #fff;
+                        .service {
+                            a {
+                                display: block;
+                                width: 42px;
+                                height: 42px;
+                                text-align: center;
+                                position: relative;
+                                i {
+                                    display: block;
+                                    padding-top: 4px;
+                                    color: #f1f1f1;
+                                    transition: color .4s ease;
+                                    -webkit-transition: color .4s ease;
+                                    -moz-transition: color .4s ease;
+                                }
+                                b {
+                                    display: none;
+                                    position: absolute;
+                                    top: 11px;
+                                    left: -1px;
+                                    color: #fff;
+                                    font-size: 6px;
+                                }
+                            }
+                        }
+                        .defi {
+                            display: none; 
+                            position: absolute;
+                            width: 122px;
+                            padding: 15px;
+                            right: 42px;
+                            top: -90px;
+                            background: #fbfbfb;
+                            border: 1px solid #f5f5f5;
+                            box-shadow: 0 0 10px rgba(0,0,0,.12);
+                            a {
+                                display: block;
+                                line-height: 23px;
+                                color: #666;
+                                transition: margin-left .8s ease;
+                                -webkit-transition: margin-left .8s ease;
+                                -moz-transition: margin-left .8s ease;
+                                -o-transition: margin-left .8s ease;
+                            }
+                            a:hover {
+                                color: #e2231a;
+                                margin-left: 5px;
+                            }
+                        }
+                        .ee {
+                            background-color: #999999;
+                            a {
+                                i {
+                                    display: inline-block;
+                                    width: 100%;
+                                    height: 100%;
+                                    line-height: 30px;
+                                }
+                            }
+                        }
+                    }
+                    li:hover, li:hover .ee i {
+                        background-color: #c51622;
+                    }
+                    li:hover i {
+                        color: #fefbfb;
+                    }
+                    li:hover a b, li:hover .defi {
+                        display: block;
+                    }
+                    
+                }
+            }
+        }
 }
