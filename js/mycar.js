@@ -9,7 +9,7 @@ $(".amount-sum i").on("click", function() {
 });
 
 // 商品增加减少
-AddDeShop($("#jd-cart .increment"), $("#jd-cart .decrement"), $("#jd-cart .itxt"), $("#jd-cart .p-sum strong"), $("#jd-cart .plus-switch strong"), $(".amount-sum em"), "disabled", $(".sumPrice em"));
+AddDeShop($("#jd-cart .increment"), $("#jd-cart .decrement"), $("#jd-cart .itxt"), "disabled", $("#jd-cart .p-sum strong"), $("#jd-cart .plus-switch strong"), $(".amount-sum em"), $(".sumPrice em"));
 
 // 全选
 $(".selectAll").on("click", function() {

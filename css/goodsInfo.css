@@ -22,8 +22,7 @@
   cursor: default; }
   .cw-icon i {
     display: block;
-    position: absolute;
-    overflow: hidden; }
+    position: absolute; }
 
 a {
   color: #666;
@@ -336,6 +335,7 @@ header {
           color: #000; }
         #shop-head .head-menu-black .head-menu .menu-list .all-cate .sub-menu {
           display: none;
+          z-index: 999;
           position: absolute;
           left: 0;
           top: 39px;
@@ -355,12 +355,13 @@ header {
               font-weight: 600; }
             #shop-head .head-menu-black .head-menu .menu-list .all-cate .sub-menu .sub-pannel dt:hover a {
               color: #f30213; }
-        #shop-head .head-menu-black .head-menu .menu-list .all-cate .all:hover {
+        #shop-head .head-menu-black .head-menu .menu-list .all-cate .all:hover, #shop-head .head-menu-black .head-menu .menu-list .all-cate .sub-menu:hover .all-cate {
           background-color: #fff;
           color: #000; }
         #shop-head .head-menu-black .head-menu .menu-list .all-cate .all:hover i {
           color: #000; }
-        #shop-head .head-menu-black .head-menu .menu-list .all-cate .all:hover .sub-menu {
+        #shop-head .head-menu-black .head-menu .menu-list .all-cate:hover .sub-menu {
+          z-index: 999;
           display: block; }
 
 section {
@@ -368,13 +369,11 @@ section {
 
 .crumb-wrap {
   position: relative;
-  z-index: 5;
   background: #f2f2f2;
   clear: both; }
 
 .crumb {
   position: relative;
-  z-index: 5;
   padding: 13px 0 9px; }
   .crumb .item {
     float: left; }
@@ -435,7 +434,7 @@ section {
     float: left;
     padding-bottom: 15px; }
   .product-intro .itemInfo-wrap {
-    min-height: 590px;
+    min-height: 450px;
     margin-right: 24px;
     width: 624px;
     float: right; }
@@ -712,6 +711,24 @@ section {
   margin-bottom: 3px;
   line-height: 32px;
   display: block; }
+  .li .item {
+    position: relative;
+    float: left;
+    color: #666;
+    background-color: #FFF;
+    margin-right: 7px;
+    margin-bottom: 4px; }
+    .li .item a {
+      border: 1px solid #ccc;
+      padding: 0 13px;
+      display: block;
+      white-space: nowrap;
+      color: #666; }
+  .li .item:hover a {
+    border: 1px solid #e3393c; }
+  .li .selected a {
+    border: 1px solid #e3393c;
+    color: #666; }
 
 #summary-supply {
   clear: both;
@@ -722,9 +739,15 @@ section {
   padding-left: 10px;
   font-family: simsun;
   color: #999; }
-
 .itemInfo-wrap .dd {
   margin-left: 70px; }
+.itemInfo-wrap .summary-tips {
+  margin-bottom: 5px; }
+  .itemInfo-wrap .summary-tips .tips-list li {
+    float: left;
+    margin-right: 15px;
+    font-family: simsun;
+    color: #999; }
 
 .summary-service {
   color: #999; }
@@ -739,5 +762,147 @@ section {
   overflow: hidden;
   border-bottom: 1px dotted #dfdfdf;
   margin-bottom: 15px; }
+
+.baitiao-list {
+  float: left; }
+  .baitiao-list .item {
+    position: relative; }
+    .baitiao-list .item a {
+      text-align: center; }
+  .baitiao-list strong {
+    font-weight: 400;
+    color: #666; }
+
+.btn-lg {
+  height: 46px;
+  line-height: 46px;
+  padding: 0 26px;
+  font-size: 18px;
+  font-family: "microsoft yahei"; }
+
+.btn-special1 {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  font-weight: 700;
+  background-color: #df3033; }
+
+.choose-btns {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 0 10px; }
+  .choose-btns .choose-amount {
+    width: 58px;
+    height: 44px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    position: relative;
+    margin-right: 10px;
+    float: left; }
+    .choose-btns .choose-amount input {
+      display: block;
+      width: 43px;
+      height: 42px;
+      line-height: 42px;
+      position: absolute;
+      top: 1px;
+      left: 0;
+      border: 0;
+      text-align: center; }
+    .choose-btns .choose-amount a {
+      display: block;
+      width: 15px;
+      text-align: center;
+      height: 22px;
+      line-height: 22px;
+      overflow: hidden;
+      background: #f1f1f1;
+      color: #666;
+      position: absolute;
+      right: -1px;
+      border: 1px solid #ccc; }
+    .choose-btns .choose-amount .disabled {
+      color: #ccc;
+      cursor: not-allowed; }
+    .choose-btns .choose-amount .btn-reduce {
+      bottom: -1px;
+      border-top: 0; }
+    .choose-btns .choose-amount .btn-add {
+      top: -1px; }
+  .choose-btns .btn-lg {
+    margin-right: 10px;
+    float: left;
+    color: #fff;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease; }
+  .choose-btns .btn-lg:hover {
+    background-color: #be2023;
+    color: #eee8e8; }
+
+#shopRecSuit .tab-main {
+  position: relative;
+  background-color: #f7f7f7;
+  border: 1px solid #eee;
+  border-bottom: 1px solid #e4393c; }
+  #shopRecSuit .tab-main ul {
+    margin-top: -1px; }
+    #shopRecSuit .tab-main ul li {
+      position: relative;
+      display: inline-block;
+      padding: 10px 25px;
+      font-size: 14px;
+      background-color: #e4393c;
+      color: #fff;
+      cursor: default; }
+#shopRecSuit .tab-con {
+  padding: 10px 0; }
+
+.plist {
+  margin-bottom: 10px; }
+  .plist li {
+    width: 160px;
+    margin: 10px 19px;
+    float: left;
+    position: relative; }
+    .plist li .p-name {
+      position: absolute;
+      left: 0;
+      top: 65%;
+      background: transparent;
+      opacity: 0;
+      padding-left: 10px;
+      transition: all .3s linear;
+      -webkit-transition: all .3s linear;
+      -moz-transition: all .3s linear; }
+      .plist li .p-name a {
+        color: #fff; }
+    .plist li .p-price {
+      text-align: center; }
+  .plist li:hover .p-name {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.7); }
+
+#shop-reco {
+  height: 210px; }
+
+.p-img {
+  padding-bottom: 5px;
+  overflow: hidden; }
+
+.p-name {
+  overflow: hidden;
+  max-height: 3em;
+  min-height: 36px;
+  line-height: 1.5em;
+  margin-bottom: 5px; }
+
+.p-price {
+  overflow: hidden; }
+  .p-price strong {
+    color: #e4393c;
+    font-size: 14px;
+    font-family: Verdana; }
 
 /*# sourceMappingURL=goodsInfo.css.map */

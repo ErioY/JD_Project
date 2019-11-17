@@ -331,7 +331,7 @@ function search(searchInput) {
  *  secondSum: 第二个商品总价
  *  
 */
-function AddDeShop(increment, decrement, numinput , sumprice, singleprice, hasSelect, disabled, secondSum) {
+function AddDeShop(increment, decrement, numinput, disabled, sumprice, singleprice, hasSelect, secondSum) {
     // 点击加号时
     increment.click(function() {
         decrement.removeClass(disabled);
@@ -357,5 +357,25 @@ function AddDeShop(increment, decrement, numinput , sumprice, singleprice, hasSe
         sumprice.html("￥" + (singleprice.html().substring(1) * shopNum).toFixed(2));
         hasSelect.html(shopNum);
         secondSum.html(sumprice.html());
+    });
+}
+
+/**
+ * 点击或触摸i标签，i标签改变形状，同时打开或隐藏某个列表
+ *  clickEle：要点击的元素
+ *  ev：事件（click、hover等）
+ *  originClass：标签原来的类名
+ *  nowClass：改变后的类名
+ *  opeEle：要改变状态的元素（隐藏或显示）
+ * */
+function toggleI(clickEle, ev, originClass, nowClass, opeEle) {
+    clickEle.on(ev, function() {
+        if ($(this).hasClass(originClass)) {
+            $(this).removeClass(originClass).addClass(nowClass);
+            opeEle.css("display", "none");
+        } else {
+            $(this).removeClass(nowClass).addClass(originClass);
+            opeEle.css("display", "block");
+        }
     });
 }
